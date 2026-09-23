@@ -61,6 +61,7 @@ const ICONS = {
   alert: '<path d="M12 3 2 21h20z"/><path d="M12 9v5M12 18h.01"/>',
   circleCheck: '<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
   spark: '<path d="m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/>',
+  award: '<circle cx="12" cy="9" r="6"/><path d="m9 14-1.5 7L12 18.5 16.5 21 15 14"/><path d="m10 9 1.5 1.5L14.5 7.5"/>',
   copy: '<rect x="8" y="8" width="11" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/>',
 };
 
@@ -652,6 +653,59 @@ function renderBerlinInfo() {
   </div>`;
 }
 
+function formatEuro(amount) {
+  return new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(amount);
+}
+
+function sponsorTierClass(tier) {
+  const t = String(tier || '').toLowerCase();
+  return t.includes('gold') ? 'gold' : t.includes('silver') ? 'silver' : 'gray';
+}
+
+function renderCme() {
+  setTopbar({ title: 'CME & sponsors', kicker: 'Continuing medical education' });
+  const cme = DATA.config.cme;
+  const sponsors = DATA.config.sponsors;
+  if (!cme) return `<div class="page">${renderEmpty('award', 'CME information is not available', 'Reload the app while online.')}</div>`;
+  const ref = cme.reference;
+  return `<div class="page cme-page">
+    <div class="large-title"><h1 class="page-title">CME</h1><p class="page-subtitle">Continuing medical education points and sponsorship disclosure.</p></div>
+
+    <article class="card cme-hero">
+      <div class="cme-hero-top">
+        <span class="cme-hero-icon">${icon('award')}</span>
+        <div><small>${esc(cme.authorityEnglish)}</small><h2>${esc(cme.authority)}</h2></div>
+      </div>
+      <span class="badge gold">${esc(cme.status)}</span>
+      <p>${esc(cme.summary)}</p>
+      ${ref ? `<div class="cme-reference">
+        <div class="cme-total"><strong>${esc(String(ref.total))}</strong><span>CME points awarded in ${esc(String(ref.year))}</span></div>
+        <div class="cme-days">${ref.days.map(day => `<div><strong>${esc(String(day.points))}</strong><span>${esc(day.label)}</span></div>`).join('')}</div>
+      </div>` : ''}
+      ${cme.note ? `<p class="cme-note">${icon('info')}<span>${esc(cme.note)}</span></p>` : ''}
+    </article>
+
+    <section class="section">
+      <div class="section-head"><div><span class="eyebrow">At the meeting</span><h2>How to claim your points</h2></div></div>
+      <article class="card route-card"><div class="route-steps">
+        ${cme.steps.map((step, index) => `<div class="route-step"><span class="route-number">${index + 1}</span><div><strong>${esc(step.title)}</strong><p>${esc(step.body)}</p></div></div>`).join('')}
+      </div></article>
+      ${cme.germanText?.length ? `<details class="card cme-german"><summary>Deutscher Originaltext</summary>${cme.germanText.map(t => `<p>${esc(t)}</p>`).join('')}</details>` : ''}
+    </section>
+
+    ${sponsors?.items?.length ? `<section class="section">
+      <div class="section-head"><div><span class="eyebrow">Disclosure</span><h2>Sponsors</h2><p>${esc(sponsors.intro)}</p></div></div>
+      <div class="sponsor-list">
+        ${sponsors.items.map(sp => `<article class="card sponsor-card">
+          <a class="sponsor-logo" href="${attr(sp.url)}" target="_blank" rel="noopener" aria-label="${attr(sp.name)} website"><img src="${attr(sp.logo)}" alt="${attr(sp.name)} logo" loading="lazy"></a>
+          <div class="sponsor-copy"><strong>${esc(sp.name)}</strong><span class="badge ${sponsorTierClass(sp.tier)}">${esc(sp.tier)}</span></div>
+          <div class="sponsor-amount"><strong>${esc(formatEuro(sp.amount))}</strong><small>Sponsorship</small></div>
+        </article>`).join('')}
+      </div>
+    </section>` : ''}
+  </div>`;
+}
+
 function renderMore() {
   setTopbar({ title: 'More', kicker: 'Meeting information' });
   const summary = dataSummary();
@@ -705,7 +759,7 @@ function renderRoute(resetScroll = true) {
   state.route = getRoute();
   const detail = state.route.name === 'abstract';
   document.body.classList.toggle('detail-route', detail);
-  const navName = detail ? 'abstracts' : ['home', 'programme', 'abstracts', 'explore', 'more'].includes(state.route.name) ? state.route.name : 'home';
+  const navName = detail ? 'abstracts' : ['home', 'programme', 'abstracts', 'explore', 'cme', 'more'].includes(state.route.name) ? state.route.name : 'home';
   setActiveNavigation(navName);
 
   let html;
@@ -715,6 +769,7 @@ function renderRoute(resetScroll = true) {
     case 'abstracts': html = renderAbstracts(); break;
     case 'abstract': html = renderAbstractDetail(state.route.id); break;
     case 'explore': html = renderExplore(); break;
+    case 'cme': html = renderCme(); break;
     case 'more': html = renderMore(); break;
     default: routeTo('#/home'); return;
   }
