@@ -1,4 +1,4 @@
-const VERSION = 'btm2026-v2.0.2-20260923';
+const VERSION = 'btm2026-v2.1.1-20260923';
 const APP_CACHE = `${VERSION}-app`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const DATA_CACHE = `${VERSION}-data`;
@@ -23,7 +23,13 @@ const APP_SHELL = [
   './images/campus-schematic.svg',
   './images/stadtgut-schematic.svg',
   './images/transit-schematic.svg',
-  './images/og-card.png'
+  './images/og-card.png',
+  './images/sponsors/jazz-pharmaceuticals.png',
+  './images/sponsors/lam-x.png',
+  './images/sponsors/illumina.png',
+  './images/sponsors/servier.png',
+  './images/sponsors/novocure.png',
+  './images/sponsors/alexion.png'
 ];
 
 self.addEventListener('install', event => {
