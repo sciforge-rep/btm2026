@@ -1,0 +1,26 @@
+[
+  {
+    "id": "programme-status",
+    "level": "info",
+    "title": "Programme subject to change",
+    "body": "The app reflects the programme currently published for BTM 2026. Organiser notices will appear here if timings or rooms change.",
+    "date": "2026-09-22",
+    "active": true
+  },
+  {
+    "id": "abstract-book",
+    "level": "success",
+    "title": "Abstract book available",
+    "body": "All 74 submitted records are searchable in the app and available offline after the first complete load.",
+    "date": "2026-09-22",
+    "active": true
+  },
+  {
+    "id": "stadtgut-evening",
+    "level": "event",
+    "title": "Wednesday evening at Stadtgut",
+    "body": "Flash-orals begin at 19:00, followed by the social dinner at 20:00 and late-breaking flash-orals from 21:45.",
+    "date": "2026-10-14",
+    "active": true
+  }
+]

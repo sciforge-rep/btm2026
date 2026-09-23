@@ -1,0 +1,190 @@
+{
+  "event": {
+    "name": "Brain Tumor Meeting 2026",
+    "shortName": "BTM 2026",
+    "edition": "12th edition",
+    "tagline": "Finding paths through brain tumor complexity",
+    "start": "2026-10-14T09:30:00+02:00",
+    "end": "2026-10-15T17:30:00+02:00",
+    "datesLabel": "14–15 October 2026",
+    "timezone": "Europe/Berlin",
+    "language": "English",
+    "officialWebsite": "https://www.mdc-berlin.de/BTM2026",
+    "programmePdf": "https://www.mdc-berlin.de/system/files/document/BTM2026_Program_July-15-1.pdf",
+    "programmeStatus": "Programme subject to change",
+    "lastContentUpdate": "2026-09-22",
+    "abstractMode": "74 author-submitted abstracts imported from the approved conference export",
+    "version": "2.0.0"
+  },
+  "venues": {
+    "main": {
+      "name": "MDC.C Conference Center",
+      "subtitle": "Building 83 · Campus Berlin-Buch",
+      "address": "Robert-Rössle-Straße 10, 13125 Berlin, Germany",
+      "lat": 52.62449,
+      "lng": 13.50169,
+      "description": "The scientific programme, registration and poster sessions take place at MDC.C, Building 83, on the Campus Berlin-Buch.",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=MDC.C%20Building%2083%20Robert-R%C3%B6ssle-Stra%C3%9Fe%2010%2013125%20Berlin",
+      "appleMaps": "https://maps.apple.com/?q=MDC.C%20Building%2083&address=Robert-R%C3%B6ssle-Stra%C3%9Fe%2010%2C%2013125%20Berlin",
+      "osm": "https://www.openstreetmap.org/search?query=MDC.C%20Berlin-Buch",
+      "campusMap": "https://www.campusberlinbuch.de/en/campus/map/"
+    },
+    "social": {
+      "name": "Stadtgut Berlin-Buch",
+      "subtitle": "Historic wooden barn",
+      "address": "Alt-Buch 45–51, 13125 Berlin, Germany",
+      "lat": 52.63436,
+      "lng": 13.49745,
+      "description": "The extended symposium, social dinner and late-breaking flash orals take place in the historic wooden barn at Stadtgut Berlin-Buch on Wednesday evening.",
+      "googleMaps": "https://www.google.com/maps/search/?api=1&query=Stadtgut%20Berlin-Buch%20Alt-Buch%2045-51%2013125%20Berlin",
+      "appleMaps": "https://maps.apple.com/?q=Stadtgut%20Berlin-Buch&address=Alt-Buch%2045-51%2C%2013125%20Berlin",
+      "website": "https://stadtgut-buch.de/",
+      "walking": "https://www.google.com/maps/dir/?api=1&origin=MDC.C%20Building%2083%20Berlin-Buch&destination=Stadtgut%20Berlin-Buch&travelmode=walking"
+    }
+  },
+  "transport": {
+    "campus": [
+      "Take S-Bahn line S2 to S Buch.",
+      "From S Buch, take bus 353 to Campus Buch; the stop is directly by the conference venue.",
+      "Bus lines 150, 158 and 259 also serve stops near the campus.",
+      "Use the live BVG or VBB journey planner on the day, because construction and timetable changes can occur."
+    ],
+    "berlin": [
+      "One ticket covers S-Bahn, U-Bahn, tram, bus and ferry services within the selected Berlin fare zones.",
+      "Berlin-Buch lies in fare zones A/B. BER Airport is in zone C, so airport journeys to or from Berlin require an ABC ticket.",
+      "Validate paper tickets before travelling. Digital tickets must be activated before the journey if activation is not automatic.",
+      "Use the live BVG or VBB journey planner on the day because construction and timetable changes can occur."
+    ],
+    "airport": [
+      "BER Airport railway station is below Terminal 1 on level U2.",
+      "Regional trains and the Airport Express connect BER with central Berlin; S-Bahn services also operate from the airport.",
+      "For the conference, plan a live route to “Campus Buch” and allow additional transfer time."
+    ],
+    "links": {
+      "bvgPlanner": "https://www.bvg.de/en/connections/connection-search",
+      "vbbPlanner": "https://www.vbb.de/en/",
+      "dbPlanner": "https://int.bahn.de/en",
+      "berAirport": "https://ber.berlin-airport.de/en/orientation/getting-here/public-transport.html",
+      "mdcDirections": "https://www.mdc-berlin.de/about/contact/berlin-buch"
+    }
+  },
+  "meetingInfo": {
+    "poster": "Maximum poster size: 120 cm high × 100 cm wide. Wider formats cannot be accepted.",
+    "talks": "Keynotes: 30 min talk + 10 min discussion. Oral presentations: 15 min talk + 5 min discussion, unless otherwise scheduled.",
+    "cme": "Recognition by the Berlin Medical Association has been requested for 2026. Physicians seeking credit should bring their barcode labels; final confirmation remains subject to approval.",
+    "onsite": "On-site registration is listed as available on the official meeting page.",
+    "language": "The official meeting language is English.",
+    "abstracts": "The app contains 74 submitted abstracts. One source PDF contains title, authors and affiliation only, without an abstract body."
+  },
+  "contacts": {
+    "organisational": {
+      "label": "Organisational enquiries",
+      "name": "MDC Events Team",
+      "email": "BTM2026@mdc-berlin.de"
+    },
+    "scientific": {
+      "label": "Scientific enquiries",
+      "name": "Dr. Gaetano Gargiulo",
+      "email": "Gaetano.Gargiulo@mdc-berlin.de"
+    }
+  },
+  "committees": {
+    "scientific": [
+      {
+        "name": "Charlotte Flüh",
+        "detail": "Göttingen University · clinician, neurosurgery"
+      },
+      {
+        "name": "Gaetano Gargiulo",
+        "detail": "Max Delbrück Center · GBM biology · host"
+      },
+      {
+        "name": "Rainer Glass",
+        "detail": "LMU · GBM biology"
+      },
+      {
+        "name": "Ilon Liu",
+        "detail": "Charité · clinician, neuro-oncology"
+      },
+      {
+        "name": "Michela Serresi",
+        "detail": "Max Delbrück Center · metastasis biology"
+      }
+    ],
+    "organising": [
+      {
+        "name": "Gaetano Gargiulo",
+        "detail": "Max Delbrück Center"
+      },
+      {
+        "name": "Matthias Runow",
+        "detail": "Max Delbrück Center"
+      },
+      {
+        "name": "Matthias Schmitt",
+        "detail": "Max Delbrück Center"
+      },
+      {
+        "name": "Pilar Sanchez",
+        "detail": "Max Delbrück Center"
+      },
+      {
+        "name": "Michela Serresi",
+        "detail": "Max Delbrück Center"
+      }
+    ]
+  },
+  "privacy": {
+    "summary": "The app stores favourites, theme choice and installation preferences only on the participant’s device. It has no login, advertising, analytics, attendee tracking, location collection or payment data.",
+    "publicationNote": "The abstracts were extracted from the submitted PDF archive supplied by the meeting organisers. Confirm author publication approval and adapt the privacy/imprint text to MDC requirements before public deployment."
+  },
+  "accommodation": [
+    {
+      "name": "A25Hotel Berlin-Karow",
+      "address": "Hagenstraße 1A, 13125 Berlin-Karow",
+      "note": "Approximately four bus stops from the venue",
+      "url": "http://www.a25hotel-berlin.de"
+    },
+    {
+      "name": "Hotel Alt-Karow",
+      "address": "Alt-Karow 2, 13125 Berlin-Karow",
+      "note": "Approximately three bus stops from the venue",
+      "url": "http://www.hotel-alt-karow.de/index.php"
+    },
+    {
+      "name": "Pension Boje",
+      "address": "Alt-Karow 37, 13125 Berlin-Karow",
+      "note": "Approximately three bus stops from the venue",
+      "url": "http://www.pension-boje.de"
+    },
+    {
+      "name": "Hotel Stadtgut Berlin-Buch",
+      "address": "Alt-Buch 45–51, 13125 Berlin-Buch",
+      "note": "Approximately ten minutes on foot from MDC.C",
+      "url": "http://www.hotel-stadtgut-berlin-buch.de"
+    },
+    {
+      "name": "Pension Il Castello",
+      "address": "Karower Straße 1, 13125 Berlin-Buch",
+      "note": "Approximately ten minutes on foot from MDC.C",
+      "url": "https://il-castello-berlin.de/pension-in-berlin-buch/"
+    },
+    {
+      "name": "Pension am Helios",
+      "address": "Rudolf-Breitscheid-Straße 81, 16341 Panketal",
+      "note": "Approximately fifteen minutes on foot via Helios Clinic",
+      "url": "http://www.pension-am-helios.de/"
+    },
+    {
+      "name": "Park Inn by Radisson Berlin Alexanderplatz",
+      "address": "Alexanderplatz 7, 10178 Berlin",
+      "note": "Central Berlin, close to the S2 route",
+      "url": "https://www.radissonhotels.com/en-us/hotels/park-inn-berlin-alexanderplatz"
+    }
+  ],
+  "emergency": {
+    "general": "112",
+    "police": "110",
+    "note": "For immediate medical or fire emergencies in Germany call 112. For police emergencies call 110."
+  }
+}

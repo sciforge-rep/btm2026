@@ -1,0 +1,90 @@
+{
+  "name": "Brain Tumor Meeting 2026",
+  "short_name": "BTM 2026",
+  "description": "Programme, abstracts and practical information for the Brain Tumor Meeting 2026 in Berlin.",
+  "id": "./",
+  "start_url": "./#/home?source=installed",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#071425",
+  "theme_color": "#f3f6fa",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": [
+    "education",
+    "medical",
+    "events"
+  ],
+  "prefer_related_applications": false,
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "icons": [
+    {
+      "src": "./images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./images/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Open programme",
+      "short_name": "Programme",
+      "description": "View the two-day scientific programme.",
+      "url": "./#/programme",
+      "icons": [{ "src": "./images/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Search abstracts",
+      "short_name": "Abstracts",
+      "description": "Search all submitted abstracts.",
+      "url": "./#/abstracts",
+      "icons": [{ "src": "./images/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    },
+    {
+      "name": "Venues and travel",
+      "short_name": "Explore",
+      "description": "Find MDC.C, Stadtgut and Berlin travel information.",
+      "url": "./#/explore",
+      "icons": [{ "src": "./images/icon-192.png", "sizes": "192x192", "type": "image/png" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./images/screenshot-home-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "label": "BTM 2026 home screen"
+    },
+    {
+      "src": "./images/screenshot-programme-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "label": "BTM 2026 programme"
+    },
+    {
+      "src": "./images/screenshot-programme-desktop.png",
+      "sizes": "1440x980",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "BTM 2026 programme on desktop"
+    }
+  ]
+}

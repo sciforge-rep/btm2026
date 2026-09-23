@@ -1,0 +1,544 @@
+{
+  "days": [
+    {
+      "id": "day-1",
+      "date": "2026-10-14",
+      "label": "Wednesday, 14 October",
+      "shortLabel": "Wed 14 Oct",
+      "location": "MDC.C · Building 83 / Stadtgut Berlin-Buch",
+      "sessions": [
+        {
+          "id": "origin-plasticity-evolution",
+          "title": "Brain Tumor Origin, Plasticity and Evolution",
+          "chair": "TBD",
+          "theme": "Origin & evolution",
+          "items": [
+            {
+              "id": "d1-registration",
+              "start": "09:30",
+              "end": "13:10",
+              "kind": "registration",
+              "title": "Registration and poster setup",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "d1-welcome",
+              "start": "11:00",
+              "end": "11:05",
+              "kind": "welcome",
+              "title": "Welcome address",
+              "speaker": "Gaetano Gargiulo",
+              "affiliation": "on behalf of the Scientific Committee",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "jeremy-rich",
+              "start": "11:10",
+              "end": "11:50",
+              "kind": "keynote",
+              "title": "Title to be announced",
+              "speaker": "Jeremy N. Rich",
+              "affiliation": "University of North Carolina, Chapel Hill, USA",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "jeong-ho-lee",
+              "start": "11:50",
+              "end": "12:30",
+              "kind": "keynote",
+              "title": "Somatic Mosaicism in Brain Tumor Evolution",
+              "speaker": "Jeong Ho Lee",
+              "affiliation": "KAIST, South Korea",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "ghazaleh-tabatabai",
+              "start": "12:30",
+              "end": "13:10",
+              "kind": "keynote",
+              "title": "Mapping and Targeting Functional Vulnerabilities in Glioblastoma",
+              "speaker": "Ghazaleh Tabatabai",
+              "affiliation": "Tübingen, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "d1-lunch",
+              "start": "13:10",
+              "end": "14:00",
+              "kind": "break",
+              "title": "Lunch break",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        },
+        {
+          "id": "glioma-cell-intrinsic",
+          "title": "Glioma Cell Intrinsic Biology",
+          "chair": "TBD",
+          "theme": "Cell-intrinsic biology",
+          "items": [
+            {
+              "id": "ashraf-zaman",
+              "start": "14:00",
+              "end": "14:20",
+              "kind": "oral",
+              "title": "A conserved astrocyte-like parental cell defines the phylogenetic root of adult-type diffuse glioma",
+              "speaker": "Ashraf Zaman",
+              "affiliation": "Garvan Institute of Medical Research, Sydney, Australia",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2485"
+            },
+            {
+              "id": "kevin-johnson",
+              "start": "14:20",
+              "end": "14:40",
+              "kind": "oral",
+              "title": "Acquired genetic and cell state changes in IDH-mutant glioma progression",
+              "speaker": "Kevin Johnson",
+              "affiliation": "Yale University, USA",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2486"
+            },
+            {
+              "id": "tugba-bagci-onder",
+              "start": "14:40",
+              "end": "14:50",
+              "kind": "flash",
+              "title": "Defining Epigenetic Vulnerabilities and Response Programs in IDH-Mutant Gliomas",
+              "speaker": "Tuğba Bağcı-Önder",
+              "affiliation": "Koç University, Turkey",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2439"
+            },
+            {
+              "id": "elisabetta-stanzani",
+              "start": "14:50",
+              "end": "15:00",
+              "kind": "flash",
+              "title": "Beyond oncogenic mutations: identifying actionable vulnerabilities in BRAF-wt glioblastoma resistance",
+              "speaker": "Elisabetta Stanzani",
+              "affiliation": "CNR – Istituto di Neuroscienze / Humanitas Research Hospital, Italy",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2546"
+            },
+            {
+              "id": "d1-coffee-poster",
+              "start": "15:00",
+              "end": "15:45",
+              "kind": "poster",
+              "title": "Coffee break and poster session",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        },
+        {
+          "id": "brain-metastasis",
+          "title": "Brain Metastasis",
+          "chair": "TBD",
+          "theme": "Primary & metastatic brain tumors",
+          "items": [
+            {
+              "id": "berta-lopez",
+              "start": "15:45",
+              "end": "16:25",
+              "kind": "keynote",
+              "title": "Microenvironmental regulation of melanoma brain metastases",
+              "speaker": "Berta López Sánchez-Laorden",
+              "affiliation": "Alicante, Spain",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "pedro-garcia-gomez",
+              "start": "16:25",
+              "end": "16:45",
+              "kind": "oral",
+              "title": "A transient MXD4-dependent proliferative pause enables survival of brain micrometastases",
+              "speaker": "Pedro García-Gómez",
+              "affiliation": "CNIO, Spain",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2509"
+            },
+            {
+              "id": "jan-remsik",
+              "start": "16:45",
+              "end": "17:05",
+              "kind": "oral",
+              "title": "How dendritic cell maturation instructs leptomeningeal anti-tumor immunity",
+              "speaker": "Jan Remsik",
+              "affiliation": "VIB, Belgium",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2525"
+            },
+            {
+              "id": "d1-poster",
+              "start": "17:05",
+              "end": "18:30",
+              "kind": "poster",
+              "title": "Poster session",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        },
+        {
+          "id": "extended-symposium",
+          "title": "Extended Symposium",
+          "chair": "Stadtgut historic wooden barn",
+          "theme": "Evening programme",
+          "items": [
+            {
+              "id": "extended-flash",
+              "start": "19:00",
+              "end": "20:00",
+              "kind": "flash-session",
+              "title": "Flash-orals",
+              "speaker": "Francesca Lessi · Chiara Maria Mazzanti · Mariangela Morelli · Giuseppina Catanzaro · Sukrit Mahajan · Adrián Sanz Gálvez",
+              "affiliation": "Selected contributors",
+              "note": "",
+              "location": "Stadtgut Berlin-Buch · Historic wooden barn",
+              "contributors": [
+                {
+                  "name": "Francesca Lessi",
+                  "affiliation": "Fondazione Pisana per la Scienza",
+                  "abstractIds": [
+                    "abs-2533",
+                    "abs-2547"
+                  ]
+                },
+                {
+                  "name": "Chiara Maria Mazzanti",
+                  "affiliation": "Fondazione Pisana per la Scienza",
+                  "abstractIds": [
+                    "abs-2515"
+                  ]
+                },
+                {
+                  "name": "Mariangela Morelli",
+                  "affiliation": "Fondazione Pisana per la Scienza",
+                  "abstractIds": [
+                    "abs-2551",
+                    "abs-2553"
+                  ]
+                },
+                {
+                  "name": "Giuseppina Catanzaro",
+                  "affiliation": "Link University",
+                  "abstractIds": [
+                    "abs-2518",
+                    "abs-2519"
+                  ]
+                },
+                {
+                  "name": "Sukrit Mahajan",
+                  "affiliation": "TU Dresden",
+                  "abstractIds": [
+                    "abs-2447"
+                  ]
+                },
+                {
+                  "name": "Adrián Sanz Gálvez",
+                  "affiliation": "Universidad Complutense de Madrid",
+                  "abstractIds": [
+                    "abs-2423"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "social-dinner",
+              "start": "20:00",
+              "end": "21:45",
+              "kind": "social",
+              "title": "Social dinner",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "Stadtgut Berlin-Buch · Historic wooden barn"
+            },
+            {
+              "id": "late-breaking-flash",
+              "start": "21:45",
+              "end": "23:00",
+              "kind": "flash-session",
+              "title": "Late-breaking flash-orals",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "Stadtgut Berlin-Buch · Historic wooden barn"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-2",
+      "date": "2026-10-15",
+      "label": "Thursday, 15 October",
+      "shortLabel": "Thu 15 Oct",
+      "location": "MDC.C · Building 83",
+      "sessions": [
+        {
+          "id": "tumor-immunology",
+          "title": "Brain Tumor Immunology",
+          "chair": "TBD",
+          "theme": "Immunology",
+          "items": [
+            {
+              "id": "ahmed-sadik",
+              "start": "09:30",
+              "end": "09:50",
+              "kind": "oral",
+              "title": "The spatial distribution of tryptophan metabolic fields promote niche-specific immunosuppressive programs in gliomas",
+              "speaker": "Ahmed Sadik",
+              "affiliation": "DKFZ/DKTK, Heidelberg, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2543"
+            },
+            {
+              "id": "aso-omer-mohammed",
+              "start": "09:50",
+              "end": "10:00",
+              "kind": "flash",
+              "title": "Human Glioma-Infiltrated Brain Slices Reveal Payload-Specific Remodeling by Cytokine-Armored CAR-PBMC",
+              "speaker": "Aso Omer Mohammed",
+              "affiliation": "Universitätsklinikum Freiburg / University Hospital Zurich, Germany/Switzerland",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2544"
+            },
+            {
+              "id": "laurens-zaschke",
+              "start": "10:00",
+              "end": "10:10",
+              "kind": "flash",
+              "title": "Dexamethasone induces immunosuppressive remodeling of the brain tumor microenvironment associated with poor prognosis",
+              "speaker": "Laurens Zaschke",
+              "affiliation": "Charité, Berlin, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2541"
+            },
+            {
+              "id": "bjoern-scheffler",
+              "start": "10:10",
+              "end": "10:50",
+              "kind": "keynote",
+              "title": "Glioblastoma at the Brain-Skull Marrow Interface: From Neuroimmune Crosstalk to Clinical Translation",
+              "speaker": "Björn Scheffler",
+              "affiliation": "DKFZ, Heidelberg, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "d2-coffee-1",
+              "start": "10:50",
+              "end": "11:15",
+              "kind": "break",
+              "title": "Coffee break",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        },
+        {
+          "id": "tumor-microenvironment",
+          "title": "Brain Tumor Microenvironment",
+          "chair": "TBD",
+          "theme": "The brain tumor ecosystem",
+          "items": [
+            {
+              "id": "leila-akkari",
+              "start": "11:15",
+              "end": "11:55",
+              "kind": "keynote",
+              "title": "From Diversity to Dependency: Plasticity of Myeloid Cells in Brain Tumors",
+              "speaker": "Leila Akkari",
+              "affiliation": "NKI, Amsterdam, Netherlands",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "simona-parrinello",
+              "start": "11:55",
+              "end": "12:35",
+              "kind": "keynote",
+              "title": "[Tentative] The role of injury programs in gliomagenesis",
+              "speaker": "Simona Parrinello",
+              "affiliation": "UCL, London, UK",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "alexander-pietras",
+              "start": "12:35",
+              "end": "12:55",
+              "kind": "oral",
+              "title": "Phenotypic Screening Identifies Flunarizine as an Inhibitor of Radiotherapy-Induced Astrocyte Reactivity with Therapeutic Potential in Glioblastoma",
+              "speaker": "Alexander Pietras",
+              "affiliation": "Lund, Sweden",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2512"
+            },
+            {
+              "id": "felix-nebeling",
+              "start": "12:55",
+              "end": "13:05",
+              "kind": "flash",
+              "title": "Microglial Regulation of Glioblastoma Dissemination at the Far Infiltration Zone",
+              "speaker": "Felix C. Nebeling",
+              "affiliation": "University Hospital Bonn / DZNE, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "d2-lunch",
+              "start": "13:05",
+              "end": "14:00",
+              "kind": "break",
+              "title": "Lunch break",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        },
+        {
+          "id": "paediatric-rare",
+          "title": "Pediatric, Low-grade and Rare CNS Tumors",
+          "chair": "TBD",
+          "theme": "Brain tumor diversity",
+          "items": [
+            {
+              "id": "sina-neyazi",
+              "start": "14:00",
+              "end": "14:20",
+              "kind": "oral",
+              "title": "Project HOPE: a longitudinal multidimensional profiling of high-grade gliomas in children, adolescents and young adults",
+              "speaker": "Sina Neyazi",
+              "affiliation": "Dana-Farber, Boston, USA",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2499"
+            },
+            {
+              "id": "simon-zeuner",
+              "start": "14:20",
+              "end": "14:40",
+              "kind": "oral",
+              "title": "Repurposing statins as senolytics in pediatric low-grade glioma leverages mevalonate pathway dependency in oncogene-induced senescence",
+              "speaker": "Simon Zeuner",
+              "affiliation": "DKFZ/KiTZ, Heidelberg, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2524"
+            },
+            {
+              "id": "kevin-lu",
+              "start": "14:40",
+              "end": "15:00",
+              "kind": "oral",
+              "title": "Co-targeting gangliosides to overcome antigen heterogeneity in H3-wildtype pediatric high-grade glioma",
+              "speaker": "Kevin Lu",
+              "affiliation": "Dana-Farber, Boston, USA",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2538"
+            },
+            {
+              "id": "simay-celikyurekli",
+              "start": "15:00",
+              "end": "15:10",
+              "kind": "flash",
+              "title": "Combined CDK9 and BET inhibition induces apoptosis in H3K27M pediatric diffuse midline gliomas through translational suppression and replication stress",
+              "speaker": "Simay Çelikyürekli",
+              "affiliation": "DKFZ/KiTZ, Heidelberg, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2528"
+            },
+            {
+              "id": "klejdi-nurellari",
+              "start": "15:10",
+              "end": "15:20",
+              "kind": "flash",
+              "title": "Integrated Spatial Profiling Identifies a Recruitment-Deficient Lymphocyte-Cold State in Meningioma",
+              "speaker": "Klejdi Nurellari",
+              "affiliation": "Universitätsklinikum Freiburg, Germany",
+              "note": "",
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2545"
+            },
+            {
+              "id": "d2-coffee-poster",
+              "start": "15:20",
+              "end": "16:20",
+              "kind": "poster",
+              "title": "Coffee break and poster session",
+              "speaker": "",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        },
+        {
+          "id": "functional-genetics-models",
+          "title": "Functional Genetics and Next-generation Brain Tumor Models",
+          "chair": "TBD",
+          "theme": "Functional genetics & models",
+          "items": [
+            {
+              "id": "daniel-schramek",
+              "start": "16:20",
+              "end": "17:00",
+              "kind": "keynote",
+              "title": "Decoding Aneuploidies in Glioma — using CRISPR technologies in mice to unravel novel cancer driver genes and vulnerabilities in recurrent CNA",
+              "speaker": "Daniel Schramek",
+              "affiliation": "Lunenfeld-Tanenbaum, Toronto, Canada",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            },
+            {
+              "id": "poster-prize-closing",
+              "start": "17:00",
+              "end": "17:30",
+              "kind": "closing",
+              "title": "Poster prize and closing remarks",
+              "speaker": "Scientific Committee",
+              "affiliation": "",
+              "note": "",
+              "location": "MDC.C · Building 83"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
