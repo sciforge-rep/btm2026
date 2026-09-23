@@ -1084,6 +1084,52 @@ async function loadData() {
   entries.forEach(([key, value]) => { DATA[key] = value; });
 }
 
+const REFRESH_MIN_GAP_MS = 60 * 1000;
+const REFRESH_INTERVAL_MS = 5 * 60 * 1000;
+let lastRefreshAt = Date.now();
+let refreshPending = false;
+let refreshRunning = false;
+
+function userIsTyping() {
+  const el = document.activeElement;
+  return !!el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
+}
+
+// Re-fetch the data files when the app returns to the foreground or comes back online,
+// and re-render only if something actually changed.
+async function refreshData(force = false) {
+  if (refreshRunning || !navigator.onLine || document.visibilityState !== 'visible') return;
+  if (!force && Date.now() - lastRefreshAt < REFRESH_MIN_GAP_MS) return;
+  if (userIsTyping()) { refreshPending = true; return; }
+  refreshRunning = true;
+  lastRefreshAt = Date.now();
+  const before = JSON.stringify([DATA.config, DATA.program, DATA.abstracts, DATA.announcements]);
+  const previous = { ...DATA };
+  try {
+    await loadData();
+    const after = JSON.stringify([DATA.config, DATA.program, DATA.abstracts, DATA.announcements]);
+    if (after !== before) {
+      renderRoute(false);
+      toast('Programme and notices updated');
+    }
+    refreshPending = false;
+  } catch (error) {
+    Object.assign(DATA, previous);
+    console.warn('Background content check failed', error);
+  } finally {
+    refreshRunning = false;
+  }
+  state.serviceWorkerRegistration?.update().catch(() => {});
+}
+
+function bindRefreshTriggers() {
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') refreshData(); });
+  window.addEventListener('pageshow', event => { if (event.persisted) refreshData(true); });
+  window.addEventListener('online', () => refreshData(true));
+  document.addEventListener('focusout', () => { if (refreshPending) setTimeout(() => refreshData(true), 300); });
+  setInterval(() => refreshData(), REFRESH_INTERVAL_MS);
+}
+
 async function initialise() {
   applyTheme();
   bindEvents();
@@ -1092,6 +1138,7 @@ async function initialise() {
     await loadData();
     await registerServiceWorker();
     renderRoute();
+    bindRefreshTriggers();
   } catch (error) {
     console.error(error);
     setTopbar({ title: 'BTM 2026', kicker: 'Conference app' });
