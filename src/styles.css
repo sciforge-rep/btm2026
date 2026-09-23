@@ -436,15 +436,15 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .session-header h2 { margin: 5px 0 4px; font-size: 1.04rem; line-height: 1.25; letter-spacing: -.02em; }
 .session-header p { margin: 0; color: var(--muted); font-size: .72rem; }
 .timeline { position: relative; }
-.timeline::before { content: ""; position: absolute; left: 62px; top: 0; bottom: 0; width: 1px; background: var(--line); }
-.programme-entry { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1fr) 34px; gap: 12px; padding: 15px 13px 15px 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
+.timeline::before { content: ""; position: absolute; left: 76px; top: 0; bottom: 0; width: 1px; background: var(--line); }
+.programme-entry { position: relative; display: grid; grid-template-columns: 52px minmax(0, 1fr) 34px; gap: 24px; padding: 15px 13px 15px 12px; border-bottom: 1px solid var(--line); cursor: pointer; }
 .programme-entry:last-child { border-bottom: 0; }
 .programme-entry:hover { background: var(--blue-50); }
 .programme-entry.now { background: color-mix(in srgb, var(--gold-100) 48%, var(--surface)); }
 .programme-time { padding-top: 1px; text-align: right; font-variant-numeric: tabular-nums; }
 .programme-time strong { display: block; font-size: .78rem; }
 .programme-time small { display: block; margin-top: 2px; color: var(--faint); font-size: .64rem; }
-.timeline-dot { position: absolute; left: 58px; top: 20px; width: 9px; height: 9px; border: 2px solid var(--surface); border-radius: 50%; background: var(--blue-500); box-shadow: 0 0 0 1px var(--blue-500); }
+.timeline-dot { position: absolute; left: 72px; top: 20px; width: 9px; height: 9px; border: 2px solid var(--surface); border-radius: 50%; background: var(--blue-500); box-shadow: 0 0 0 1px var(--blue-500); }
 .programme-entry[data-kind="keynote"] .timeline-dot { background: var(--gold-500); box-shadow: 0 0 0 1px var(--gold-500); }
 .programme-entry[data-kind="break"] .timeline-dot,
 .programme-entry[data-kind="registration"] .timeline-dot { background: var(--faint); box-shadow: 0 0 0 1px var(--faint); }
@@ -790,9 +790,9 @@ body.detail-route .toast { bottom: calc(var(--safe-bottom) + 18px); }
   .hero-card h1 { font-size: 2.42rem; }
   .hero-actions .button { width: 100%; }
   .quick-action { min-height: 125px; padding: 14px; }
-  .programme-entry { grid-template-columns: 47px minmax(0,1fr) 30px; gap: 10px; padding-left: 8px; }
-  .timeline::before { left: 55px; }
-  .timeline-dot { left: 51px; }
+  .programme-entry { grid-template-columns: 47px minmax(0,1fr) 30px; gap: 20px; padding-left: 8px; }
+  .timeline::before { left: 65px; }
+  .timeline-dot { left: 61px; }
   .sheet-actions { grid-template-columns: 1fr; }
 }
 
