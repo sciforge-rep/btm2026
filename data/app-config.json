@@ -71,7 +71,7 @@
   "meetingInfo": {
     "poster": "Maximum poster size: 120 cm high × 100 cm wide. Wider formats cannot be accepted.",
     "talks": "Keynotes: 30 min talk + 10 min discussion. Oral presentations: 15 min talk + 5 min discussion, unless otherwise scheduled.",
-    "cme": "Recognition by the Berlin Medical Association has been requested for 2026. Physicians seeking credit should bring their barcode labels; final confirmation remains subject to approval.",
+    "cme": "Recognition by the Berlin Medical Association (Ärztekammer Berlin) will be requested again for 2026. See the CME tab for how to claim points.",
     "onsite": "On-site registration is listed as available on the official meeting page.",
     "language": "The official meeting language is English.",
     "abstracts": "The app contains 74 submitted abstracts. One source PDF contains title, authors and affiliation only, without an abstract body."
@@ -186,5 +186,94 @@
     "general": "112",
     "police": "110",
     "note": "For immediate medical or fire emergencies in Germany call 112. For police emergencies call 110."
+  },
+  "cme": {
+    "authority": "Ärztekammer Berlin",
+    "authorityEnglish": "Berlin Medical Association",
+    "status": "Application for 2026 will be submitted",
+    "summary": "Every Brain Tumor Meeting so far has been recognised by the Berlin Medical Association as continuing medical education for physicians, so participants received CME points. Recognition will be requested again for the Brain Tumor Meeting 2026.",
+    "reference": {
+      "year": 2024,
+      "total": 12,
+      "days": [
+        {
+          "label": "Thursday",
+          "points": 6
+        },
+        {
+          "label": "Friday",
+          "points": 6
+        }
+      ]
+    },
+    "steps": [
+      {
+        "title": "Bring your barcode labels",
+        "body": "A barcode label from your medical association (Ärztekammer) is needed to register your attendance. Please bring your labels with you."
+      },
+      {
+        "title": "Sign the participant list",
+        "body": "Participant lists for the Ärztekammer are available at the meeting. Everyone who wants CME points enters their name and sticks on a barcode label."
+      },
+      {
+        "title": "Collect your certificate",
+        "body": "Attendance certificates are handed out at the registration desk."
+      }
+    ],
+    "note": "The number of points for 2026 depends on the Ärztekammer's decision and will be added here once confirmed.",
+    "germanText": [
+      "Alle Brain Tumor Meetings sind bisher von der Berliner Ärztekammer als Fortbildungsveranstaltung für Mediziner anerkannt worden, so dass Teilnehmer*innen an der Tagung Fortbildungspunkte erhalten.",
+      "Auch für das Brain Tumor Meeting 2026 wird die Anerkennung wieder beantragt werden, so dass Teilnehmer*innen an der Tagung Fortbildungspunkte erhalten.",
+      "2024 hatte die Ärztekammer insgesamt 12 Punkte (6 Punkte für Donnerstag und 6 Punkte für Freitag) vergeben.",
+      "Für die Meldung der Teilnehmer*innen an die Ärztekammer liegen dann Teilnehmerlisten aus, in die sich die an Fortbildungspunkten interessierten Teilnehmer*innen eintragen müssen. Dafür wird ein Barcode-Etikett benötigt. Bitte bringen Sie diese zum Einkleben mit. Die Teilnahme-Bescheinigungen erhalten Sie ebenfalls an der Registrierung."
+    ]
+  },
+  "sponsors": {
+    "intro": "BTM 2026 receives financial support from the following companies. Sponsorship amounts are disclosed as part of the CME information.",
+    "currency": "EUR",
+    "items": [
+      {
+        "name": "Jazz Pharmaceuticals",
+        "tier": "Gold Sponsor",
+        "amount": 2000,
+        "logo": "./images/sponsors/jazz-pharmaceuticals.png",
+        "url": "https://www.jazzpharma.com/"
+      },
+      {
+        "name": "LAM-X a.s. (VerdiBlot)",
+        "tier": "Gold Sponsor",
+        "amount": 2000,
+        "logo": "./images/sponsors/lam-x.png",
+        "url": "https://www.verdiblot.com/about-us"
+      },
+      {
+        "name": "Alexion, AstraZeneca Rare Disease",
+        "tier": "Gold Sponsor",
+        "amount": 2000,
+        "logo": "./images/sponsors/alexion.png",
+        "url": "https://alexion.com/"
+      },
+      {
+        "name": "Illumina GmbH",
+        "tier": "Silver Sponsor",
+        "amount": 1500,
+        "logo": "./images/sponsors/illumina.png",
+        "url": "https://emea.illumina.com/"
+      },
+      {
+        "name": "Servier Deutschland GmbH",
+        "tier": "Silver Sponsor",
+        "amount": 1500,
+        "logo": "./images/sponsors/servier.png",
+        "url": "https://servier.de/"
+      },
+      {
+        "name": "Novocure",
+        "tier": "Supporter",
+        "amount": 750,
+        "logo": "./images/sponsors/novocure.png",
+        "url": "https://www.novocure.de/"
+      }
+    ]
   }
 }
