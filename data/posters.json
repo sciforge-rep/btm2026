@@ -1,6 +1,14 @@
 {
   "title": "Poster session",
   "intro": "61 posters in 10 thematic blocks. Consecutive numbers hang next to each other on the boards.",
+  "format": {
+    "title": "Poster format",
+    "body": "Posters will be displayed physically rather than digitally. Please bring a printed poster.",
+    "size": "DIN A0",
+    "dimensions": "84.1 × 118.9 cm",
+    "orientation": "Portrait",
+    "mounting": "We will provide the necessary material for mounting the posters at the venue."
+  },
   "themes": [
     {
       "name": "Tumour evolution, stemness and cell-state plasticity",

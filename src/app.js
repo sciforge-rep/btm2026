@@ -679,6 +679,15 @@ function renderPosters() {
     <div class="large-title">
       <div class="large-title-row"><div><h1 class="page-title">Posters</h1><p class="page-subtitle">${esc(data.intro || 'Find your poster number.')}</p></div><span class="count">${data.posters.length} posters</span></div>
     </div>
+    ${data.format ? `<article class="card poster-format">
+      <div class="poster-format-head"><span class="poster-format-icon">${icon('board')}</span><div><h2>${esc(data.format.title || 'Poster format')}</h2><p>${esc(data.format.body)}</p></div></div>
+      <div class="poster-format-facts">
+        <div><small>Format</small><strong>${esc(data.format.size)}</strong></div>
+        <div><small>Size</small><strong>${esc(data.format.dimensions)}</strong></div>
+        <div><small>Orientation</small><strong>${esc(data.format.orientation)}</strong></div>
+      </div>
+      ${data.format.mounting ? `<p class="poster-format-note">${icon('check')}<span>${esc(data.format.mounting)}</span></p>` : ''}
+    </article>` : ''}
     <div class="sticky-controls">
       <div class="search-box">
         ${icon('search')}<input id="poster-search" type="search" inputmode="search" value="${attr(state.posterQuery)}" placeholder="Search name, title or poster number" autocomplete="off" aria-label="Search posters">

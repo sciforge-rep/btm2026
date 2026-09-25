@@ -880,3 +880,17 @@ body.detail-route .toast { bottom: calc(var(--safe-bottom) + 18px); }
 }
 .badge.poster-badge { background: var(--navy-850); color: #fff; text-decoration: none; }
 :root[data-theme="dark"] .badge.poster-badge { background: #d7e8f4; color: #071425; }
+
+.poster-format { margin-bottom: 16px; padding: 18px; }
+.poster-format-head { display: flex; gap: 13px; align-items: flex-start; }
+.poster-format-icon { display: grid; place-items: center; width: 42px; height: 42px; flex: none; border-radius: 13px; background: var(--gold-100); color: var(--gold-600); }
+.poster-format-icon svg { width: 22px; height: 22px; }
+.poster-format h2 { margin: 1px 0 4px; font-size: 1.02rem; letter-spacing: -.02em; }
+.poster-format-head p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.5; }
+.poster-format-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 15px; }
+.poster-format-facts div { padding: 11px 12px; border-radius: 13px; background: var(--surface-muted); }
+.poster-format-facts small { display: block; color: var(--muted); font-size: .6rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.poster-format-facts strong { display: block; margin-top: 4px; font-size: .84rem; font-variant-numeric: tabular-nums; }
+.poster-format-note { display: flex; gap: 8px; align-items: flex-start; margin: 13px 0 0; color: var(--muted); font-size: .76rem; line-height: 1.45; }
+.poster-format-note svg { width: 16px; height: 16px; flex: none; margin-top: 1px; color: var(--success); }
+@media (max-width: 389px) { .poster-format-facts strong { font-size: .76rem; } }
