@@ -604,10 +604,10 @@ function renderVenues() {
   const main = DATA.config.venues.main;
   const social = DATA.config.venues.social;
   return `<div class="venue-stack">
-    ${renderVenueCard(main, 'Main conference venue', './images/campus-schematic.svg', [
+    ${renderVenueCard(main, 'Main conference venue', './images/venue-mdcc.jpg', [
       { label: 'Google Maps', href: main.googleMaps }, { label: 'Apple Maps', href: main.appleMaps }, { label: 'Campus map', href: main.campusMap },
     ])}
-    ${renderVenueCard(social, 'Wednesday evening', './images/stadtgut-schematic.svg', [
+    ${renderVenueCard(social, 'Wednesday evening', './images/venue-stadtgut.jpg', [
       { label: 'Walking route', href: social.walking }, { label: 'Google Maps', href: social.googleMaps }, { label: 'Venue website', href: social.website },
     ])}
   </div>
@@ -625,7 +625,7 @@ function renderVenues() {
 
 function renderVenueCard(venue, eyebrow, image, actions) {
   return `<article class="card venue-card">
-    <div class="venue-visual"><img src="${attr(image)}" alt=""><div class="venue-label"><small>${esc(eyebrow)}</small><h2>${esc(venue.name)}</h2></div></div>
+    <div class="venue-visual"><img src="${attr(image)}" alt="${attr(venue.name)}" loading="lazy"><div class="venue-label"><small>${esc(eyebrow)}</small><h2>${esc(venue.name)}</h2></div></div>
     <div class="venue-content"><div class="venue-address">${icon('pin')}<span>${esc(venue.address)}</span></div><p>${esc(venue.description)}</p>
       <div class="venue-actions">${actions.slice(0, 2).map(action => `<a class="button outline small" href="${attr(action.href)}" target="_blank" rel="noopener">${icon('external')} ${esc(action.label)}</a>`).join('')}</div>
       ${actions[2] ? `<a class="text-action" style="margin-top:13px" href="${attr(actions[2].href)}" target="_blank" rel="noopener">${esc(actions[2].label)} ${icon('arrowUpRight')}</a>` : ''}

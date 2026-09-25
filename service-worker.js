@@ -1,4 +1,4 @@
-const VERSION = 'btm2026-v2.3.1-20260926';
+const VERSION = 'btm2026-v2.3.2-20260926';
 const APP_CACHE = `${VERSION}-app`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const DATA_CACHE = `${VERSION}-data`;
@@ -24,6 +24,8 @@ const APP_SHELL = [
   './images/campus-schematic.svg',
   './images/stadtgut-schematic.svg',
   './images/transit-schematic.svg',
+  './images/venue-mdcc.jpg',
+  './images/venue-stadtgut.jpg',
   './images/og-card.png',
   './images/sponsors/jazz-pharmaceuticals.png',
   './images/sponsors/lam-x.png',
