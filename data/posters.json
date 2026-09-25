@@ -1,46 +1,46 @@
 {
   "title": "Poster session",
-  "intro": "61 posters in 10 thematic blocks. Consecutive numbers hang next to each other on the boards; posters 60 and 61 were added late.",
+  "intro": "61 posters in 10 thematic blocks. Consecutive numbers hang next to each other on the boards.",
   "themes": [
     {
       "name": "Tumour evolution, stemness and cell-state plasticity",
-      "numbers": "1-11, 60"
+      "numbers": "1-12"
     },
     {
       "name": "Invasion, migration and tumour biophysics",
-      "numbers": "12-17"
+      "numbers": "13-18"
     },
     {
       "name": "Vascular niche and angiogenesis",
-      "numbers": "18-21"
+      "numbers": "19-22"
     },
     {
       "name": "Myeloid cells, haematopoiesis and systemic immunity",
-      "numbers": "22-27"
+      "numbers": "23-28"
     },
     {
       "name": "Immune microenvironment and immunotherapy",
-      "numbers": "28-31"
+      "numbers": "29-32"
     },
     {
       "name": "Therapeutic targeting and drug delivery",
-      "numbers": "32-39"
+      "numbers": "33-40"
     },
     {
       "name": "Pediatric high-grade gliomas and embryonal tumours",
-      "numbers": "40-44, 61"
+      "numbers": "41-46"
     },
     {
       "name": "Pediatric low-grade glioma",
-      "numbers": "45-51"
+      "numbers": "47-53"
     },
     {
       "name": "Meningioma",
-      "numbers": "52-54"
+      "numbers": "54-56"
     },
     {
       "name": "Liquid biopsy and molecular diagnostics",
-      "numbers": "55-59"
+      "numbers": "57-61"
     }
   ],
   "posters": [
@@ -123,353 +123,353 @@
     },
     {
       "number": 12,
-      "theme": "Invasion, migration and tumour biophysics",
-      "presenter": "Urszula Hohmann",
-      "title": "Influence of astrocyte-glioblastoma cell interactions on proliferation and migration",
-      "abstractId": "abs-2517"
-    },
-    {
-      "number": 13,
-      "theme": "Invasion, migration and tumour biophysics",
-      "presenter": "Tim Hohmann",
-      "title": "Liquid Crystal-like Self-Organization of Glioblastoma is Associated with Consistent Cell Migration",
-      "abstractId": "abs-2481"
-    },
-    {
-      "number": 14,
-      "theme": "Invasion, migration and tumour biophysics",
-      "presenter": "Lucie Martin",
-      "title": "Nuclear adaptation to confined migration fuels glioblastoma aggressiveness",
-      "abstractId": "abs-2550"
-    },
-    {
-      "number": 15,
-      "theme": "Invasion, migration and tumour biophysics",
-      "presenter": "Chiara Maria Mazzanti",
-      "title": "Cellular Migratory Scaling Stratifies Glioblastoma Survival: PTEN Amino Acid Substitutions as Pro-Invasive Drivers",
-      "abstractId": "abs-2515"
-    },
-    {
-      "number": 16,
-      "theme": "Invasion, migration and tumour biophysics",
-      "presenter": "Mariangela Morelli",
-      "title": "Convergent Physics-Guided and Deep Learning Analyses Reveal a Common Prognostic Motility Axis in Glioblastoma",
-      "abstractId": "abs-2551"
-    },
-    {
-      "number": 17,
-      "theme": "Invasion, migration and tumour biophysics",
-      "presenter": "Mariangela Morelli",
-      "title": "Adding a Metabolic Layer to Glioblastoma Pathology with Label-Free NADH-Fluorescence Lifetime Imaging",
-      "abstractId": "abs-2553"
-    },
-    {
-      "number": 18,
-      "theme": "Vascular niche and angiogenesis",
-      "presenter": "Pia Gallego Porcar",
-      "title": "Characterization of F3 (Tissue Factor) Expression and Its Role in Angiogenesis Within Glioblastoma Stem Cells",
-      "abstractId": "abs-2575"
-    },
-    {
-      "number": 19,
-      "theme": "Vascular niche and angiogenesis",
-      "presenter": "Zhuqing Cheng",
-      "title": "Glioblastoma with diverse oncogenic drivers share translationally relevant vascular elements",
-      "abstractId": "abs-2604"
-    },
-    {
-      "number": 20,
-      "theme": "Vascular niche and angiogenesis",
-      "presenter": "Ebru Karakaplan",
-      "title": "Neural crest-like cells appear in the vascular-microenvironment of glioblastoma at tumor initiation",
-      "abstractId": "abs-2595"
-    },
-    {
-      "number": 21,
-      "theme": "Vascular niche and angiogenesis",
-      "presenter": "Roland Kälin",
-      "title": "Glioblastoma cell-derived APLN acts as a chemoattractant for tumor-associated myeloid cells",
-      "abstractId": "abs-2594"
-    },
-    {
-      "number": 22,
-      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
-      "presenter": "Vijayasarathy Sampath Kumar",
-      "title": "Myelin-driven lipid metabolism reprograms macrophages to suppress anti-tumor immunity in brain metastasis",
-      "abstractId": "abs-2576"
-    },
-    {
-      "number": 23,
-      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
-      "presenter": "Cemile Kartal",
-      "title": "Local calvarial myeloid reservoirs do not contribute to tumor associated macrophages in Glioblastoma",
-      "abstractId": "abs-2612"
-    },
-    {
-      "number": 24,
-      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
-      "presenter": "Sarah Langer",
-      "title": "Glioblastoma rewires hematopoiesis and the emerging trajectory strikes back",
-      "abstractId": "abs-2589"
-    },
-    {
-      "number": 25,
-      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
-      "presenter": "Celia Dobersalske",
-      "title": "CBLs - Towards a skull-based T-cell therapy for glioblastoma treatment",
-      "abstractId": "abs-2613"
-    },
-    {
-      "number": 26,
-      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
-      "presenter": "Irene Appolloni",
-      "title": "Better Than Hiding: Gliomas Reprogram the Immune System to Disarm Host Defense",
-      "abstractId": "abs-2605"
-    },
-    {
-      "number": 27,
-      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
-      "presenter": "Sukrit Mahajan",
-      "title": "Rewiring glioblastoma immunity: the role of EGFL7-Integrin β2 axis",
-      "abstractId": "abs-2447"
-    },
-    {
-      "number": 28,
-      "theme": "Immune microenvironment and immunotherapy",
-      "presenter": "Joana M. Ferreira",
-      "title": "Dissecting spatial niches and immunological cues in glioblastoma for novel biomarkers and precision therapies",
-      "abstractId": "abs-2425"
-    },
-    {
-      "number": 29,
-      "theme": "Immune microenvironment and immunotherapy",
-      "presenter": "Camille Cochois",
-      "title": "Local strategy to remodel the glioblastoma microenvironment and “open the door” to anti-tumoral immune cells",
-      "abstractId": "abs-2549"
-    },
-    {
-      "number": 30,
-      "theme": "Immune microenvironment and immunotherapy",
-      "presenter": "Mattia Volpi",
-      "title": "CIITA-mediated MHC-II expression in glioblastoma unveil MHC-II-bound tumor-associated peptides for protective anti-tumor vaccination",
-      "abstractId": "abs-2585"
-    },
-    {
-      "number": 31,
-      "theme": "Immune microenvironment and immunotherapy",
-      "presenter": "Paolo Malatesta",
-      "title": "IL-12-Armed EGFRvIII-Retargeted Oncolytic HSV Promotes Agnostic Vaccination in Heterogeneous Murine Glioblastoma",
-      "abstractId": "abs-2609"
-    },
-    {
-      "number": 32,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Tugba Bagci-Onder",
-      "title": "BRD9 inhibition enhances radiotherapy response in glioblastoma by disrupting MYC-driven translational programs",
-      "abstractId": "abs-2438"
-    },
-    {
-      "number": 33,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Adrián Sanz Gálvez",
-      "title": "Cannabinoid administration as a therapeutic strategy to improve Glioblastoma response to radiotherapy",
-      "abstractId": "abs-2423"
-    },
-    {
-      "number": 34,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Aleksandra Ilic",
-      "title": "Rational Design of SIRT2 Inhibitors as Potential Glioblastoma Therapeutics Using Combined 3D-QSAR, Docking, and Machine Learning Methods",
-      "abstractId": "abs-2430"
-    },
-    {
-      "number": 35,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Beyza Yenimahalleli",
-      "title": "Investigating Synergistic Temozolomide Based Combinations with Rifampicin, Ulipristal, and EdU in U87 Glioblastoma Cells",
-      "abstractId": "abs-2560"
-    },
-    {
-      "number": 36,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Aleyna Baltacıoğlu",
-      "title": "LC-MS/MS-Based Metabolomic Analysis of ATRA and Curcumin Combination Treatment in U87-MG Glioblastoma Cells",
-      "abstractId": "abs-2566"
-    },
-    {
-      "number": 37,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Ceyda Sönmez",
-      "title": "Antitumor Activity of All-Trans Retinoic Acid and Curcumin-Loaded BSA Nanoparticles Against U87 Glioblastoma Cells",
-      "abstractId": "abs-2568"
-    },
-    {
-      "number": 38,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Ana Amorim",
-      "title": "Biomimetic Non-lamellar Lipid Nanoplatforms for Targeted Glioblastoma Multiforme Therapy",
-      "abstractId": "abs-2507"
-    },
-    {
-      "number": 39,
-      "theme": "Therapeutic targeting and drug delivery",
-      "presenter": "Giuseppina Catanzaro",
-      "title": "Ferritin nanoparticles as strategic delivery tools for human organotypic brain slices: a proof-of-concept study",
-      "abstractId": "abs-2519"
-    },
-    {
-      "number": 40,
-      "theme": "Pediatric high-grade gliomas and embryonal tumours",
-      "presenter": "Giuseppina Catanzaro",
-      "title": "Disrupting Golgi dependent signalling uncovers a Vulnerability in Medulloblastoma stem cells",
-      "abstractId": "abs-2518"
-    },
-    {
-      "number": 41,
-      "theme": "Pediatric high-grade gliomas and embryonal tumours",
-      "presenter": "Lucrezia Maria Ribolla",
-      "title": "Deciphering Ceramide Biosynthesis as a Metabolic Dependency in MYC-Driven Group 3 Medulloblastoma",
-      "abstractId": "abs-2598"
-    },
-    {
-      "number": 42,
-      "theme": "Pediatric high-grade gliomas and embryonal tumours",
-      "presenter": "Suheda Duran",
-      "title": "Identification of a Kinase-Autophagy Signaling Hub as a Therapeutic Vulnerability in Pediatric Glioma",
-      "abstractId": "abs-2581"
-    },
-    {
-      "number": 43,
-      "theme": "Pediatric high-grade gliomas and embryonal tumours",
-      "presenter": "Sophie Heuer",
-      "title": "Characterisation of calcium active tumor microtube networks in diffuse midline glioma in multiple models",
-      "abstractId": "abs-2610"
-    },
-    {
-      "number": 44,
-      "theme": "Pediatric high-grade gliomas and embryonal tumours",
-      "presenter": "Kuscha Tabatabai",
-      "title": "Multiomic landscape of brain invasion in pediatric gliomatosis cerebri",
-      "abstractId": "abs-2570"
-    },
-    {
-      "number": 45,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Emma Fernandez Tendolkar",
-      "title": "HDAC Inhibition Synergizes with MEK Inhibition to Treat Senescent pLGG",
-      "abstractId": "abs-2540"
-    },
-    {
-      "number": 46,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Julia Großer",
-      "title": "Time limited add-on of vinblastine to targeted therapy with selumetinib for NF1 associated pediatric low-grade glioma – a Phase 2 study proposal",
-      "abstractId": "abs-2555"
-    },
-    {
-      "number": 47,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Julia Großer",
-      "title": "Tumor-driven seizures in pediatric low grade glioma: a retrospective study of the German cohort",
-      "abstractId": "abs-2556"
-    },
-    {
-      "number": 48,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Helen Dzionsko",
-      "title": "Low grade glioma in Infancy and current neuro-oncology treatment standards in Germany",
-      "abstractId": "abs-2584"
-    },
-    {
-      "number": 49,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Svea Horn",
-      "title": "Low-Grade Gliomas in Infancy: An Analysis of Clinical and Molecular Features",
-      "abstractId": "abs-2554"
-    },
-    {
-      "number": 50,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Isabella Horst",
-      "title": "Project Proposal: Rare Fusions in Pediatric Low Grade Glioma – a LOGGIC and LOGGIC-Core-BioClinical Data Bank Analysis",
-      "abstractId": "abs-2558"
-    },
-    {
-      "number": 51,
-      "theme": "Pediatric low-grade glioma",
-      "presenter": "Christin Siewert",
-      "title": "Systematic DNA Methylation Profiling Improves Diagnostic Precision in Paediatric Low-Grade Glioma: Results from the HIT-LOGGIC Registry",
-      "abstractId": "abs-2583"
-    },
-    {
-      "number": 52,
-      "theme": "Meningioma",
-      "presenter": "Liyam Laraba",
-      "title": "Single-cell RNA-sequencing in tumour-bearing humanized mice recapitulates human meningioma and refines preclinical drug discovery",
-      "abstractId": "abs-2565"
-    },
-    {
-      "number": 53,
-      "theme": "Meningioma",
-      "presenter": "Hanieh Samavati",
-      "title": "Development of Interfering Peptides Targeting HK2 Protein Interactions in Meningioma",
-      "abstractId": "abs-2431"
-    },
-    {
-      "number": 54,
-      "theme": "Meningioma",
-      "presenter": "Indrė Valiulytė-Simaitė",
-      "title": "Liquid Biopsy-Based Methylation and Fragment Signatures in Intracranial Meningiomas",
-      "abstractId": "abs-2571"
-    },
-    {
-      "number": 55,
-      "theme": "Liquid biopsy and molecular diagnostics",
-      "presenter": "Negin Behboodi",
-      "title": "Chromatin Deregulation in Glioblastoma and Applications for Liquid Biopsies",
-      "abstractId": "abs-2433"
-    },
-    {
-      "number": 56,
-      "theme": "Liquid biopsy and molecular diagnostics",
-      "presenter": "Max Braune",
-      "title": "Comprehensive analysis of TERT promoter methylation in glioblastoma: associations with molecular features, expression, and survival",
-      "abstractId": "abs-2606"
-    },
-    {
-      "number": 57,
-      "theme": "Liquid biopsy and molecular diagnostics",
-      "presenter": "Helena M. Figueiredo",
-      "title": "WNT6 modulates extracellular vesicle biogenesis and cargo loading in glioblastoma: implications for liquid biopsies",
-      "abstractId": "abs-2428"
-    },
-    {
-      "number": 58,
-      "theme": "Liquid biopsy and molecular diagnostics",
-      "presenter": "Francesca Lessi",
-      "title": "Transcriptomic signature and cellular plasticity of glioblastoma circulating tumor cells",
-      "abstractId": "abs-2533"
-    },
-    {
-      "number": 59,
-      "theme": "Liquid biopsy and molecular diagnostics",
-      "presenter": "Francesca Lessi",
-      "title": "Development of a multimodal platform for the characterization of glioblastoma circulating tumor cells using FLIM Analysis",
-      "abstractId": "abs-2547"
-    },
-    {
-      "number": 60,
       "theme": "Tumour evolution, stemness and cell-state plasticity",
       "presenter": "Vivian-Pascal Brandt",
       "title": "Comparative genetic analyses of glioblastoma-stem-cell based brain tumor organoids vs glioblastoma stem like cells and glioblastoma tissue",
       "abstractId": "abs-2614"
     },
     {
-      "number": 61,
+      "number": 13,
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Urszula Hohmann",
+      "title": "Influence of astrocyte-glioblastoma cell interactions on proliferation and migration",
+      "abstractId": "abs-2517"
+    },
+    {
+      "number": 14,
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Tim Hohmann",
+      "title": "Liquid Crystal-like Self-Organization of Glioblastoma is Associated with Consistent Cell Migration",
+      "abstractId": "abs-2481"
+    },
+    {
+      "number": 15,
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Lucie Martin",
+      "title": "Nuclear adaptation to confined migration fuels glioblastoma aggressiveness",
+      "abstractId": "abs-2550"
+    },
+    {
+      "number": 16,
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Chiara Maria Mazzanti",
+      "title": "Cellular Migratory Scaling Stratifies Glioblastoma Survival: PTEN Amino Acid Substitutions as Pro-Invasive Drivers",
+      "abstractId": "abs-2515"
+    },
+    {
+      "number": 17,
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Mariangela Morelli",
+      "title": "Convergent Physics-Guided and Deep Learning Analyses Reveal a Common Prognostic Motility Axis in Glioblastoma",
+      "abstractId": "abs-2551"
+    },
+    {
+      "number": 18,
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Mariangela Morelli",
+      "title": "Adding a Metabolic Layer to Glioblastoma Pathology with Label-Free NADH-Fluorescence Lifetime Imaging",
+      "abstractId": "abs-2553"
+    },
+    {
+      "number": 19,
+      "theme": "Vascular niche and angiogenesis",
+      "presenter": "Pia Gallego Porcar",
+      "title": "Characterization of F3 (Tissue Factor) Expression and Its Role in Angiogenesis Within Glioblastoma Stem Cells",
+      "abstractId": "abs-2575"
+    },
+    {
+      "number": 20,
+      "theme": "Vascular niche and angiogenesis",
+      "presenter": "Zhuqing Cheng",
+      "title": "Glioblastoma with diverse oncogenic drivers share translationally relevant vascular elements",
+      "abstractId": "abs-2604"
+    },
+    {
+      "number": 21,
+      "theme": "Vascular niche and angiogenesis",
+      "presenter": "Ebru Karakaplan",
+      "title": "Neural crest-like cells appear in the vascular-microenvironment of glioblastoma at tumor initiation",
+      "abstractId": "abs-2595"
+    },
+    {
+      "number": 22,
+      "theme": "Vascular niche and angiogenesis",
+      "presenter": "Roland Kälin",
+      "title": "Glioblastoma cell-derived APLN acts as a chemoattractant for tumor-associated myeloid cells",
+      "abstractId": "abs-2594"
+    },
+    {
+      "number": 23,
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Vijayasarathy Sampath Kumar",
+      "title": "Myelin-driven lipid metabolism reprograms macrophages to suppress anti-tumor immunity in brain metastasis",
+      "abstractId": "abs-2576"
+    },
+    {
+      "number": 24,
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Cemile Kartal",
+      "title": "Local calvarial myeloid reservoirs do not contribute to tumor associated macrophages in Glioblastoma",
+      "abstractId": "abs-2612"
+    },
+    {
+      "number": 25,
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Sarah Langer",
+      "title": "Glioblastoma rewires hematopoiesis and the emerging trajectory strikes back",
+      "abstractId": "abs-2589"
+    },
+    {
+      "number": 26,
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Celia Dobersalske",
+      "title": "CBLs - Towards a skull-based T-cell therapy for glioblastoma treatment",
+      "abstractId": "abs-2613"
+    },
+    {
+      "number": 27,
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Irene Appolloni",
+      "title": "Better Than Hiding: Gliomas Reprogram the Immune System to Disarm Host Defense",
+      "abstractId": "abs-2605"
+    },
+    {
+      "number": 28,
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Sukrit Mahajan",
+      "title": "Rewiring glioblastoma immunity: the role of EGFL7-Integrin β2 axis",
+      "abstractId": "abs-2447"
+    },
+    {
+      "number": 29,
+      "theme": "Immune microenvironment and immunotherapy",
+      "presenter": "Joana M. Ferreira",
+      "title": "Dissecting spatial niches and immunological cues in glioblastoma for novel biomarkers and precision therapies",
+      "abstractId": "abs-2425"
+    },
+    {
+      "number": 30,
+      "theme": "Immune microenvironment and immunotherapy",
+      "presenter": "Camille Cochois",
+      "title": "Local strategy to remodel the glioblastoma microenvironment and “open the door” to anti-tumoral immune cells",
+      "abstractId": "abs-2549"
+    },
+    {
+      "number": 31,
+      "theme": "Immune microenvironment and immunotherapy",
+      "presenter": "Mattia Volpi",
+      "title": "CIITA-mediated MHC-II expression in glioblastoma unveil MHC-II-bound tumor-associated peptides for protective anti-tumor vaccination",
+      "abstractId": "abs-2585"
+    },
+    {
+      "number": 32,
+      "theme": "Immune microenvironment and immunotherapy",
+      "presenter": "Paolo Malatesta",
+      "title": "IL-12-Armed EGFRvIII-Retargeted Oncolytic HSV Promotes Agnostic Vaccination in Heterogeneous Murine Glioblastoma",
+      "abstractId": "abs-2609"
+    },
+    {
+      "number": 33,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Tugba Bagci-Onder",
+      "title": "BRD9 inhibition enhances radiotherapy response in glioblastoma by disrupting MYC-driven translational programs",
+      "abstractId": "abs-2438"
+    },
+    {
+      "number": 34,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Adrián Sanz Gálvez",
+      "title": "Cannabinoid administration as a therapeutic strategy to improve Glioblastoma response to radiotherapy",
+      "abstractId": "abs-2423"
+    },
+    {
+      "number": 35,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Aleksandra Ilic",
+      "title": "Rational Design of SIRT2 Inhibitors as Potential Glioblastoma Therapeutics Using Combined 3D-QSAR, Docking, and Machine Learning Methods",
+      "abstractId": "abs-2430"
+    },
+    {
+      "number": 36,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Beyza Yenimahalleli",
+      "title": "Investigating Synergistic Temozolomide Based Combinations with Rifampicin, Ulipristal, and EdU in U87 Glioblastoma Cells",
+      "abstractId": "abs-2560"
+    },
+    {
+      "number": 37,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Aleyna Baltacıoğlu",
+      "title": "LC-MS/MS-Based Metabolomic Analysis of ATRA and Curcumin Combination Treatment in U87-MG Glioblastoma Cells",
+      "abstractId": "abs-2566"
+    },
+    {
+      "number": 38,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Ceyda Sönmez",
+      "title": "Antitumor Activity of All-Trans Retinoic Acid and Curcumin-Loaded BSA Nanoparticles Against U87 Glioblastoma Cells",
+      "abstractId": "abs-2568"
+    },
+    {
+      "number": 39,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Ana Amorim",
+      "title": "Biomimetic Non-lamellar Lipid Nanoplatforms for Targeted Glioblastoma Multiforme Therapy",
+      "abstractId": "abs-2507"
+    },
+    {
+      "number": 40,
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Giuseppina Catanzaro",
+      "title": "Ferritin nanoparticles as strategic delivery tools for human organotypic brain slices: a proof-of-concept study",
+      "abstractId": "abs-2519"
+    },
+    {
+      "number": 41,
+      "theme": "Pediatric high-grade gliomas and embryonal tumours",
+      "presenter": "Giuseppina Catanzaro",
+      "title": "Disrupting Golgi dependent signalling uncovers a Vulnerability in Medulloblastoma stem cells",
+      "abstractId": "abs-2518"
+    },
+    {
+      "number": 42,
+      "theme": "Pediatric high-grade gliomas and embryonal tumours",
+      "presenter": "Lucrezia Maria Ribolla",
+      "title": "Deciphering Ceramide Biosynthesis as a Metabolic Dependency in MYC-Driven Group 3 Medulloblastoma",
+      "abstractId": "abs-2598"
+    },
+    {
+      "number": 43,
+      "theme": "Pediatric high-grade gliomas and embryonal tumours",
+      "presenter": "Suheda Duran",
+      "title": "Identification of a Kinase-Autophagy Signaling Hub as a Therapeutic Vulnerability in Pediatric Glioma",
+      "abstractId": "abs-2581"
+    },
+    {
+      "number": 44,
+      "theme": "Pediatric high-grade gliomas and embryonal tumours",
+      "presenter": "Sophie Heuer",
+      "title": "Characterisation of calcium active tumor microtube networks in diffuse midline glioma in multiple models",
+      "abstractId": "abs-2610"
+    },
+    {
+      "number": 45,
+      "theme": "Pediatric high-grade gliomas and embryonal tumours",
+      "presenter": "Kuscha Tabatabai",
+      "title": "Multiomic landscape of brain invasion in pediatric gliomatosis cerebri",
+      "abstractId": "abs-2570"
+    },
+    {
+      "number": 46,
       "theme": "Pediatric high-grade gliomas and embryonal tumours",
       "presenter": "Alexandra Carmon",
       "title": "Modeling SHH medulloblastoma and treatment-induced neurodevelopmental alterations using Human cerebellar organoids",
       "abstractId": "abs-2617"
+    },
+    {
+      "number": 47,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Emma Fernandez Tendolkar",
+      "title": "HDAC Inhibition Synergizes with MEK Inhibition to Treat Senescent pLGG",
+      "abstractId": "abs-2540"
+    },
+    {
+      "number": 48,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Julia Großer",
+      "title": "Time limited add-on of vinblastine to targeted therapy with selumetinib for NF1 associated pediatric low-grade glioma – a Phase 2 study proposal",
+      "abstractId": "abs-2555"
+    },
+    {
+      "number": 49,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Julia Großer",
+      "title": "Tumor-driven seizures in pediatric low grade glioma: a retrospective study of the German cohort",
+      "abstractId": "abs-2556"
+    },
+    {
+      "number": 50,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Helen Dzionsko",
+      "title": "Low grade glioma in Infancy and current neuro-oncology treatment standards in Germany",
+      "abstractId": "abs-2584"
+    },
+    {
+      "number": 51,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Svea Horn",
+      "title": "Low-Grade Gliomas in Infancy: An Analysis of Clinical and Molecular Features",
+      "abstractId": "abs-2554"
+    },
+    {
+      "number": 52,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Isabella Horst",
+      "title": "Project Proposal: Rare Fusions in Pediatric Low Grade Glioma – a LOGGIC and LOGGIC-Core-BioClinical Data Bank Analysis",
+      "abstractId": "abs-2558"
+    },
+    {
+      "number": 53,
+      "theme": "Pediatric low-grade glioma",
+      "presenter": "Christin Siewert",
+      "title": "Systematic DNA Methylation Profiling Improves Diagnostic Precision in Paediatric Low-Grade Glioma: Results from the HIT-LOGGIC Registry",
+      "abstractId": "abs-2583"
+    },
+    {
+      "number": 54,
+      "theme": "Meningioma",
+      "presenter": "Liyam Laraba",
+      "title": "Single-cell RNA-sequencing in tumour-bearing humanized mice recapitulates human meningioma and refines preclinical drug discovery",
+      "abstractId": "abs-2565"
+    },
+    {
+      "number": 55,
+      "theme": "Meningioma",
+      "presenter": "Hanieh Samavati",
+      "title": "Development of Interfering Peptides Targeting HK2 Protein Interactions in Meningioma",
+      "abstractId": "abs-2431"
+    },
+    {
+      "number": 56,
+      "theme": "Meningioma",
+      "presenter": "Indrė Valiulytė-Simaitė",
+      "title": "Liquid Biopsy-Based Methylation and Fragment Signatures in Intracranial Meningiomas",
+      "abstractId": "abs-2571"
+    },
+    {
+      "number": 57,
+      "theme": "Liquid biopsy and molecular diagnostics",
+      "presenter": "Negin Behboodi",
+      "title": "Chromatin Deregulation in Glioblastoma and Applications for Liquid Biopsies",
+      "abstractId": "abs-2433"
+    },
+    {
+      "number": 58,
+      "theme": "Liquid biopsy and molecular diagnostics",
+      "presenter": "Max Braune",
+      "title": "Comprehensive analysis of TERT promoter methylation in glioblastoma: associations with molecular features, expression, and survival",
+      "abstractId": "abs-2606"
+    },
+    {
+      "number": 59,
+      "theme": "Liquid biopsy and molecular diagnostics",
+      "presenter": "Helena M. Figueiredo",
+      "title": "WNT6 modulates extracellular vesicle biogenesis and cargo loading in glioblastoma: implications for liquid biopsies",
+      "abstractId": "abs-2428"
+    },
+    {
+      "number": 60,
+      "theme": "Liquid biopsy and molecular diagnostics",
+      "presenter": "Francesca Lessi",
+      "title": "Transcriptomic signature and cellular plasticity of glioblastoma circulating tumor cells",
+      "abstractId": "abs-2533"
+    },
+    {
+      "number": 61,
+      "theme": "Liquid biopsy and molecular diagnostics",
+      "presenter": "Francesca Lessi",
+      "title": "Development of a multimodal platform for the characterization of glioblastoma circulating tumor cells using FLIM Analysis",
+      "abstractId": "abs-2547"
     }
   ]
 }
