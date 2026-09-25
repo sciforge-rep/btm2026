@@ -1,4 +1,4 @@
-const DATA = { config: null, program: null, abstracts: [], announcements: [] };
+const DATA = { config: null, program: null, abstracts: [], announcements: [], posters: null };
 
 const state = {
   route: { name: 'home', id: '', query: new URLSearchParams() },
@@ -6,6 +6,8 @@ const state = {
   programmeQuery: '',
   programmeFilter: 'all',
   abstractQuery: '',
+  posterQuery: '',
+  posterTheme: 'all',
   abstractFilter: 'all',
   abstractSort: 'title',
   exploreTab: 'venues',
@@ -61,6 +63,7 @@ const ICONS = {
   alert: '<path d="M12 3 2 21h20z"/><path d="M12 9v5M12 18h.01"/>',
   circleCheck: '<circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/>',
   spark: '<path d="m12 3 1.5 4.5L18 9l-4.5 1.5L12 15l-1.5-4.5L6 9l4.5-1.5zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/>',
+  board: '<rect x="3" y="3" width="18" height="13" rx="1.5"/><path d="M8 16l-2 5M16 16l2 5M12 16v3M7 7h6M7 10.5h10"/>',
   award: '<circle cx="12" cy="9" r="6"/><path d="m9 14-1.5 7L12 18.5 16.5 21 15 14"/><path d="m10 9 1.5 1.5L14.5 7.5"/>',
   copy: '<rect x="8" y="8" width="11" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/>',
 };
@@ -527,7 +530,7 @@ function renderAbstractDetail(id) {
         <button class="top-icon" type="button" data-action="share-abstract" data-id="${attr(abstract.id)}" aria-label="Share abstract">${icon('share')}</button>
         <button class="top-icon" type="button" data-action="toggle-abstract-favourite" data-id="${attr(abstract.id)}" aria-label="${saved ? 'Remove from' : 'Add to'} saved abstracts">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
       </div>
-      <div class="badge-row"><span class="badge ${formatClass}">${esc(abstract.format)}</span><span class="badge gray">Submission ${esc(abstract.submissionId)}</span>${abstract.eveningContributor ? '<span class="badge gold">Extended symposium contributor</span>' : ''}</div>
+      <div class="badge-row"><span class="badge ${formatClass}">${esc(abstract.format)}</span><span class="badge gray">Submission ${esc(abstract.submissionId)}</span>${posterNumberFor(abstract.id) ? `<a class="badge poster-badge" href="#/posters">${icon('board')} Poster ${esc(String(posterNumberFor(abstract.id)))}</a>` : ''}${abstract.eveningContributor ? '<span class="badge gold">Extended symposium contributor</span>' : ''}</div>
       <h1>${esc(abstract.title)}</h1>
       <p class="detail-authors">${authorHtml}</p>
       ${abstract.presentingAuthors.length ? `<span class="presenter-note">${icon('star')} * Presenting author in the submitted abstract</span>` : '<span class="presenter-note">Presenting author was not marked in the submitted PDF.</span>'}
@@ -653,6 +656,59 @@ function renderBerlinInfo() {
   </div>`;
 }
 
+function posterNumberFor(abstractId) {
+  return DATA.posters?.posters?.find(p => p.abstractId === abstractId)?.number || null;
+}
+
+function posterMatches(poster, query) {
+  if (!query) return true;
+  if (/^\d+$/.test(query)) return String(poster.number) === query;
+  return normalise(`${poster.number} ${poster.title} ${poster.presenter} ${poster.theme}`).includes(query);
+}
+
+function renderPosters() {
+  setTopbar({ title: 'Posters', kicker: 'Poster session' });
+  const data = DATA.posters;
+  if (!data?.posters?.length) return `<div class="page">${renderEmpty('board', 'The poster plan is not available', 'Reload the app while online.')}</div>`;
+  const query = normalise(state.posterQuery.trim());
+  const themes = data.themes?.length ? data.themes : [...new Set(data.posters.map(p => p.theme))].map(name => ({ name }));
+  if (state.posterTheme !== 'all' && !themes.some(t => t.name === state.posterTheme)) state.posterTheme = 'all';
+  const visible = data.posters.filter(p => (state.posterTheme === 'all' || p.theme === state.posterTheme) && posterMatches(p, query));
+  const groups = themes.map(t => ({ ...t, items: visible.filter(p => p.theme === t.name).sort((a, b) => a.number - b.number) })).filter(g => g.items.length);
+  return `<div class="page posters-page">
+    <div class="large-title">
+      <div class="large-title-row"><div><h1 class="page-title">Posters</h1><p class="page-subtitle">${esc(data.intro || 'Find your poster number.')}</p></div><span class="count">${data.posters.length} posters</span></div>
+    </div>
+    <div class="sticky-controls">
+      <div class="search-box">
+        ${icon('search')}<input id="poster-search" type="search" inputmode="search" value="${attr(state.posterQuery)}" placeholder="Search name, title or poster number" autocomplete="off" aria-label="Search posters">
+        ${state.posterQuery ? `<button class="search-clear" type="button" data-action="clear-poster-search" aria-label="Clear search">${icon('x')}</button>` : ''}
+      </div>
+      <div class="chip-row" aria-label="Poster topics">
+        <button type="button" class="chip ${state.posterTheme === 'all' ? 'active' : ''}" data-action="poster-theme" data-value="all">All topics <span class="chip-count">${data.posters.length}</span></button>
+        ${themes.map(t => `<button type="button" class="chip ${state.posterTheme === t.name ? 'active' : ''}" data-action="poster-theme" data-value="${attr(t.name)}">${esc(t.name)} <span class="chip-count">${data.posters.filter(p => p.theme === t.name).length}</span></button>`).join('')}
+      </div>
+    </div>
+    <div class="results-row"><span>${visible.length} poster${visible.length === 1 ? '' : 's'}</span><span>Tap a poster to read the abstract</span></div>
+    ${groups.length ? `<div class="card poster-table-card"><table class="poster-table">
+      <thead><tr><th scope="col" class="pt-no">No.</th><th scope="col">Poster title</th><th scope="col" class="pt-author">Presenting author</th><th scope="col" class="pt-topic">Topic</th></tr></thead>
+      ${groups.map(g => `<tbody>
+        <tr class="pt-group"><th colspan="4" scope="rowgroup"><span>${esc(g.name)}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
+        ${g.items.map(p => {
+          const hasAbstract = !!abstractById(p.abstractId);
+          const open = hasAbstract ? ` data-href="#/abstract/${attr(p.abstractId)}" tabindex="0" role="link"` : '';
+          return `<tr class="pt-row${hasAbstract ? ' linked' : ''}"${open}>
+            <td class="pt-no"><span class="poster-no">${esc(String(p.number))}</span></td>
+            <td class="pt-title"><strong>${esc(p.title)}</strong><span class="pt-author-inline">${icon('person')}${esc(p.presenter)}</span></td>
+            <td class="pt-author">${esc(p.presenter)}</td>
+            <td class="pt-topic">${esc(p.theme)}</td>
+          </tr>`;
+        }).join('')}
+      </tbody>`).join('')}
+    </table></div>` : renderEmpty('search', 'No posters found', 'Try a surname, a word from the title or a poster number.')}
+  </div>`;
+}
+
 function formatEuro(amount) {
   return new Intl.NumberFormat('en-GB', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }).format(amount);
 }
@@ -759,7 +815,7 @@ function renderRoute(resetScroll = true) {
   state.route = getRoute();
   const detail = state.route.name === 'abstract';
   document.body.classList.toggle('detail-route', detail);
-  const navName = detail ? 'abstracts' : ['home', 'programme', 'abstracts', 'explore', 'cme', 'more'].includes(state.route.name) ? state.route.name : 'home';
+  const navName = detail ? 'abstracts' : ['home', 'programme', 'abstracts', 'posters', 'explore', 'cme', 'more'].includes(state.route.name) ? state.route.name : 'home';
   setActiveNavigation(navName);
 
   let html;
@@ -769,6 +825,7 @@ function renderRoute(resetScroll = true) {
     case 'abstracts': html = renderAbstracts(); break;
     case 'abstract': html = renderAbstractDetail(state.route.id); break;
     case 'explore': html = renderExplore(); break;
+    case 'posters': html = renderPosters(); break;
     case 'cme': html = renderCme(); break;
     case 'more': html = renderMore(); break;
     default: routeTo('#/home'); return;
@@ -1006,6 +1063,11 @@ function bindEvents() {
     toast('BTM 2026 installed');
   });
 
+  document.addEventListener('keydown', event => {
+    const rowLink = event.target.closest?.('tr[data-href]');
+    if (rowLink && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); location.hash = rowLink.dataset.href; }
+  });
+
   document.addEventListener('input', event => {
     if (event.target.id === 'programme-search') {
       state.programmeQuery = event.target.value;
@@ -1014,6 +1076,10 @@ function bindEvents() {
     if (event.target.id === 'abstract-search') {
       state.abstractQuery = event.target.value;
       debounceRender('abstracts');
+    }
+    if (event.target.id === 'poster-search') {
+      state.posterQuery = event.target.value;
+      debounceRender('posters');
     }
   });
 
@@ -1027,6 +1093,8 @@ function bindEvents() {
   });
 
   document.addEventListener('click', event => {
+    const rowLink = event.target.closest('tr[data-href]');
+    if (rowLink) { location.hash = rowLink.dataset.href; return; }
     const actionElement = event.target.closest('[data-action]');
     if (!actionElement) return;
     const action = actionElement.dataset.action;
@@ -1054,6 +1122,8 @@ function bindEvents() {
       case 'toggle-programme-favourite-sheet': toggleFavourite('programme', id); openProgrammeSheet(id); break;
       case 'abstract-filter': state.abstractFilter = value; renderRoute(false); break;
       case 'clear-abstract-search': state.abstractQuery = ''; renderRoute(false); break;
+      case 'poster-theme': state.posterTheme = value; renderRoute(false); break;
+      case 'clear-poster-search': state.posterQuery = ''; renderRoute(false); break;
       case 'open-abstract': routeTo(`#/abstract/${encodeURIComponent(id)}`); break;
       case 'toggle-abstract-favourite': {
         toggleFavourite('abstract', id);
@@ -1095,7 +1165,7 @@ function debounceRender(routeName) {
   clearTimeout(debounceRender.timer);
   debounceRender.timer = setTimeout(() => {
     if (state.route.name === routeName) {
-      const inputId = routeName === 'programme' ? 'programme-search' : 'abstract-search';
+      const inputId = routeName === 'programme' ? 'programme-search' : routeName === 'posters' ? 'poster-search' : 'abstract-search';
       const position = document.getElementById(inputId)?.selectionStart;
       renderRoute(false);
       const input = document.getElementById(inputId);
@@ -1137,6 +1207,12 @@ async function loadData() {
     return [key, await response.json()];
   }));
   entries.forEach(([key, value]) => { DATA[key] = value; });
+  try {
+    const response = await fetch('./data/posters.json', { cache: 'no-cache' });
+    DATA.posters = response.ok ? await response.json() : null;
+  } catch (error) {
+    DATA.posters = null;
+  }
 }
 
 const REFRESH_MIN_GAP_MS = 60 * 1000;
@@ -1158,11 +1234,11 @@ async function refreshData(force = false) {
   if (userIsTyping()) { refreshPending = true; return; }
   refreshRunning = true;
   lastRefreshAt = Date.now();
-  const before = JSON.stringify([DATA.config, DATA.program, DATA.abstracts, DATA.announcements]);
+  const before = JSON.stringify([DATA.config, DATA.program, DATA.abstracts, DATA.announcements, DATA.posters]);
   const previous = { ...DATA };
   try {
     await loadData();
-    const after = JSON.stringify([DATA.config, DATA.program, DATA.abstracts, DATA.announcements]);
+    const after = JSON.stringify([DATA.config, DATA.program, DATA.abstracts, DATA.announcements, DATA.posters]);
     if (after !== before) {
       renderRoute(false);
       toast('Programme and notices updated');
