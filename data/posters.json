@@ -1,10 +1,10 @@
 {
   "title": "Poster session",
-  "intro": "59 posters in 10 thematic blocks. Consecutive numbers hang next to each other on the boards.",
+  "intro": "61 posters in 10 thematic blocks. Consecutive numbers hang next to each other on the boards; posters 60 and 61 were added late.",
   "themes": [
     {
       "name": "Tumour evolution, stemness and cell-state plasticity",
-      "numbers": "1-11"
+      "numbers": "1-11, 60"
     },
     {
       "name": "Invasion, migration and tumour biophysics",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Pediatric high-grade gliomas and embryonal tumours",
-      "numbers": "40-44"
+      "numbers": "40-44, 61"
     },
     {
       "name": "Pediatric low-grade glioma",
@@ -456,6 +456,20 @@
       "presenter": "Francesca Lessi",
       "title": "Development of a multimodal platform for the characterization of glioblastoma circulating tumor cells using FLIM Analysis",
       "abstractId": "abs-2547"
+    },
+    {
+      "number": 60,
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Vivian-Pascal Brandt",
+      "title": "Comparative genetic analyses of glioblastoma-stem-cell based brain tumor organoids vs glioblastoma stem like cells and glioblastoma tissue",
+      "abstractId": "abs-2614"
+    },
+    {
+      "number": 61,
+      "theme": "Pediatric high-grade gliomas and embryonal tumours",
+      "presenter": "Alexandra Carmon",
+      "title": "Modeling SHH medulloblastoma and treatment-induced neurodevelopmental alterations using Human cerebellar organoids",
+      "abstractId": "abs-2617"
     }
   ]
 }

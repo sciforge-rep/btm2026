@@ -272,7 +272,7 @@ function renderHome() {
             <span class="quick-action-icon">${icon('calendar')}</span><strong>Programme</strong><small>Two days, sessions and saved talks</small>
           </a>
           <a class="card pressable quick-action" href="#/abstracts">
-            <span class="quick-action-icon">${icon('file')}</span><strong>Abstracts</strong><small>${summary.full} full-text records offline</small>
+            <span class="quick-action-icon">${icon('file')}</span><strong>Abstracts</strong><small>${summary.total} abstracts, searchable offline</small>
           </a>
           <a class="card pressable quick-action" href="#/explore">
             <span class="quick-action-icon gold">${icon('pin')}</span><strong>Venues</strong><small>MDC.C and Stadtgut Berlin-Buch</small>
@@ -891,7 +891,7 @@ function showMeetingInfo() {
     <div class="sheet-meta-list">
       <div class="sheet-meta">${icon('file')}<div><strong>Posters</strong><span>${esc(info.poster)}</span></div></div>
       <div class="sheet-meta">${icon('mic')}<div><strong>Presentation lengths</strong><span>${esc(info.talks)}</span></div></div>
-      <div class="sheet-meta">${icon('star')}<div><strong>Abstract book</strong><span>${esc(info.abstracts)}</span></div></div>
+      <div class="sheet-meta">${icon('star')}<div><strong>Abstract book</strong><span>${esc(`The app contains ${dataSummary().total} submitted abstracts${dataSummary().total - dataSummary().full ? `, of which ${dataSummary().total - dataSummary().full} ${dataSummary().total - dataSummary().full === 1 ? 'has' : 'have'} title, authors and affiliations only` : ''}.`)}</span></div></div>
       <div class="sheet-meta">${icon('circleCheck')}<div><strong>Continuing medical education</strong><span>${esc(info.cme)}</span></div></div>
       <div class="sheet-meta">${icon('globe')}<div><strong>Meeting language</strong><span>${esc(info.language)}</span></div></div>
     </div>`);

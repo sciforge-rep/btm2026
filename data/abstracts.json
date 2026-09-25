@@ -10528,5 +10528,72 @@
     "eveningContributor": false,
     "eveningContributorName": "",
     "searchText": "modeling shh medulloblastoma and treatment induced neurodevelopmental alterations using human cerebellar organoids alexandra carmon alexandra carmon yann zerguine lucie martin laurence desrues martine dubois magali lecourtois anne rovelet gael nicolas max van essen esther becker fabrice morin pierrick gandolfo olivier wurtz helene castel pascal hilber inserm u1245 cancer and brain genomics rouen university kavli institute of nanoscience discovery university of oxford oxford uk sonic hedgehog shh type medulloblastomas are embryonal tumors that disrupt cerebellar cortex development although survival rates reach 7588 many survivors experience long term cognitive and emotional impairments chemotherapy radiotherapy treatments contribute to these sequelae highlighting the need to understand their underlying mechanisms on both healthy and tumoral tissues loss of function of ptch1 a key shh pathway receptor promotes abnormal proliferation of cerebellar progenitors and tumorigenesis we generated cerebellar organoids from wild type human induced pluripotent stem cells hipscs and hipscs carrying heterozygous ptch1 inactivation ptch1 the effects of shh targeted therapies were assessed using vismodegib or jq1 administered either acutely day 28 or chronically 28 35 and 42 cerebellar and shh pathway gene expression was analyzed by rtqpcr major cell markers as well as primary cilia bearing the ptch1 receptor were analyzed by immunohistochemistry spontaneous electrical activity was recorded in mature organoids using microelectrode arrays and the involvement of gabaergic and glutamatergic receptors was investigated in healthy organoids vismodegib inhibited shh signaling as shown by complete loss of gli1 expression and unexpectedly induced a ciliopathy characterized by predominantly biciliated cells jq1 exacerbated this phenotype leading to multiciliated cells organoids developed functional neuronal networks involving gaba a receptors while vismodegib reduced spontaneous activity ptch1 organoids displayed increased growth but preserved structural and electrophysiological features following vismodegib treatment they similarly showed complete gli1 loss and multiciliation recently we established a new invasion model by introducing shh group medulloblastoma cells into healthy cerebellar organoids providing a physiologically relevant system to investigate tumorcerebellar interactions we aim to use this model to further assess how anticancer therapies affect both medulloblastoma invasion and the surrounding healthy cerebellar tissue overall cerebellar organoids reveal how shh targeted therapies disrupt ciliogenesis and neuronal activity providing a human relevant platform to decipher treatment induced neurodevelopmental defects and refine therapeutic strategies in shh medulloblastoma poster abstract 2617"
+  },
+  {
+    "id": "abs-2614",
+    "submissionId": "2614",
+    "title": "Comparative genetic analyses of glioblastoma-stem-cell based brain tumor organoids vs glioblastoma stem like cells and glioblastoma tissue",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Vivian-Pascal Brandt"
+    ],
+    "leadAuthor": "Vivian-Pascal Brandt",
+    "authors": [
+      {
+        "name": "Vivian-Pascal Brandt",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Johannes Wach",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Erdem Güresir",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Heidrun Holland",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Saxonian Incubator for Clinical Translation (SIKT), University of Leipzig"
+      },
+      {
+        "ref": 2,
+        "name": "Department of Neurosurgery, University Hospital Leipzig"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GB) is defined as high grade glioma with an astrocytic differentiation (WHO grade 4). Possibly, glioblastoma stem like cells (GSC) could be responsible for tumor initiation, maintenance, recurrence and cancer therapy resistance. Genetic comparisons of glioblastoma tissue vs GSCs and GSC-based brain tumor organoids (GSC-BTO) are still limited. The aim of this study was the genetic comparison of tumor tissue, GSC and GSC-BTO to assess the genetic integrity of GSC-BTO.",
+      "Primary tumor was obtained during neurosurgical resection and GSCs were cultivated under serum-free conditions. GSC-based organoids were generated using StemDiff™ Cerebral Organoid Kit. Immunhistochemical characterization of GSCs (e.g. SOX2, Nestin) and GSC-BTO (e.g. GFAP, ß-Tubulin) was performed. Genetic analyses were carried out using SNP array (Affymetrix CytoScanHD Array). In previously published data (PMID: 32634135), we have detected a similar genetic profile of tumor tissue vs GSC with minor differences. Here, we could identified previously detected chromosomal aberrations in tumor tissue and GSC for GSC-BTO too (e.g. gain 3q21.3-q29). Predominantly, we identified a comparable genetic profile for GSC-BTO in comparison with GSC or tumor tissue of the respective patient with few additional aberrations in GSC-BTO. One donor have showed more chromosomal aberrations in GSC-BTO vs GSC and tumor tissue (e.g. loss of 1q21.2-q44 and gain 8q11.1-q24.3 in GSC-BTO). Interestingly, in this donor, the cn-LOH aberration for chromosomal region 9p21.3-p21.1 were detected only in GSC-BTO (tumor: -; GSC: loss) and could be an indication for a tumor repair mechanisms (somatic reduplication).",
+      "Predominantly, our results highlights the reflection of the respective patient specific genetic profile of GSC-BTO vs tumor tissue and GSC. Nevertheless, further investigations are needed to enlarge the knowledge about the genetic integrity of glioblastoma-based tumor organoids."
+    ],
+    "body": "Glioblastoma (GB) is defined as high grade glioma with an astrocytic differentiation (WHO grade 4). Possibly, glioblastoma stem like cells (GSC) could be responsible for tumor initiation, maintenance, recurrence and cancer therapy resistance. Genetic comparisons of glioblastoma tissue vs GSCs and GSC-based brain tumor organoids (GSC-BTO) are still limited. The aim of this study was the genetic comparison of tumor tissue, GSC and GSC-BTO to assess the genetic integrity of GSC-BTO.\n\nPrimary tumor was obtained during neurosurgical resection and GSCs were cultivated under serum-free conditions. GSC-based organoids were generated using StemDiff™ Cerebral Organoid Kit. Immunhistochemical characterization of GSCs (e.g. SOX2, Nestin) and GSC-BTO (e.g. GFAP, ß-Tubulin) was performed. Genetic analyses were carried out using SNP array (Affymetrix CytoScanHD Array). In previously published data (PMID: 32634135), we have detected a similar genetic profile of tumor tissue vs GSC with minor differences. Here, we could identified previously detected chromosomal aberrations in tumor tissue and GSC for GSC-BTO too (e.g. gain 3q21.3-q29). Predominantly, we identified a comparable genetic profile for GSC-BTO in comparison with GSC or tumor tissue of the respective patient with few additional aberrations in GSC-BTO. One donor have showed more chromosomal aberrations in GSC-BTO vs GSC and tumor tissue (e.g. loss of 1q21.2-q44 and gain 8q11.1-q24.3 in GSC-BTO). Interestingly, in this donor, the cn-LOH aberration for chromosomal region 9p21.3-p21.1 were detected only in GSC-BTO (tumor: -; GSC: loss) and could be an indication for a tumor repair mechanisms (somatic reduplication).\n\nPredominantly, our results highlights the reflection of the respective patient specific genetic profile of GSC-BTO vs tumor tissue and GSC. Nevertheless, further investigations are needed to enlarge the knowledge about the genetic integrity of glioblastoma-based tumor organoids.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2614.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Brandt_12th-brain-tumor-meeting_2614.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "comparative genetic analyses of glioblastoma stem cell based brain tumor organoids vs glioblastoma stem like cells and glioblastoma tissue vivian pascal brandt vivian pascal brandt johannes wach erdem guresir heidrun holland saxonian incubator for clinical translation sikt university of leipzig department of neurosurgery university hospital leipzig glioblastoma gb is defined as high grade glioma with an astrocytic differentiation who grade 4 possibly glioblastoma stem like cells gsc could be responsible for tumor initiation maintenance recurrence and cancer therapy resistance genetic comparisons of glioblastoma tissue vs gscs and gsc based brain tumor organoids gsc bto are still limited the aim of this study was the genetic comparison of tumor tissue gsc and gsc bto to assess the genetic integrity of gsc bto primary tumor was obtained during neurosurgical resection and gscs were cultivated under serum free conditions gsc based organoids were generated using stemdifftm cerebral organoid kit immunhistochemical characterization of gscs e g sox2 nestin and gsc bto e g gfap ss tubulin was performed genetic analyses were carried out using snp array affymetrix cytoscanhd array in previously published data pmid 32634135 we have detected a similar genetic profile of tumor tissue vs gsc with minor differences here we could identified previously detected chromosomal aberrations in tumor tissue and gsc for gsc bto too e g gain 3q21 3 q29 predominantly we identified a comparable genetic profile for gsc bto in comparison with gsc or tumor tissue of the respective patient with few additional aberrations in gsc bto one donor have showed more chromosomal aberrations in gsc bto vs gsc and tumor tissue e g loss of 1q21 2 q44 and gain 8q11 1 q24 3 in gsc bto interestingly in this donor the cn loh aberration for chromosomal region 9p21 3 p21 1 were detected only in gsc bto tumor gsc loss and could be an indication for a tumor repair mechanisms somatic reduplication predominantly our results highlights the reflection of the respective patient specific genetic profile of gsc bto vs tumor tissue and gsc nevertheless further investigations are needed to enlarge the knowledge about the genetic integrity of glioblastoma based tumor organoids poster abstract 2614"
   }
 ]

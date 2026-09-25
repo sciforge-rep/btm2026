@@ -13,7 +13,7 @@
     "programmePdf": "./docs/BTM2026_Programme.pdf",
     "programmeStatus": "Programme subject to change",
     "lastContentUpdate": "2026-09-25",
-    "abstractMode": "75 author-submitted abstracts imported from the approved conference export",
+    "abstractMode": "Author-submitted abstracts imported from the approved conference export",
     "version": "2.0.0"
   },
   "venues": {
@@ -74,7 +74,7 @@
     "cme": "Recognition by the Berlin Medical Association (Ärztekammer Berlin) will be requested again for 2026. See the CME tab for how to claim points.",
     "onsite": "On-site registration is listed as available on the official meeting page.",
     "language": "The official meeting language is English.",
-    "abstracts": "The app contains 75 submitted abstracts. One source PDF contains title, authors and affiliation only, without an abstract body."
+    "abstracts": "Author-submitted abstracts with original PDFs."
   },
   "contacts": {
     "organisational": {
