@@ -1,4 +1,4 @@
-const VERSION = 'btm2026-v2.1.1-20260923';
+const VERSION = 'btm2026-v2.2.0-20260925';
 const APP_CACHE = `${VERSION}-app`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const DATA_CACHE = `${VERSION}-data`;
@@ -99,6 +99,11 @@ self.addEventListener('fetch', event => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;
+
+  if (url.pathname.includes('/docs/')) {
+    event.respondWith(networkFirst(request, RUNTIME_CACHE));
+    return;
+  }
 
   if (request.mode === 'navigate') {
     event.respondWith(networkFirst(request, APP_CACHE, './index.html'));

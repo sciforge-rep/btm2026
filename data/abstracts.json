@@ -10365,5 +10365,168 @@
     "eveningContributor": false,
     "eveningContributorName": "",
     "searchText": "wnt6 modulates extracellular vesicle biogenesis and cargo loading in glioblastoma implications for liquid biopsies helena m figueiredo helena m figueiredo eduarda p martins alexandra teixeira lorena dieguez paula ludovico eduarda sa marta marta viana pereira marta almeida afonso m pinto bruno m costa celine s gocalves life and health sciences research institute icvs school of medicine university of minho braga portugal icvs 3bspt government associate laboratory braga guimaraes portugal medical devices international iberian nanotechnology laboratory inl braga portugal department of neurosurgery hospital braga braga portugal department of oncology hospital braga braga portugal introduction glioblastoma gbm is the most aggressive primary brain tumor characterized by poor prognosis and limited treatment options our team showed that wnt6 a wnt signaling ligand is overexpressed in gbm and associated with tumor aggressiveness notably wnt6 was highly enriched in extracellular vesicles evs derived from gbm primary cells given the role of evs in intercellular communication and their potential as minimally invasive liquid biopsy tools this work explores the biological and clinical relevance of wnt6 driven ev signaling in gbm methods gbm cell lines with genetically altered wnt6 expression were used additionally plasma from gbm n 20 and lower grade glioma n 14 patients were collected from hospital de braga evs were isolated from conditioned medium size exclusion chromatography and plasma precipitation and characterized by nanoparticle tracking analysis and western blot transcriptomic rna seq and proteomic ms ms profiles of cells and evs were assessed by differential expression and pathway analyses including go enrichment and gsea wnt6 levels in evs were quantified by western blot ddpcr and elisa results rna seq and ms ms analyses of wnt6 high cells revealed enriched ev and exosome related signatures consistently wnt6 high cells released more evs per cell compared to wnt6 low this effect was reflected in patient samples where plasma ev concentration was increased in wnt6 high tumors highlighting a link between wnt6 and ev biogenesis furthermore wnt6 reshaped ev transcriptomic and proteomics cargo with enrichment in oncogenic pathways interestingly wnt6 mrna and protein were detected in evs from gbm cells and patient plasma closely mirroring its cellular and tumoral expression levels respectively conclusion wnt6 modulates ev release and shapes oncogenic ev cargo in gbm additionally its detectability in circulating evs reflecting tumor expression levels supports its potential as a liquid biopsy biomarker in glioma poster abstract 2428"
+  },
+  {
+    "id": "abs-2617",
+    "submissionId": "2617",
+    "title": "Modeling SHH medulloblastoma and treatment-induced neurodevelopmental alterations using Human cerebellar organoids",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Alexandra Carmon"
+    ],
+    "leadAuthor": "Alexandra Carmon",
+    "authors": [
+      {
+        "name": "Alexandra Carmon",
+        "presenting": true,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Yann Zerguine",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Lucie Martin",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Laurence Desrues",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Martine Dubois",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Magali Lecourtois",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Anne Rovelet",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Gaël Nicolas",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Max Van Essen",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Esther Becker",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Fabrice Morin",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Pierrick Gandolfo",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Olivier Wurtz",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Hélène Castel",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Pascal Hilber",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Inserm U1245 Cancer and Brain Genomics"
+      },
+      {
+        "ref": 2,
+        "name": "Rouen University"
+      },
+      {
+        "ref": 3,
+        "name": "Kavli Institute of Nanoscience Discovery, University of Oxford, Oxford, UK"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Sonic Hedgehog (SHH)–type medulloblastomas are embryonal tumors that disrupt cerebellar cortex development. Although survival rates reach 75–88%, many survivors experience long-term cognitive and emotional impairments. Chemotherapy, radiotherapy treatments contribute to these sequelae, highlighting the need to understand their underlying mechanisms on both healthy and tumoral tissues. Loss of function of PTCH1, a key SHH pathway receptor, promotes abnormal proliferation of cerebellar progenitors and tumorigenesis.",
+      "We generated cerebellar organoids from wild-type human induced pluripotent stem cells (hiPSCs) and hiPSCs carrying heterozygous PTCH1 inactivation (PTCH1+/−). The effects of SHH-targeted therapies were assessed using Vismodegib or JQ1, administered either acutely (day 28) or chronically (28, 35 and 42). Cerebellar and SHH pathway gene expression was analyzed by RTqPCR. Major cell markers, as well as primary cilia bearing the Ptch1 receptor, were analyzed by immunohistochemistry. Spontaneous electrical activity was recorded in mature organoids using microelectrode arrays, and the involvement of GABAergic and glutamatergic receptors was investigated.",
+      "In healthy organoids, Vismodegib inhibited SHH signaling, as shown by complete loss of GLI1 expression, and unexpectedly induced a ciliopathy characterized by predominantly biciliated cells. JQ1 exacerbated this phenotype, leading to multiciliated cells. Organoids developed functional neuronal networks involving GABA-A receptors, while Vismodegib reduced spontaneous activity. PTCH1+/− organoids displayed increased growth but preserved structural and electrophysiological features. Following Vismodegib treatment, they similarly showed complete GLI1 loss and multiciliation.",
+      "Recently, we established a new invasion model by introducing SHH-group medulloblastoma cells into healthy cerebellar organoids, providing a physiologically relevant system to investigate tumor–cerebellar interactions. We aim to use this model to further assess how anticancer therapies affect both medulloblastoma invasion and the surrounding healthy cerebellar tissue.",
+      "Overall, cerebellar organoids reveal how SHH-targeted therapies disrupt ciliogenesis and neuronal activity, providing a human-relevant platform to decipher treatment-induced neurodevelopmental defects and refine therapeutic strategies in SHH medulloblastoma."
+    ],
+    "body": "Sonic Hedgehog (SHH)–type medulloblastomas are embryonal tumors that disrupt cerebellar cortex development. Although survival rates reach 75–88%, many survivors experience long-term cognitive and emotional impairments. Chemotherapy, radiotherapy treatments contribute to these sequelae, highlighting the need to understand their underlying mechanisms on both healthy and tumoral tissues. Loss of function of PTCH1, a key SHH pathway receptor, promotes abnormal proliferation of cerebellar progenitors and tumorigenesis.\n\nWe generated cerebellar organoids from wild-type human induced pluripotent stem cells (hiPSCs) and hiPSCs carrying heterozygous PTCH1 inactivation (PTCH1+/−). The effects of SHH-targeted therapies were assessed using Vismodegib or JQ1, administered either acutely (day 28) or chronically (28, 35 and 42). Cerebellar and SHH pathway gene expression was analyzed by RTqPCR. Major cell markers, as well as primary cilia bearing the Ptch1 receptor, were analyzed by immunohistochemistry. Spontaneous electrical activity was recorded in mature organoids using microelectrode arrays, and the involvement of GABAergic and glutamatergic receptors was investigated.\n\nIn healthy organoids, Vismodegib inhibited SHH signaling, as shown by complete loss of GLI1 expression, and unexpectedly induced a ciliopathy characterized by predominantly biciliated cells. JQ1 exacerbated this phenotype, leading to multiciliated cells. Organoids developed functional neuronal networks involving GABA-A receptors, while Vismodegib reduced spontaneous activity. PTCH1+/− organoids displayed increased growth but preserved structural and electrophysiological features. Following Vismodegib treatment, they similarly showed complete GLI1 loss and multiciliation.\n\nRecently, we established a new invasion model by introducing SHH-group medulloblastoma cells into healthy cerebellar organoids, providing a physiologically relevant system to investigate tumor–cerebellar interactions. We aim to use this model to further assess how anticancer therapies affect both medulloblastoma invasion and the surrounding healthy cerebellar tissue.\n\nOverall, cerebellar organoids reveal how SHH-targeted therapies disrupt ciliogenesis and neuronal activity, providing a human-relevant platform to decipher treatment-induced neurodevelopmental defects and refine therapeutic strategies in SHH medulloblastoma.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2617.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Carmon_12th-brain-tumor-meeting_2617.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "modeling shh medulloblastoma and treatment induced neurodevelopmental alterations using human cerebellar organoids alexandra carmon alexandra carmon yann zerguine lucie martin laurence desrues martine dubois magali lecourtois anne rovelet gael nicolas max van essen esther becker fabrice morin pierrick gandolfo olivier wurtz helene castel pascal hilber inserm u1245 cancer and brain genomics rouen university kavli institute of nanoscience discovery university of oxford oxford uk sonic hedgehog shh type medulloblastomas are embryonal tumors that disrupt cerebellar cortex development although survival rates reach 7588 many survivors experience long term cognitive and emotional impairments chemotherapy radiotherapy treatments contribute to these sequelae highlighting the need to understand their underlying mechanisms on both healthy and tumoral tissues loss of function of ptch1 a key shh pathway receptor promotes abnormal proliferation of cerebellar progenitors and tumorigenesis we generated cerebellar organoids from wild type human induced pluripotent stem cells hipscs and hipscs carrying heterozygous ptch1 inactivation ptch1 the effects of shh targeted therapies were assessed using vismodegib or jq1 administered either acutely day 28 or chronically 28 35 and 42 cerebellar and shh pathway gene expression was analyzed by rtqpcr major cell markers as well as primary cilia bearing the ptch1 receptor were analyzed by immunohistochemistry spontaneous electrical activity was recorded in mature organoids using microelectrode arrays and the involvement of gabaergic and glutamatergic receptors was investigated in healthy organoids vismodegib inhibited shh signaling as shown by complete loss of gli1 expression and unexpectedly induced a ciliopathy characterized by predominantly biciliated cells jq1 exacerbated this phenotype leading to multiciliated cells organoids developed functional neuronal networks involving gaba a receptors while vismodegib reduced spontaneous activity ptch1 organoids displayed increased growth but preserved structural and electrophysiological features following vismodegib treatment they similarly showed complete gli1 loss and multiciliation recently we established a new invasion model by introducing shh group medulloblastoma cells into healthy cerebellar organoids providing a physiologically relevant system to investigate tumorcerebellar interactions we aim to use this model to further assess how anticancer therapies affect both medulloblastoma invasion and the surrounding healthy cerebellar tissue overall cerebellar organoids reveal how shh targeted therapies disrupt ciliogenesis and neuronal activity providing a human relevant platform to decipher treatment induced neurodevelopmental defects and refine therapeutic strategies in shh medulloblastoma poster abstract 2617"
   }
 ]

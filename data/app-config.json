@@ -10,10 +10,10 @@
     "timezone": "Europe/Berlin",
     "language": "English",
     "officialWebsite": "https://www.mdc-berlin.de/BTM2026",
-    "programmePdf": "https://www.mdc-berlin.de/system/files/document/BTM2026_Program_July-15-1.pdf",
+    "programmePdf": "./docs/BTM2026_Programme.pdf",
     "programmeStatus": "Programme subject to change",
-    "lastContentUpdate": "2026-09-22",
-    "abstractMode": "74 author-submitted abstracts imported from the approved conference export",
+    "lastContentUpdate": "2026-09-25",
+    "abstractMode": "75 author-submitted abstracts imported from the approved conference export",
     "version": "2.0.0"
   },
   "venues": {
@@ -27,7 +27,7 @@
       "googleMaps": "https://www.google.com/maps/search/?api=1&query=MDC.C%20Building%2083%20Robert-R%C3%B6ssle-Stra%C3%9Fe%2010%2013125%20Berlin",
       "appleMaps": "https://maps.apple.com/?q=MDC.C%20Building%2083&address=Robert-R%C3%B6ssle-Stra%C3%9Fe%2010%2C%2013125%20Berlin",
       "osm": "https://www.openstreetmap.org/search?query=MDC.C%20Berlin-Buch",
-      "campusMap": "https://www.campusberlinbuch.de/en/campus/map/"
+      "campusMap": "./docs/Campus_Berlin-Buch_map.pdf"
     },
     "social": {
       "name": "Stadtgut Berlin-Buch",
@@ -74,7 +74,7 @@
     "cme": "Recognition by the Berlin Medical Association (Ärztekammer Berlin) will be requested again for 2026. See the CME tab for how to claim points.",
     "onsite": "On-site registration is listed as available on the official meeting page.",
     "language": "The official meeting language is English.",
-    "abstracts": "The app contains 74 submitted abstracts. One source PDF contains title, authors and affiliation only, without an abstract body."
+    "abstracts": "The app contains 75 submitted abstracts. One source PDF contains title, authors and affiliation only, without an abstract body."
   },
   "contacts": {
     "organisational": {
