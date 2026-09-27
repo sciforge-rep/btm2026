@@ -660,9 +660,12 @@ function posterNumberFor(abstractId) {
   return DATA.posters?.posters?.find(p => p.abstractId === abstractId)?.number || null;
 }
 
+const posterSeq = poster => parseInt(String(poster.number).replace(/^\D+/, ''), 10) || 0;
+
 function posterMatches(poster, query) {
   if (!query) return true;
-  if (/^\d+$/.test(query)) return String(poster.number) === query;
+  if (/^[a-z]\s?\d+$/.test(query)) return normalise(poster.number) === query.replace(/\s/g, '');
+  if (/^\d+$/.test(query)) return String(posterSeq(poster)) === query;
   return normalise(`${poster.number} ${poster.title} ${poster.presenter} ${poster.theme}`).includes(query);
 }
 
@@ -674,7 +677,7 @@ function renderPosters() {
   const themes = data.themes?.length ? data.themes : [...new Set(data.posters.map(p => p.theme))].map(name => ({ name }));
   if (state.posterTheme !== 'all' && !themes.some(t => t.name === state.posterTheme)) state.posterTheme = 'all';
   const visible = data.posters.filter(p => (state.posterTheme === 'all' || p.theme === state.posterTheme) && posterMatches(p, query));
-  const groups = themes.map(t => ({ ...t, items: visible.filter(p => p.theme === t.name).sort((a, b) => a.number - b.number) })).filter(g => g.items.length);
+  const groups = themes.map(t => ({ ...t, items: visible.filter(p => p.theme === t.name).sort((a, b) => posterSeq(a) - posterSeq(b)) })).filter(g => g.items.length);
   return `<div class="page posters-page">
     <div class="large-title">
       <div class="large-title-row"><div><h1 class="page-title">Posters</h1><p class="page-subtitle">${esc(data.intro || 'Find your poster number.')}</p></div><span class="count">${data.posters.length} posters</span></div>
@@ -690,7 +693,7 @@ function renderPosters() {
     </article>` : ''}
     <div class="sticky-controls">
       <div class="search-box">
-        ${icon('search')}<input id="poster-search" type="search" inputmode="search" value="${attr(state.posterQuery)}" placeholder="Search name, title or poster number" autocomplete="off" aria-label="Search posters">
+        ${icon('search')}<input id="poster-search" type="search" inputmode="search" value="${attr(state.posterQuery)}" placeholder="Search name, title or no. (e.g. B3)" autocomplete="off" aria-label="Search posters">
         ${state.posterQuery ? `<button class="search-clear" type="button" data-action="clear-poster-search" aria-label="Clear search">${icon('x')}</button>` : ''}
       </div>
       <div class="chip-row" aria-label="Poster topics">
@@ -702,7 +705,7 @@ function renderPosters() {
     ${groups.length ? `<div class="card poster-table-card"><table class="poster-table">
       <thead><tr><th scope="col" class="pt-no">No.</th><th scope="col">Poster title</th><th scope="col" class="pt-author">Presenting author</th><th scope="col" class="pt-topic">Topic</th></tr></thead>
       ${groups.map(g => `<tbody>
-        <tr class="pt-group"><th colspan="4" scope="rowgroup"><span>${esc(g.name)}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
+        <tr class="pt-group"><th colspan="4" scope="rowgroup"><span>${g.code ? `${esc(g.code)} · ` : ''}${esc(g.name)}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
         ${g.items.map(p => {
           const hasAbstract = !!abstractById(p.abstractId);
           const open = hasAbstract ? ` data-href="#/abstract/${attr(p.abstractId)}" tabindex="0" role="link"` : '';
