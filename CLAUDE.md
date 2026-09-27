@@ -6,7 +6,7 @@ Static PWA for the Brain Tumor Meeting 2026 (14–15 Oct 2026, MDC.C Berlin-Buch
 
 - `data/program.json`: programme (days, sessions, entries). Keep entry IDs stable; favourites reference them.
 - `data/abstracts.json`: list of abstract records, one per submission, id `abs-<submissionId>`.
-- `data/posters.json`: poster plan (`themes` with number ranges, `posters` with number/theme/presenter/title/abstractId, `format` block).
+- `data/posters.json`: poster plan (`themes` with letter code and number range, `posters` with number/theme/presenter/title/abstractId, `format` block).
 - `data/app-config.json`: event info, venues, CME, sponsors (with amounts; shown only on the CME tab), meeting info.
 - `abstracts/pdf/<submissionId>.pdf`: original abstract PDFs.
 - `docs/`: programme PDF and campus map.
@@ -30,4 +30,4 @@ Static PWA for the Brain Tumor Meeting 2026 (14–15 Oct 2026, MDC.C Berlin-Buch
 
 ## Poster numbering
 
-Posters are numbered 1..N consecutively, and each thematic block is one unbroken range (block order as in `themes`). When adding a poster, put it at the end of its theme block and renumber all later posters; update every theme's `numbers` range and the count in `intro`. Final numbers have not been communicated yet (as of 26 Sep 2026), so renumbering is allowed. The organizers keep a matching Excel plan; mention the new numbers in the reply so it can be updated.
+Each thematic block has a letter `code` (A, B, C, … in `themes` order), and posters are numbered within their block: A1–A12, B1–B6, etc. `number` is a string such as "B3". When adding a poster, give it the next free number at the end of its block (e.g. B7); no other poster changes number. Update that theme's `numbers` range (e.g. "B1-B7") and the count in `intro`. The organizers keep a matching Excel plan; mention the new number in the reply so it can be updated.
