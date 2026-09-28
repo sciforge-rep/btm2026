@@ -3876,11 +3876,20 @@
     "format": "Poster abstract",
     "programmeId": "",
     "programme": null,
-    "presentingAuthors": [],
+    "presentingAuthors": [
+      "Hanieh Samavati"
+    ],
     "leadAuthor": "Hanieh Samavati",
     "authors": [
       {
         "name": "Hanieh Samavati",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "David Parkinson",
         "presenting": false,
         "affiliationRefs": [
           1
@@ -3915,16 +3924,21 @@
       }
     ],
     "keywords": [],
-    "bodyParagraphs": [],
-    "body": "",
-    "abstractStatus": "metadata-only",
+    "bodyParagraphs": [
+      "Meningiomas are the most common primary tumours of the central nervous system. They arise from the meninges surrounding the brain and spinal cord. Despite their predominantly benign classification, many recur following surgery or develop resistance to radiotherapy. This significantly impairs the patient's quality of life. Effective systemic therapies remain lacking, therefore identifying novel therapeutic vulnerabilities remains a major unmet clinical need.",
+      "Meningiomas exhibit the Warburg effect, relying on aerobic glycolysis for growth. Hexokinase 2 (HK2), the rate-limiting glycolytic enzyme, is overexpressed in higher grade meningiomas and has important non-canonical functions in other tumours. Unlike other hexokinase isoforms, which contain a single C-terminal catalytic domain, HK2 possesses both N- and C-terminal catalytic domains. Research has primarily focused on N-terminal mitochondrial interactions, leaving the protein interactions of the C-terminal domain unexplored.",
+      "We identified a tumour-specific interaction between HK2 and the catalytic subunit of Protein Phosphatase 1 (PP1Cβ) in grade 3 meningioma, mediated through the HK2 C-terminal domain that is essential for tumour survival. To investigate additional oncogenic interactions mediated by this domain, we designed HK2 C-terminal truncating peptides to disrupt HK2–PP1Cβ and related interactions. We hypothesise that selectively targeting tumour specific HK2 interactions will inhibit proliferation while sparing normal cells, overcoming limitations of prior HK2 inhibitors that failed due to non-specific glycolytic toxicity.",
+      "Results demonstrate peptides reduce meningioma proliferation in in vitro, without causing cytotoxicity in healthy cells. Ongoing work aims to define their mechanisms of action, evaluate efficacy across additional meningioma grades, and assess in vivo therapeutic potential alongside clinically relevant delivery strategies to support translation."
+    ],
+    "body": "Meningiomas are the most common primary tumours of the central nervous system. They arise from the meninges surrounding the brain and spinal cord. Despite their predominantly benign classification, many recur following surgery or develop resistance to radiotherapy. This significantly impairs the patient's quality of life. Effective systemic therapies remain lacking, therefore identifying novel therapeutic vulnerabilities remains a major unmet clinical need.\n\nMeningiomas exhibit the Warburg effect, relying on aerobic glycolysis for growth. Hexokinase 2 (HK2), the rate-limiting glycolytic enzyme, is overexpressed in higher grade meningiomas and has important non-canonical functions in other tumours. Unlike other hexokinase isoforms, which contain a single C-terminal catalytic domain, HK2 possesses both N- and C-terminal catalytic domains. Research has primarily focused on N-terminal mitochondrial interactions, leaving the protein interactions of the C-terminal domain unexplored.\n\nWe identified a tumour-specific interaction between HK2 and the catalytic subunit of Protein Phosphatase 1 (PP1Cβ) in grade 3 meningioma, mediated through the HK2 C-terminal domain that is essential for tumour survival. To investigate additional oncogenic interactions mediated by this domain, we designed HK2 C-terminal truncating peptides to disrupt HK2–PP1Cβ and related interactions. We hypothesise that selectively targeting tumour specific HK2 interactions will inhibit proliferation while sparing normal cells, overcoming limitations of prior HK2 inhibitors that failed due to non-specific glycolytic toxicity.\n\nResults demonstrate peptides reduce meningioma proliferation in in vitro, without causing cytotoxicity in healthy cells. Ongoing work aims to define their mechanisms of action, evaluate efficacy across additional meningioma grades, and assess in vivo therapeutic potential alongside clinically relevant delivery strategies to support translation.",
+    "abstractStatus": "full",
     "pdfPath": "./abstracts/pdf/2431.pdf",
     "pageCount": 1,
     "sourceFilename": "Samavati_12th-brain-tumor-meeting_2431.pdf",
     "source": "Author-submitted abstract PDF",
     "eveningContributor": false,
     "eveningContributorName": "",
-    "searchText": "development of interfering peptides targeting hk2 protein interactions in meningioma hanieh samavati hanieh samavati jane carre liyam laraba leandro jose de assis university of plymouth poster abstract 2431"
+    "searchText": "development of interfering peptides targeting hk2 protein interactions in meningioma hanieh samavati hanieh samavati david parkinson jane carre liyam laraba leandro jose de assis university of plymouth meningiomas are the most common primary tumours of the central nervous system they arise from the meninges surrounding the brain and spinal cord despite their predominantly benign classification many recur following surgery or develop resistance to radiotherapy this significantly impairs the patient s quality of life effective systemic therapies remain lacking therefore identifying novel therapeutic vulnerabilities remains a major unmet clinical need meningiomas exhibit the warburg effect relying on aerobic glycolysis for growth hexokinase 2 hk2 the rate limiting glycolytic enzyme is overexpressed in higher grade meningiomas and has important non canonical functions in other tumours unlike other hexokinase isoforms which contain a single c terminal catalytic domain hk2 possesses both n and c terminal catalytic domains research has primarily focused on n terminal mitochondrial interactions leaving the protein interactions of the c terminal domain unexplored we identified a tumour specific interaction between hk2 and the catalytic subunit of protein phosphatase 1 pp1c in grade 3 meningioma mediated through the hk2 c terminal domain that is essential for tumour survival to investigate additional oncogenic interactions mediated by this domain we designed hk2 c terminal truncating peptides to disrupt hk2 pp1c and related interactions we hypothesise that selectively targeting tumour specific hk2 interactions will inhibit proliferation while sparing normal cells overcoming limitations of prior hk2 inhibitors that failed due to non specific glycolytic toxicity results demonstrate peptides reduce meningioma proliferation in in vitro without causing cytotoxicity in healthy cells ongoing work aims to define their mechanisms of action evaluate efficacy across additional meningioma grades and assess in vivo therapeutic potential alongside clinically relevant delivery strategies to support translation poster abstract 2431"
   },
   {
     "id": "abs-2541",
