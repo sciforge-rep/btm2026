@@ -3749,6 +3749,81 @@
     "searchText": "defining epigenetic vulnerabilities and response programs in idh mutant gliomas tugba bagci onder tugba bagci onder alisan kayabolen ebru yilmaz sedef sarac yalcinkaya fidan seker polat elisa simone koc university school of medicine idh mutant gliomas are epigenetically dysregulated tumors with limited therapeutic options at recurrence identifying chromatin regulatory dependencies specific to the idh mutant context may reveal new treatment strategies using a chromatin focused crispr cas9 knockout library screen we identified rbbp7 as a potential idh mutant specific dependency functional validation and rna sequencing were performed in isogenic idh wildtype and idh mutant glioma cells and extended to 3d patient derived idh mutant glioma stem like models revealing context dependent effects of rbbp7 loss on proliferation differentiation and inflammatory programs in parallel an epigenetic drug screen identified kdm6a 6b as candidate therapeutic vulnerabilities following pharmacological confirmation crispr cas9 mediated single and double knockout of kdm6a and kdm6b was performed in 3d patient derived idh mutant glioma stem like models functional characterization and rna sequencing defined the transcriptional and phenotypic consequences of kdm6a 6b loss comparative analysis of rbbp7 and kdm6a 6b perturbation signatures is ongoing to determine whether these vulnerabilities converge on shared response pathways to extend translational relevance patient derived glioma organoid models are being established and perturbation signatures will be integrated with public glioma datasets including tcga cgga and glass to assess clinical correlates such as recurrence and progression together this work supports the identification of epigenetic dependencies in idh mutant glioma and provides a framework to understand how chromatin perturbations reshape tumor cell states with implications for future therapeutic targeting flash oral 2439 glioma cell intrinsic biology tugba bagci onder"
   },
   {
+    "id": "abs-2439b",
+    "submissionId": "2439b",
+    "title": "Defining Epigenetic Vulnerabilities and Response Programs in IDH-Mutant Gliomas",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Sedef Sarac-Yalcinkaya"
+    ],
+    "leadAuthor": "Sedef Sarac-Yalcinkaya",
+    "authors": [
+      {
+        "name": "Sedef Sarac-Yalcinkaya",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Alisan Kayabolen",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Ebru Yilmaz",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Fidan Seker-Polat",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Elisa Simone",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Tugba Bagci-Onder",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Koc University School of Medicine"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "IDH-mutant gliomas are epigenetically dysregulated tumors with limited therapeutic options at recurrence. Identifying chromatin-regulatory dependencies specific to the IDH-mutant context may reveal new treatment strategies. Using a chromatin-focused CRISPR/Cas9 knockout library screen, we identified RBBP7 as a potential IDH-mutant-specific dependency. Functional validation and RNA sequencing were performed in isogenic IDH-wildtype and IDH-mutant glioma cells and extended to 3D patient-derived IDH-mutant glioma stem-like models, revealing context-dependent effects of RBBP7 loss on proliferation, differentiation, and inflammatory programs. In parallel, an epigenetic drug screen identified KDM6A/6B as candidate therapeutic vulnerabilities. Following pharmacological confirmation, CRISPR/Cas9-mediated single-and double-knockout of KDM6A and KDM6B was performed in 3D patient-derived IDH-mutant glioma stem-like models. Functional characterization and RNA sequencing defined the transcriptional and phenotypic consequences of KDM6A/6B loss. Comparative analysis of RBBP7 and KDM6A/6B perturbation signatures is ongoing to determine whether these vulnerabilities converge on shared response pathways. To extend translational relevance, patient-derived glioma organoid models are being established, and perturbation signatures will be integrated with public glioma datasets, including TCGA, CGGA, and GLASS, to assess clinical correlates such as recurrence and progression. Together, this work supports the identification of epigenetic dependencies in IDH-mutant glioma and provides a framework to understand how chromatin perturbations reshape tumor cell states, with implications for future therapeutic targeting."
+    ],
+    "body": "IDH-mutant gliomas are epigenetically dysregulated tumors with limited therapeutic options at recurrence. Identifying chromatin-regulatory dependencies specific to the IDH-mutant context may reveal new treatment strategies. Using a chromatin-focused CRISPR/Cas9 knockout library screen, we identified RBBP7 as a potential IDH-mutant-specific dependency. Functional validation and RNA sequencing were performed in isogenic IDH-wildtype and IDH-mutant glioma cells and extended to 3D patient-derived IDH-mutant glioma stem-like models, revealing context-dependent effects of RBBP7 loss on proliferation, differentiation, and inflammatory programs. In parallel, an epigenetic drug screen identified KDM6A/6B as candidate therapeutic vulnerabilities. Following pharmacological confirmation, CRISPR/Cas9-mediated single-and double-knockout of KDM6A and KDM6B was performed in 3D patient-derived IDH-mutant glioma stem-like models. Functional characterization and RNA sequencing defined the transcriptional and phenotypic consequences of KDM6A/6B loss. Comparative analysis of RBBP7 and KDM6A/6B perturbation signatures is ongoing to determine whether these vulnerabilities converge on shared response pathways. To extend translational relevance, patient-derived glioma organoid models are being established, and perturbation signatures will be integrated with public glioma datasets, including TCGA, CGGA, and GLASS, to assess clinical correlates such as recurrence and progression. Together, this work supports the identification of epigenetic dependencies in IDH-mutant glioma and provides a framework to understand how chromatin perturbations reshape tumor cell states, with implications for future therapeutic targeting.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2439b.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Bagci-Onder_12th-brain-tumor-meeting_2439.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "defining epigenetic vulnerabilities and response programs in idh mutant gliomas sedef sarac yalcinkaya sedef sarac yalcinkaya alisan kayabolen ebru yilmaz fidan seker polat elisa simone tugba bagci onder koc university school of medicine idh mutant gliomas are epigenetically dysregulated tumors with limited therapeutic options at recurrence identifying chromatin regulatory dependencies specific to the idh mutant context may reveal new treatment strategies using a chromatin focused crispr cas9 knockout library screen we identified rbbp7 as a potential idh mutant specific dependency functional validation and rna sequencing were performed in isogenic idh wildtype and idh mutant glioma cells and extended to 3d patient derived idh mutant glioma stem like models revealing context dependent effects of rbbp7 loss on proliferation differentiation and inflammatory programs in parallel an epigenetic drug screen identified kdm6a 6b as candidate therapeutic vulnerabilities following pharmacological confirmation crispr cas9 mediated single and double knockout of kdm6a and kdm6b was performed in 3d patient derived idh mutant glioma stem like models functional characterization and rna sequencing defined the transcriptional and phenotypic consequences of kdm6a 6b loss comparative analysis of rbbp7 and kdm6a 6b perturbation signatures is ongoing to determine whether these vulnerabilities converge on shared response pathways to extend translational relevance patient derived glioma organoid models are being established and perturbation signatures will be integrated with public glioma datasets including tcga cgga and glass to assess clinical correlates such as recurrence and progression together this work supports the identification of epigenetic dependencies in idh mutant glioma and provides a framework to understand how chromatin perturbations reshape tumor cell states with implications for future therapeutic targeting poster abstract 2439b"
+  },
+  {
     "id": "abs-2547",
     "submissionId": "2547",
     "title": "Development of a multimodal platform for the characterization of glioblastoma circulating tumor cells using FLIM Analysis",
