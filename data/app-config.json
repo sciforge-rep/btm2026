@@ -71,7 +71,7 @@
   "meetingInfo": {
     "poster": "Printed posters only, DIN A0 (84.1 × 118.9 cm), portrait orientation. Mounting material is provided at the venue.",
     "talks": "Keynotes: 30 min talk + 10 min discussion. Oral presentations: 15 min talk + 5 min discussion, unless otherwise scheduled.",
-    "cme": "Recognition by the Berlin Medical Association (Ärztekammer Berlin) will be requested again for 2026. See the CME tab for how to claim points.",
+    "cme": "Recognised by the Berlin Medical Association (Ärztekammer Berlin): 6 CME points per day, 12 in total. See the CME tab for event numbers and how to claim points.",
     "onsite": "On-site registration is listed as available on the official meeting page.",
     "language": "The official meeting language is English.",
     "abstracts": "Author-submitted abstracts with original PDFs."
@@ -190,19 +190,21 @@
   "cme": {
     "authority": "Ärztekammer Berlin",
     "authorityEnglish": "Berlin Medical Association",
-    "status": "Application for 2026 will be submitted",
-    "summary": "Every Brain Tumor Meeting so far has been recognised by the Berlin Medical Association as continuing medical education for physicians, so participants received CME points. Recognition will be requested again for the Brain Tumor Meeting 2026.",
+    "status": "Recognised for 2026: 12 CME points",
+    "summary": "The Berlin Medical Association (Ärztekammer Berlin) has recognised the Brain Tumor Meeting 2026 as continuing medical education for physicians (category B): 6 CME points for each meeting day.",
     "reference": {
-      "year": 2024,
+      "year": 2026,
       "total": 12,
       "days": [
         {
-          "label": "Thursday",
-          "points": 6
+          "label": "Wednesday, 14 Oct",
+          "points": 6,
+          "vnr": "2761102026033121002"
         },
         {
-          "label": "Friday",
-          "points": 6
+          "label": "Thursday, 15 Oct",
+          "points": 6,
+          "vnr": "2761102026033122000"
         }
       ]
     },
@@ -220,11 +222,11 @@
         "body": "Attendance certificates are handed out at the registration desk."
       }
     ],
-    "note": "The number of points for 2026 depends on the Ärztekammer's decision and will be added here once confirmed.",
+    "note": "Each meeting day has its own event number (Veranstaltungsnummer, VNR). Please quote it for any questions to the Ärztekammer.",
     "germanText": [
       "Alle Brain Tumor Meetings sind bisher von der Berliner Ärztekammer als Fortbildungsveranstaltung für Mediziner anerkannt worden, so dass Teilnehmer*innen an der Tagung Fortbildungspunkte erhalten.",
-      "Auch für das Brain Tumor Meeting 2026 wird die Anerkennung wieder beantragt werden, so dass Teilnehmer*innen an der Tagung Fortbildungspunkte erhalten.",
-      "2024 hatte die Ärztekammer insgesamt 12 Punkte (6 Punkte für Donnerstag und 6 Punkte für Freitag) vergeben.",
+      "Auch das Brain Tumor Meeting 2026 ist von der Ärztekammer Berlin anerkannt (Kategorie B).",
+      "Die Ärztekammer vergibt insgesamt 12 Punkte: 6 Punkte für Mittwoch, 14.10.2026 (Veranstaltungsnummer 2761102026033121002) und 6 Punkte für Donnerstag, 15.10.2026 (Veranstaltungsnummer 2761102026033122000).",
       "Für die Meldung der Teilnehmer*innen an die Ärztekammer liegen dann Teilnehmerlisten aus, in die sich die an Fortbildungspunkten interessierten Teilnehmer*innen eintragen müssen. Dafür wird ein Barcode-Etikett benötigt. Bitte bringen Sie diese zum Einkleben mit. Die Teilnahme-Bescheinigungen erhalten Sie ebenfalls an der Registrierung."
     ]
   },
