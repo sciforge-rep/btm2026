@@ -3681,13 +3681,13 @@
       "location": "MDC.C · Building 83"
     },
     "presentingAuthors": [
-      "Sedef Sarac-Yalcinkaya"
+      "Tugba Bagci-Onder"
     ],
     "leadAuthor": "Tugba Bagci-Onder",
     "authors": [
       {
         "name": "Tugba Bagci-Onder",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -3708,7 +3708,7 @@
       },
       {
         "name": "Sedef Sarac-Yalcinkaya",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]

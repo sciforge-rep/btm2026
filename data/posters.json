@@ -1,6 +1,6 @@
 {
   "title": "Poster session",
-  "intro": "61 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
+  "intro": "62 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
   "format": {
     "title": "Poster format",
     "body": "Posters will be displayed physically rather than digitally. Please bring a printed poster.",
@@ -38,7 +38,7 @@
     {
       "code": "F",
       "name": "Therapeutic targeting and drug delivery",
-      "numbers": "F1-F8"
+      "numbers": "F1-F9"
     },
     {
       "code": "G",
@@ -341,6 +341,13 @@
       "presenter": "Giuseppina Catanzaro",
       "title": "Ferritin nanoparticles as strategic delivery tools for human organotypic brain slices: a proof-of-concept study",
       "abstractId": "abs-2519"
+    },
+    {
+      "number": "F9",
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Sedef Sarac-Yalcinkaya",
+      "title": "Defining Epigenetic Vulnerabilities and Response Programs in IDH-Mutant Gliomas",
+      "abstractId": "abs-2439"
     },
     {
       "number": "G1",
