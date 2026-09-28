@@ -1,4 +1,4 @@
-const VERSION = 'btm2026-v2.3.7-20260928';
+const VERSION = 'btm2026-v2.3.8-20260928';
 const APP_CACHE = `${VERSION}-app`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const DATA_CACHE = `${VERSION}-data`;
@@ -60,9 +60,13 @@ async function put(cacheName, request, response) {
   return response;
 }
 
+function bypassHttpCache(request) {
+  return new Request(request, { cache: 'reload' });
+}
+
 async function networkFirst(request, cacheName, fallback) {
   try {
-    const response = await fetch(request);
+    const response = await fetch(bypassHttpCache(request));
     return put(cacheName, request, response);
   } catch (error) {
     const cached = await caches.match(request);
@@ -78,13 +82,13 @@ async function networkFirst(request, cacheName, fallback) {
 async function cacheFirst(request, cacheName) {
   const cached = await caches.match(request);
   if (cached) return cached;
-  const response = await fetch(request);
+  const response = await fetch(bypassHttpCache(request));
   return put(cacheName, request, response);
 }
 
 async function staleWhileRevalidate(request, cacheName) {
   const cached = await caches.match(request);
-  const network = fetch(request)
+  const network = fetch(bypassHttpCache(request))
     .then(response => put(cacheName, request, response))
     .catch(() => null);
   if (cached) {
