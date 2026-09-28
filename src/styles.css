@@ -825,6 +825,9 @@ body.detail-route .toast { bottom: calc(var(--safe-bottom) + 18px); }
 .cme-total span, .cme-days span { display: block; margin-top: 5px; color: var(--muted); font-size: .66rem; font-weight: 700; }
 .cme-days { display: grid; gap: 10px; }
 .cme-days strong { font-size: 1.15rem; }
+.cme-vnr { display: block; margin-top: 6px; color: var(--muted); font-size: .64rem; font-weight: 700; letter-spacing: .02em; }
+.cme-vnr b { display: block; color: var(--ink); font-size: .78rem; font-weight: 800; font-variant-numeric: tabular-nums; letter-spacing: 0; overflow-wrap: anywhere; user-select: all; }
+@media (max-width: 559px) { .cme-reference { grid-template-columns: minmax(0, 1fr); } }
 .cme-note { display: flex; gap: 8px; align-items: flex-start; font-size: .72rem !important; }
 .cme-note svg { width: 16px; height: 16px; flex: none; margin-top: 1px; }
 .cme-german { margin-top: 12px; padding: 14px 18px; }

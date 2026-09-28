@@ -748,7 +748,7 @@ function renderCme() {
       <p>${esc(cme.summary)}</p>
       ${ref ? `<div class="cme-reference">
         <div class="cme-total"><strong>${esc(String(ref.total))}</strong><span>CME points awarded in ${esc(String(ref.year))}</span></div>
-        <div class="cme-days">${ref.days.map(day => `<div><strong>${esc(String(day.points))}</strong><span>${esc(day.label)}</span></div>`).join('')}</div>
+        <div class="cme-days">${ref.days.map(day => `<div><strong>${esc(String(day.points))}</strong><span>${esc(day.label)}</span>${day.vnr ? `<small class="cme-vnr" title="Veranstaltungsnummer">VNR <b>${esc(day.vnr)}</b></small>` : ''}</div>`).join('')}</div>
       </div>` : ''}
       ${cme.note ? `<p class="cme-note">${icon('info')}<span>${esc(cme.note)}</span></p>` : ''}
     </article>
