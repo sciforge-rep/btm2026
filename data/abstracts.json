@@ -5750,12 +5750,69 @@
         "affiliationRefs": [
           1
         ]
+      },
+      {
+        "name": "Song Wangyang",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Anru Yang",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Cheng Zhuqing",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Zhu Sihan",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Gaetano Gargiulo",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Roland Kaelin",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Rainer Glass",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
       }
     ],
     "affiliations": [
       {
         "ref": 1,
-        "name": "LMU"
+        "name": "Neurosurgical Department, University Hospital, LMU Munich, 81377 Munich, Germany"
+      },
+      {
+        "ref": 2,
+        "name": "Molecular Oncology, Max-Delbrück-Center for Molecular Medicine in the Helmholtz Association (MDC), 13125 Berlin, Germany"
+      },
+      {
+        "ref": 3,
+        "name": "Johannes Kepler University, Linz, Austria"
       }
     ],
     "keywords": [],
@@ -5770,7 +5827,7 @@
     "source": "Author-submitted abstract PDF",
     "eveningContributor": false,
     "eveningContributorName": "",
-    "searchText": "identification and therapeutic targeting of paracrine signaling cues inducing mesenchymal drift of infiltrating glioblastoma mariya fedosieieva mariya fedosieieva lmu glioblastoma gbm almost invariably relapse and the recurrent tumor likely derives from invasive tumor cells escaping neurosurgical resection and adjuvant treatment interaction of gbm cells with the microenvironment fosters therapy resistance but we lack detailed knowledge on the protumorigenic signaling cues in the invasive zone here we used an orthotopic mouse model to monitor the transcriptomic states of genetically engineered human gbm cells and observed that acquisition of a mesenchymal mes state in the infiltrative margin promotes chemoresistance also we identified parenchymal cells inducing mesenchymalization of invasive gbm cells this was achieved with engineered tumor cells that labeled neighboring microenvironmental cells promoting mesenchymal drift in gbm using this model we confirmed a predominant role for myeloid cells in initiating mesenchymalization of the tumor core however in the tumor invasive margin other parenchymal cells had higher capacity for the induction of mes gbm and in particular mesenchymal stromal cells msc were identified as powerful inducers of mesenchymal shifts in vitro gene expression analysis revealed that mscs modulate tumor cells through tgf induced phosphorylation of smad2 3 and increased id1 expression in in vivo experiments we investigated the interaction of mscs with invasive gbm cells we corroborated that invading gbm cells neighboring with mscs acquired a mes state while in other infiltrating gbm cells the proneural subtype dominated activity of the psmad2 3 and id1 pathways directly correlated with mesenchymalization of gbm combinatorial application of the tgf blocker galunisertib gal together with temozolomide attenuated psmad2 3 and id1 signaling and tumor mesenchymal drift notably the number of gamma h2a x positive infiltrating gbm cells was strongly increased after coapplication of gal with tmz as compared to chemotherapy alone altogether mscs induced pn to mes transition can strongly contribute to therapy resistance and tumor relapse systemic administration of galunisertib blocks this pathological pathway and supports standard clinical care poster abstract 2611"
+    "searchText": "identification and therapeutic targeting of paracrine signaling cues inducing mesenchymal drift of infiltrating glioblastoma mariya fedosieieva mariya fedosieieva song wangyang anru yang cheng zhuqing zhu sihan gaetano gargiulo roland kaelin rainer glass neurosurgical department university hospital lmu munich 81377 munich germany molecular oncology max delbruck center for molecular medicine in the helmholtz association mdc 13125 berlin germany johannes kepler university linz austria glioblastoma gbm almost invariably relapse and the recurrent tumor likely derives from invasive tumor cells escaping neurosurgical resection and adjuvant treatment interaction of gbm cells with the microenvironment fosters therapy resistance but we lack detailed knowledge on the protumorigenic signaling cues in the invasive zone here we used an orthotopic mouse model to monitor the transcriptomic states of genetically engineered human gbm cells and observed that acquisition of a mesenchymal mes state in the infiltrative margin promotes chemoresistance also we identified parenchymal cells inducing mesenchymalization of invasive gbm cells this was achieved with engineered tumor cells that labeled neighboring microenvironmental cells promoting mesenchymal drift in gbm using this model we confirmed a predominant role for myeloid cells in initiating mesenchymalization of the tumor core however in the tumor invasive margin other parenchymal cells had higher capacity for the induction of mes gbm and in particular mesenchymal stromal cells msc were identified as powerful inducers of mesenchymal shifts in vitro gene expression analysis revealed that mscs modulate tumor cells through tgf induced phosphorylation of smad2 3 and increased id1 expression in in vivo experiments we investigated the interaction of mscs with invasive gbm cells we corroborated that invading gbm cells neighboring with mscs acquired a mes state while in other infiltrating gbm cells the proneural subtype dominated activity of the psmad2 3 and id1 pathways directly correlated with mesenchymalization of gbm combinatorial application of the tgf blocker galunisertib gal together with temozolomide attenuated psmad2 3 and id1 signaling and tumor mesenchymal drift notably the number of gamma h2a x positive infiltrating gbm cells was strongly increased after coapplication of gal with tmz as compared to chemotherapy alone altogether mscs induced pn to mes transition can strongly contribute to therapy resistance and tumor relapse systemic administration of galunisertib blocks this pathological pathway and supports standard clinical care poster abstract 2611"
   },
   {
     "id": "abs-2581",
