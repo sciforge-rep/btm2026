@@ -492,14 +492,14 @@ function filteredAbstracts() {
 function renderAbstractCard(abstract) {
   const saved = isFavourite('abstract', abstract.id);
   const author = abstract.presentingAuthors[0] || abstract.leadAuthor;
-  const formatClass = abstract.format === 'Flash oral' ? 'green' : abstract.format === 'Oral presentation' ? '' : 'gray';
+  const formatClass = abstract.format === 'Flash oral' ? 'green' : abstract.format === 'Keynote abstract' ? 'gold' : abstract.format === 'Oral presentation' ? '' : 'gray';
   return `<article class="card pressable abstract-card" data-action="open-abstract" data-id="${attr(abstract.id)}" tabindex="0" role="link" aria-label="Open abstract ${attr(abstract.title)}">
     <div class="abstract-card-main">
       <div class="abstract-card-top"><span class="badge ${formatClass}">${esc(abstract.format)}</span>${abstract.eveningContributor ? '<span class="badge gold">Evening speaker</span>' : ''}${abstract.abstractStatus === 'metadata-only' ? '<span class="badge red">No body text</span>' : ''}</div>
       <h2>${esc(abstract.title)}</h2>
       <p class="authors">${esc(author)}${abstract.presentingAuthors.length ? ' · presenting author' : ''}</p>
       <div class="abstract-meta">
-        <span>${icon('file')} ID ${esc(abstract.submissionId)}</span>
+        ${abstract.submissionId ? `<span>${icon('file')} ID ${esc(abstract.submissionId)}</span>` : ''}
         ${abstract.programme ? `<span>${icon('calendar')} ${esc(formatDate(abstract.programme.date))} · ${esc(abstract.programme.start)}</span>` : ''}
         <span>${icon('users')} ${abstract.authors.length} author${abstract.authors.length === 1 ? '' : 's'}</span>
       </div>
@@ -511,7 +511,7 @@ function renderAbstractCard(abstract) {
 
 function renderAbstractDetail(id) {
   const abstract = abstractById(id);
-  setTopbar({ title: 'Abstract', kicker: abstract ? `Submission ${abstract.submissionId}` : 'Not found', back: true });
+  setTopbar({ title: 'Abstract', kicker: abstract ? (abstract.submissionId ? `Submission ${abstract.submissionId}` : abstract.format) : 'Not found', back: true });
   if (!abstract) return `<div class="page detail-page">${renderEmpty('file', 'Abstract not found', 'Return to the abstract book and choose another record.')}</div>`;
   const saved = isFavourite('abstract', abstract.id);
   const sorted = [...DATA.abstracts].sort((a, b) => a.title.localeCompare(b.title));
@@ -522,7 +522,7 @@ function renderAbstractDetail(id) {
     const refs = author.affiliationRefs.length ? `<sup>${author.affiliationRefs.join(',')}</sup>` : '';
     return `<span class="${author.presenting ? 'presenting' : ''}">${esc(author.name)}${refs}${author.presenting ? '*' : ''}</span>`;
   }).join(', ');
-  const formatClass = abstract.format === 'Flash oral' ? 'green' : abstract.format === 'Poster abstract' ? 'gray' : '';
+  const formatClass = abstract.format === 'Flash oral' ? 'green' : abstract.format === 'Poster abstract' ? 'gray' : abstract.format === 'Keynote abstract' ? 'gold' : '';
 
   return `<div class="page detail-page">
     <article class="card detail-hero">
@@ -530,7 +530,7 @@ function renderAbstractDetail(id) {
         <button class="top-icon" type="button" data-action="share-abstract" data-id="${attr(abstract.id)}" aria-label="Share abstract">${icon('share')}</button>
         <button class="top-icon" type="button" data-action="toggle-abstract-favourite" data-id="${attr(abstract.id)}" aria-label="${saved ? 'Remove from' : 'Add to'} saved abstracts">${icon(saved ? 'bookmarkFill' : 'bookmark')}</button>
       </div>
-      <div class="badge-row"><span class="badge ${formatClass}">${esc(abstract.format)}</span><span class="badge gray">Submission ${esc(abstract.submissionId)}</span>${posterNumberFor(abstract.id) ? `<a class="badge poster-badge" href="#/posters">${icon('board')} Poster ${esc(String(posterNumberFor(abstract.id)))}</a>` : ''}${abstract.eveningContributor ? '<span class="badge gold">Extended symposium contributor</span>' : ''}</div>
+      <div class="badge-row"><span class="badge ${formatClass}">${esc(abstract.format)}</span>${abstract.submissionId ? `<span class="badge gray">Submission ${esc(abstract.submissionId)}</span>` : ''}${posterNumberFor(abstract.id) ? `<a class="badge poster-badge" href="#/posters">${icon('board')} Poster ${esc(String(posterNumberFor(abstract.id)))}</a>` : ''}${abstract.eveningContributor ? '<span class="badge gold">Extended symposium contributor</span>' : ''}</div>
       <h1>${esc(abstract.title)}</h1>
       <p class="detail-authors">${authorHtml}</p>
       ${abstract.presentingAuthors.length ? `<span class="presenter-note">${icon('star')} * Presenting author in the submitted abstract</span>` : '<span class="presenter-note">Presenting author was not marked in the submitted PDF.</span>'}

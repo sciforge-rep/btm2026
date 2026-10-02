@@ -1,4 +1,4 @@
-const VERSION = 'btm2026-v2.3.10-20260930';
+const VERSION = 'btm2026-v2.3.12-20261002';
 const APP_CACHE = `${VERSION}-app`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const DATA_CACHE = `${VERSION}-data`;

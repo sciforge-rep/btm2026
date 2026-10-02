@@ -10741,5 +10741,109 @@
     "eveningContributor": false,
     "eveningContributorName": "",
     "searchText": "comparative genetic analyses of glioblastoma stem cell based brain tumor organoids vs glioblastoma stem like cells and glioblastoma tissue vivian pascal brandt vivian pascal brandt johannes wach erdem guresir heidrun holland saxonian incubator for clinical translation sikt university of leipzig department of neurosurgery university hospital leipzig glioblastoma gb is defined as high grade glioma with an astrocytic differentiation who grade 4 possibly glioblastoma stem like cells gsc could be responsible for tumor initiation maintenance recurrence and cancer therapy resistance genetic comparisons of glioblastoma tissue vs gscs and gsc based brain tumor organoids gsc bto are still limited the aim of this study was the genetic comparison of tumor tissue gsc and gsc bto to assess the genetic integrity of gsc bto primary tumor was obtained during neurosurgical resection and gscs were cultivated under serum free conditions gsc based organoids were generated using stemdifftm cerebral organoid kit immunhistochemical characterization of gscs e g sox2 nestin and gsc bto e g gfap ss tubulin was performed genetic analyses were carried out using snp array affymetrix cytoscanhd array in previously published data pmid 32634135 we have detected a similar genetic profile of tumor tissue vs gsc with minor differences here we could identified previously detected chromosomal aberrations in tumor tissue and gsc for gsc bto too e g gain 3q21 3 q29 predominantly we identified a comparable genetic profile for gsc bto in comparison with gsc or tumor tissue of the respective patient with few additional aberrations in gsc bto one donor have showed more chromosomal aberrations in gsc bto vs gsc and tumor tissue e g loss of 1q21 2 q44 and gain 8q11 1 q24 3 in gsc bto interestingly in this donor the cn loh aberration for chromosomal region 9p21 3 p21 1 were detected only in gsc bto tumor gsc loss and could be an indication for a tumor repair mechanisms somatic reduplication predominantly our results highlights the reflection of the respective patient specific genetic profile of gsc bto vs tumor tissue and gsc nevertheless further investigations are needed to enlarge the knowledge about the genetic integrity of glioblastoma based tumor organoids poster abstract 2614"
+  },
+  {
+    "id": "abs-simona-parrinello",
+    "submissionId": "",
+    "title": "The role of injury programs in gliomagenesis",
+    "format": "Keynote abstract",
+    "programmeId": "simona-parrinello",
+    "programme": {
+      "programmeTitle": "The role of injury programs in gliomagenesis",
+      "programmeSpeaker": "Simona Parrinello",
+      "kind": "keynote",
+      "dayId": "day-2",
+      "date": "2026-10-15",
+      "dayLabel": "Thursday, 15 October",
+      "start": "11:55",
+      "end": "12:35",
+      "sessionId": "tumor-microenvironment",
+      "sessionTitle": "Brain Tumor Microenvironment",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Simona Parrinello"
+    ],
+    "leadAuthor": "Simona Parrinello",
+    "authors": [
+      {
+        "name": "Simona Parrinello",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "UCL, London, UK"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma is an aggressive and highly therapy-resistant brain tumour. Whilst advanced disease has been intensely investigated, the mechanisms that underpin the earlier, likely more tractable, stages of glioblastoma development remain incompletely understood. Over the last few years my lab has focussed on the biology of early gliomagenesis, exploring the role of driver mutations and the normal brain microenvironment. To achieve this, we have developed a suite of human-relevant preclinical models that enable mechanistic analysis of these early disease stages which remain largely inaccessible in patients. I will describe some of our recent findings, which reveal mutation-specific effects and a key role for injury programmes in driving early gliomagenesis. Injury programmes are induced by tumour cells and coordinated by axonal injury and associated neuroinflammation. I will discuss how targetable injury programmes also shape invasion at the margin of advanced tumours. Together, our work suggests that targeting the injury microenvironment may provide new strategies for earlier intervention in glioblastoma."
+    ],
+    "body": "Glioblastoma is an aggressive and highly therapy-resistant brain tumour. Whilst advanced disease has been intensely investigated, the mechanisms that underpin the earlier, likely more tractable, stages of glioblastoma development remain incompletely understood. Over the last few years my lab has focussed on the biology of early gliomagenesis, exploring the role of driver mutations and the normal brain microenvironment. To achieve this, we have developed a suite of human-relevant preclinical models that enable mechanistic analysis of these early disease stages which remain largely inaccessible in patients. I will describe some of our recent findings, which reveal mutation-specific effects and a key role for injury programmes in driving early gliomagenesis. Injury programmes are induced by tumour cells and coordinated by axonal injury and associated neuroinflammation. I will discuss how targetable injury programmes also shape invasion at the margin of advanced tumours. Together, our work suggests that targeting the injury microenvironment may provide new strategies for earlier intervention in glioblastoma.",
+    "abstractStatus": "full",
+    "pdfPath": "",
+    "pageCount": 0,
+    "sourceFilename": "",
+    "source": "Keynote speaker abstract (provided directly by speaker)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "the role of injury programs in gliomagenesis simona parrinello simona parrinello ucl london uk glioblastoma is an aggressive and highly therapy resistant brain tumour whilst advanced disease has been intensely investigated the mechanisms that underpin the earlier likely more tractable stages of glioblastoma development remain incompletely understood over the last few years my lab has focussed on the biology of early gliomagenesis exploring the role of driver mutations and the normal brain microenvironment to achieve this we have developed a suite of human relevant preclinical models that enable mechanistic analysis of these early disease stages which remain largely inaccessible in patients i will describe some of our recent findings which reveal mutation specific effects and a key role for injury programmes in driving early gliomagenesis injury programmes are induced by tumour cells and coordinated by axonal injury and associated neuroinflammation i will discuss how targetable injury programmes also shape invasion at the margin of advanced tumours together our work suggests that targeting the injury microenvironment may provide new strategies for earlier intervention in glioblastoma keynote abstract"
+  },
+  {
+    "id": "abs-bjoern-scheffler",
+    "submissionId": "",
+    "title": "Glioblastoma at the Brain-Skull Marrow Interface: From Neuroimmune Crosstalk to Clinical Translation",
+    "format": "Keynote abstract",
+    "programmeId": "bjoern-scheffler",
+    "programme": {
+      "programmeTitle": "Glioblastoma at the Brain-Skull Marrow Interface: From Neuroimmune Crosstalk to Clinical Translation",
+      "programmeSpeaker": "Björn Scheffler",
+      "kind": "keynote",
+      "dayId": "day-2",
+      "date": "2026-10-15",
+      "dayLabel": "Thursday, 15 October",
+      "start": "10:10",
+      "end": "10:50",
+      "sessionId": "tumor-immunology",
+      "sessionTitle": "Brain Tumor Immunology",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Björn Scheffler"
+    ],
+    "leadAuthor": "Björn Scheffler",
+    "authors": [
+      {
+        "name": "Björn Scheffler",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "German Cancer Consortium (DKTK), partner site Essen/Düsseldorf, a partnership between DKFZ and University Hospital Essen, German Cancer Research Center (DKFZ), Heidelberg & University Duisburg–Essen, Germany"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "This presentation addresses the emerging concept that glioblastoma affects immunity beyond the tumor microenvironment by engaging immune and hematopoietic compartments at the brain borders. In particular, it focuses on the skull bone marrow as a disease-reactive immune niche that may contribute to anti-tumor immunity, provide access to tumor-reactive T cells, and offer new diagnostic and therapeutic opportunities. By linking neuroimmune communication, local skull marrow responses, and future biomedical access strategies, the talk outlines a new perspective on how brain tumors interact with the immune system and how this interaction may be harnessed in patients."
+    ],
+    "body": "This presentation addresses the emerging concept that glioblastoma affects immunity beyond the tumor microenvironment by engaging immune and hematopoietic compartments at the brain borders. In particular, it focuses on the skull bone marrow as a disease-reactive immune niche that may contribute to anti-tumor immunity, provide access to tumor-reactive T cells, and offer new diagnostic and therapeutic opportunities. By linking neuroimmune communication, local skull marrow responses, and future biomedical access strategies, the talk outlines a new perspective on how brain tumors interact with the immune system and how this interaction may be harnessed in patients.",
+    "abstractStatus": "full",
+    "pdfPath": "",
+    "pageCount": 0,
+    "sourceFilename": "",
+    "source": "Keynote speaker abstract (provided directly by speaker)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "glioblastoma at the brain skull marrow interface from neuroimmune crosstalk to clinical translation bjorn scheffler bjorn scheffler german cancer consortium dktk partner site essen dusseldorf a partnership between dkfz and university hospital essen german cancer research center dkfz heidelberg university duisburg essen germany this presentation addresses the emerging concept that glioblastoma affects immunity beyond the tumor microenvironment by engaging immune and hematopoietic compartments at the brain borders in particular it focuses on the skull bone marrow as a disease reactive immune niche that may contribute to anti tumor immunity provide access to tumor reactive t cells and offer new diagnostic and therapeutic opportunities by linking neuroimmune communication local skull marrow responses and future biomedical access strategies the talk outlines a new perspective on how brain tumors interact with the immune system and how this interaction may be harnessed in patients keynote abstract"
   }
 ]

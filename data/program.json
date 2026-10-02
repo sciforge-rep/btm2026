@@ -350,7 +350,8 @@
               "speaker": "Björn Scheffler",
               "affiliation": "German Cancer Consortium (DKTK), partner site Essen/Düsseldorf, a partnership between DKFZ and University Hospital Essen, German Cancer Research Center (DKFZ), Heidelberg & University Duisburg–Essen, Germany",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-bjoern-scheffler"
             },
             {
               "id": "d2-coffee-1",
@@ -387,11 +388,12 @@
               "start": "11:55",
               "end": "12:35",
               "kind": "keynote",
-              "title": "[Tentative] The role of injury programs in gliomagenesis",
+              "title": "The role of injury programs in gliomagenesis",
               "speaker": "Simona Parrinello",
               "affiliation": "UCL, London, UK",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-simona-parrinello"
             },
             {
               "id": "alexander-pietras",
