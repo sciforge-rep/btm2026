@@ -10,7 +10,7 @@
         {
           "id": "origin-plasticity-evolution",
           "title": "Brain Tumor Origin, Plasticity and Evolution",
-          "chair": "TBD",
+          "chair": "Rainer Glass",
           "theme": "Origin & evolution",
           "items": [
             {
@@ -72,8 +72,8 @@
               "id": "d1-lunch",
               "start": "13:10",
               "end": "14:00",
-              "kind": "break",
-              "title": "Lunch break",
+              "kind": "poster",
+              "title": "Lunch break and poster session",
               "speaker": "",
               "affiliation": "",
               "note": "",
@@ -84,7 +84,7 @@
         {
           "id": "glioma-cell-intrinsic",
           "title": "Glioma Cell Intrinsic Biology",
-          "chair": "TBD",
+          "chair": "Pilar Sanchez-Bailon",
           "theme": "Cell-intrinsic biology",
           "items": [
             {
@@ -151,7 +151,7 @@
         {
           "id": "brain-metastasis",
           "title": "Brain Metastasis",
-          "chair": "TBD",
+          "chair": "Michela Serresi",
           "theme": "Primary & metastatic brain tumors",
           "items": [
             {
@@ -194,7 +194,7 @@
               "start": "17:05",
               "end": "18:30",
               "kind": "poster",
-              "title": "Poster session",
+              "title": "Coffee break and poster session",
               "speaker": "",
               "affiliation": "",
               "note": "",
@@ -302,7 +302,7 @@
         {
           "id": "tumor-immunology",
           "title": "Brain Tumor Immunology",
-          "chair": "TBD",
+          "chair": "Gaetano Gargiulo",
           "theme": "Immunology",
           "items": [
             {
@@ -357,8 +357,8 @@
               "id": "d2-coffee-1",
               "start": "10:50",
               "end": "11:15",
-              "kind": "break",
-              "title": "Coffee break",
+              "kind": "poster",
+              "title": "Coffee break and poster session",
               "speaker": "",
               "affiliation": "",
               "note": "",
@@ -369,7 +369,7 @@
         {
           "id": "tumor-microenvironment",
           "title": "Brain Tumor Microenvironment",
-          "chair": "TBD",
+          "chair": "Charlotte Flüh",
           "theme": "The brain tumor ecosystem",
           "items": [
             {
@@ -422,8 +422,8 @@
               "id": "d2-lunch",
               "start": "13:05",
               "end": "14:00",
-              "kind": "break",
-              "title": "Lunch break",
+              "kind": "poster",
+              "title": "Lunch break and poster session",
               "speaker": "",
               "affiliation": "",
               "note": "",
@@ -434,7 +434,7 @@
         {
           "id": "paediatric-rare",
           "title": "Pediatric, Low-grade and Rare CNS Tumors",
-          "chair": "TBD",
+          "chair": "Ilon Liu",
           "theme": "Brain tumor diversity",
           "items": [
             {
@@ -513,7 +513,7 @@
         {
           "id": "functional-genetics-models",
           "title": "Functional Genetics and Next-generation Brain Tumor Models",
-          "chair": "TBD",
+          "chair": "Matthias Schmitt",
           "theme": "Functional genetics & models",
           "items": [
             {

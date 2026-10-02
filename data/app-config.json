@@ -11,8 +11,8 @@
     "language": "English",
     "officialWebsite": "https://www.mdc-berlin.de/BTM2026",
     "programmePdf": "./docs/BTM2026_Programme.pdf",
-    "programmeStatus": "Programme subject to change",
-    "lastContentUpdate": "2026-09-25",
+    "programmeStatus": "Final programme",
+    "lastContentUpdate": "2026-10-02",
     "abstractMode": "Author-submitted abstracts imported from the approved conference export",
     "version": "2.0.0"
   },
@@ -125,7 +125,7 @@
         "detail": "Max Delbrück Center"
       },
       {
-        "name": "Pilar Sanchez",
+        "name": "Pilar Sanchez-Bailon",
         "detail": "Max Delbrück Center"
       },
       {
