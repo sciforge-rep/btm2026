@@ -10845,5 +10845,57 @@
     "eveningContributor": false,
     "eveningContributorName": "",
     "searchText": "glioblastoma at the brain skull marrow interface from neuroimmune crosstalk to clinical translation bjorn scheffler bjorn scheffler german cancer consortium dktk partner site essen dusseldorf a partnership between dkfz and university hospital essen german cancer research center dkfz heidelberg university duisburg essen germany this presentation addresses the emerging concept that glioblastoma affects immunity beyond the tumor microenvironment by engaging immune and hematopoietic compartments at the brain borders in particular it focuses on the skull bone marrow as a disease reactive immune niche that may contribute to anti tumor immunity provide access to tumor reactive t cells and offer new diagnostic and therapeutic opportunities by linking neuroimmune communication local skull marrow responses and future biomedical access strategies the talk outlines a new perspective on how brain tumors interact with the immune system and how this interaction may be harnessed in patients keynote abstract"
+  },
+  {
+    "id": "abs-berta-lopez",
+    "submissionId": "",
+    "title": "Microenvironmental regulation of melanoma brain metastases",
+    "format": "Keynote abstract",
+    "programmeId": "berta-lopez",
+    "programme": {
+      "programmeTitle": "Microenvironmental regulation of melanoma brain metastases",
+      "programmeSpeaker": "Berta López Sánchez-Laorden",
+      "kind": "keynote",
+      "dayId": "day-1",
+      "date": "2026-10-14",
+      "dayLabel": "Wednesday, 14 October",
+      "start": "15:45",
+      "end": "16:25",
+      "sessionId": "brain-metastasis",
+      "sessionTitle": "Brain Metastasis",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Berta López Sánchez-Laorden"
+    ],
+    "leadAuthor": "Berta López Sánchez-Laorden",
+    "authors": [
+      {
+        "name": "Berta López Sánchez-Laorden",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Instituto de Neurociencias (CSIC-UMH), Alicante, Spain"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Melanoma frequently metastasizes to the brain, where patients have historically faced poor outcomes. Advances in neurosurgery, radiation, and systemic therapies, including immune checkpoint inhibitors (ICI) have improved survival, yet many patients, still show limited benefit. Brain metastases exhibit unique biological features, including metabolic alterations, lower immune infiltration, and interactions with the highly specialized brain microenvironment. Using syngeneic melanoma brain metastasis models, genetic and pharmacologic interventions, and single-cell transcriptomics, we are investigating how melanoma cells adapt and survive in the brain microenvironment and how glial cells regulate melanoma brain metastasis biology. In particular, we have found that activation of the NF-κB pathway in microglia, brain resident macrophages, drives metastatic growth. Targeting NF-κB reprograms microglia toward a proinflammatory phenotype, enhances antitumor immunity, and improves responses to ICI. These findings highlight brain macrophages as key modulators of melanoma brain metastases and indicate that glial reprogramming could be a novel strategy to regulate brain metastasis biology and enhance immunotherapy efficacy."
+    ],
+    "body": "Melanoma frequently metastasizes to the brain, where patients have historically faced poor outcomes. Advances in neurosurgery, radiation, and systemic therapies, including immune checkpoint inhibitors (ICI) have improved survival, yet many patients, still show limited benefit. Brain metastases exhibit unique biological features, including metabolic alterations, lower immune infiltration, and interactions with the highly specialized brain microenvironment. Using syngeneic melanoma brain metastasis models, genetic and pharmacologic interventions, and single-cell transcriptomics, we are investigating how melanoma cells adapt and survive in the brain microenvironment and how glial cells regulate melanoma brain metastasis biology. In particular, we have found that activation of the NF-κB pathway in microglia, brain resident macrophages, drives metastatic growth. Targeting NF-κB reprograms microglia toward a proinflammatory phenotype, enhances antitumor immunity, and improves responses to ICI. These findings highlight brain macrophages as key modulators of melanoma brain metastases and indicate that glial reprogramming could be a novel strategy to regulate brain metastasis biology and enhance immunotherapy efficacy.",
+    "abstractStatus": "full",
+    "pdfPath": "",
+    "pageCount": 0,
+    "sourceFilename": "",
+    "source": "Keynote speaker abstract (provided directly by speaker)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "microenvironmental regulation of melanoma brain metastases berta lopez sanchez laorden berta lopez sanchez laorden instituto de neurociencias csic umh alicante spain melanoma frequently metastasizes to the brain where patients have historically faced poor outcomes advances in neurosurgery radiation and systemic therapies including immune checkpoint inhibitors ici have improved survival yet many patients still show limited benefit brain metastases exhibit unique biological features including metabolic alterations lower immune infiltration and interactions with the highly specialized brain microenvironment using syngeneic melanoma brain metastasis models genetic and pharmacologic interventions and single cell transcriptomics we are investigating how melanoma cells adapt and survive in the brain microenvironment and how glial cells regulate melanoma brain metastasis biology in particular we have found that activation of the nf b pathway in microglia brain resident macrophages drives metastatic growth targeting nf b reprograms microglia toward a proinflammatory phenotype enhances antitumor immunity and improves responses to ici these findings highlight brain macrophages as key modulators of melanoma brain metastases and indicate that glial reprogramming could be a novel strategy to regulate brain metastasis biology and enhance immunotherapy efficacy keynote abstract"
   }
 ]
