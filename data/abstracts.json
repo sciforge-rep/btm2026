@@ -3964,13 +3964,6 @@
         ]
       },
       {
-        "name": "David Parkinson",
-        "presenting": false,
-        "affiliationRefs": [
-          1
-        ]
-      },
-      {
         "name": "Jane Carre",
         "presenting": false,
         "affiliationRefs": [
@@ -4013,7 +4006,7 @@
     "source": "Author-submitted abstract PDF",
     "eveningContributor": false,
     "eveningContributorName": "",
-    "searchText": "development of interfering peptides targeting hk2 protein interactions in meningioma hanieh samavati hanieh samavati david parkinson jane carre liyam laraba leandro jose de assis university of plymouth meningiomas are the most common primary tumours of the central nervous system they arise from the meninges surrounding the brain and spinal cord despite their predominantly benign classification many recur following surgery or develop resistance to radiotherapy this significantly impairs the patient s quality of life effective systemic therapies remain lacking therefore identifying novel therapeutic vulnerabilities remains a major unmet clinical need meningiomas exhibit the warburg effect relying on aerobic glycolysis for growth hexokinase 2 hk2 the rate limiting glycolytic enzyme is overexpressed in higher grade meningiomas and has important non canonical functions in other tumours unlike other hexokinase isoforms which contain a single c terminal catalytic domain hk2 possesses both n and c terminal catalytic domains research has primarily focused on n terminal mitochondrial interactions leaving the protein interactions of the c terminal domain unexplored we identified a tumour specific interaction between hk2 and the catalytic subunit of protein phosphatase 1 pp1c in grade 3 meningioma mediated through the hk2 c terminal domain that is essential for tumour survival to investigate additional oncogenic interactions mediated by this domain we designed hk2 c terminal truncating peptides to disrupt hk2 pp1c and related interactions we hypothesise that selectively targeting tumour specific hk2 interactions will inhibit proliferation while sparing normal cells overcoming limitations of prior hk2 inhibitors that failed due to non specific glycolytic toxicity results demonstrate peptides reduce meningioma proliferation in in vitro without causing cytotoxicity in healthy cells ongoing work aims to define their mechanisms of action evaluate efficacy across additional meningioma grades and assess in vivo therapeutic potential alongside clinically relevant delivery strategies to support translation poster abstract 2431"
+    "searchText": "development of interfering peptides targeting hk2 protein interactions in meningioma hanieh samavati hanieh samavati jane carre liyam laraba leandro jose de assis university of plymouth meningiomas are the most common primary tumours of the central nervous system they arise from the meninges surrounding the brain and spinal cord despite their predominantly benign classification many recur following surgery or develop resistance to radiotherapy this significantly impairs the patient s quality of life effective systemic therapies remain lacking therefore identifying novel therapeutic vulnerabilities remains a major unmet clinical need meningiomas exhibit the warburg effect relying on aerobic glycolysis for growth hexokinase 2 hk2 the rate limiting glycolytic enzyme is overexpressed in higher grade meningiomas and has important non canonical functions in other tumours unlike other hexokinase isoforms which contain a single c terminal catalytic domain hk2 possesses both n and c terminal catalytic domains research has primarily focused on n terminal mitochondrial interactions leaving the protein interactions of the c terminal domain unexplored we identified a tumour specific interaction between hk2 and the catalytic subunit of protein phosphatase 1 pp1c in grade 3 meningioma mediated through the hk2 c terminal domain that is essential for tumour survival to investigate additional oncogenic interactions mediated by this domain we designed hk2 c terminal truncating peptides to disrupt hk2 pp1c and related interactions we hypothesise that selectively targeting tumour specific hk2 interactions will inhibit proliferation while sparing normal cells overcoming limitations of prior hk2 inhibitors that failed due to non specific glycolytic toxicity results demonstrate peptides reduce meningioma proliferation in in vitro without causing cytotoxicity in healthy cells ongoing work aims to define their mechanisms of action evaluate efficacy across additional meningioma grades and assess in vivo therapeutic potential alongside clinically relevant delivery strategies to support translation poster abstract 2431"
   },
   {
     "id": "abs-2541",
@@ -10744,7 +10737,7 @@
   },
   {
     "id": "abs-simona-parrinello",
-    "submissionId": "",
+    "submissionId": "2631",
     "title": "The role of injury programs in gliomagenesis",
     "format": "Keynote abstract",
     "programmeId": "simona-parrinello",
@@ -10789,10 +10782,10 @@
     "pdfPath": "",
     "pageCount": 0,
     "sourceFilename": "",
-    "source": "Keynote speaker abstract (provided directly by speaker)",
+    "source": "Keynote speaker abstract (provided directly by speaker; the submission platform PDF for this ID uses an earlier draft title and wording)",
     "eveningContributor": false,
     "eveningContributorName": "",
-    "searchText": "the role of injury programs in gliomagenesis simona parrinello simona parrinello ucl london uk glioblastoma is an aggressive and highly therapy resistant brain tumour whilst advanced disease has been intensely investigated the mechanisms that underpin the earlier likely more tractable stages of glioblastoma development remain incompletely understood over the last few years my lab has focussed on the biology of early gliomagenesis exploring the role of driver mutations and the normal brain microenvironment to achieve this we have developed a suite of human relevant preclinical models that enable mechanistic analysis of these early disease stages which remain largely inaccessible in patients i will describe some of our recent findings which reveal mutation specific effects and a key role for injury programmes in driving early gliomagenesis injury programmes are induced by tumour cells and coordinated by axonal injury and associated neuroinflammation i will discuss how targetable injury programmes also shape invasion at the margin of advanced tumours together our work suggests that targeting the injury microenvironment may provide new strategies for earlier intervention in glioblastoma keynote abstract"
+    "searchText": "the role of injury programs in gliomagenesis simona parrinello simona parrinello ucl london uk glioblastoma is an aggressive and highly therapy resistant brain tumour whilst advanced disease has been intensely investigated the mechanisms that underpin the earlier likely more tractable stages of glioblastoma development remain incompletely understood over the last few years my lab has focussed on the biology of early gliomagenesis exploring the role of driver mutations and the normal brain microenvironment to achieve this we have developed a suite of human relevant preclinical models that enable mechanistic analysis of these early disease stages which remain largely inaccessible in patients i will describe some of our recent findings which reveal mutation specific effects and a key role for injury programmes in driving early gliomagenesis injury programmes are induced by tumour cells and coordinated by axonal injury and associated neuroinflammation i will discuss how targetable injury programmes also shape invasion at the margin of advanced tumours together our work suggests that targeting the injury microenvironment may provide new strategies for earlier intervention in glioblastoma keynote abstract 2631"
   },
   {
     "id": "abs-bjoern-scheffler",
@@ -10881,7 +10874,7 @@
     "affiliations": [
       {
         "ref": 1,
-        "name": "Instituto de Neurociencias (CSIC-UMH), Alicante, Spain"
+        "name": "Instituto de Neurociencias (CSIC-UMH), Miguel Hernández University, Alicante, Spain"
       }
     ],
     "keywords": [],
@@ -10896,6 +10889,1247 @@
     "source": "Keynote speaker abstract (provided directly by speaker)",
     "eveningContributor": false,
     "eveningContributorName": "",
-    "searchText": "microenvironmental regulation of melanoma brain metastases berta lopez sanchez laorden berta lopez sanchez laorden instituto de neurociencias csic umh alicante spain melanoma frequently metastasizes to the brain where patients have historically faced poor outcomes advances in neurosurgery radiation and systemic therapies including immune checkpoint inhibitors ici have improved survival yet many patients still show limited benefit brain metastases exhibit unique biological features including metabolic alterations lower immune infiltration and interactions with the highly specialized brain microenvironment using syngeneic melanoma brain metastasis models genetic and pharmacologic interventions and single cell transcriptomics we are investigating how melanoma cells adapt and survive in the brain microenvironment and how glial cells regulate melanoma brain metastasis biology in particular we have found that activation of the nf b pathway in microglia brain resident macrophages drives metastatic growth targeting nf b reprograms microglia toward a proinflammatory phenotype enhances antitumor immunity and improves responses to ici these findings highlight brain macrophages as key modulators of melanoma brain metastases and indicate that glial reprogramming could be a novel strategy to regulate brain metastasis biology and enhance immunotherapy efficacy keynote abstract"
+    "searchText": "microenvironmental regulation of melanoma brain metastases berta lopez sanchez laorden berta lopez sanchez laorden instituto de neurociencias csic umh miguel hernandez university alicante spain melanoma frequently metastasizes to the brain where patients have historically faced poor outcomes advances in neurosurgery radiation and systemic therapies including immune checkpoint inhibitors ici have improved survival yet many patients still show limited benefit brain metastases exhibit unique biological features including metabolic alterations lower immune infiltration and interactions with the highly specialized brain microenvironment using syngeneic melanoma brain metastasis models genetic and pharmacologic interventions and single cell transcriptomics we are investigating how melanoma cells adapt and survive in the brain microenvironment and how glial cells regulate melanoma brain metastasis biology in particular we have found that activation of the nf b pathway in microglia brain resident macrophages drives metastatic growth targeting nf b reprograms microglia toward a proinflammatory phenotype enhances antitumor immunity and improves responses to ici these findings highlight brain macrophages as key modulators of melanoma brain metastases and indicate that glial reprogramming could be a novel strategy to regulate brain metastasis biology and enhance immunotherapy efficacy keynote abstract"
+  },
+  {
+    "id": "abs-2627",
+    "submissionId": "2627",
+    "title": "Somatic Mosaicism in Brain Tumor Evolution",
+    "format": "Keynote abstract",
+    "programmeId": "jeong-ho-lee",
+    "programme": {
+      "programmeTitle": "Somatic Mosaicism in Brain Tumor Evolution",
+      "programmeSpeaker": "Jeong Ho Lee",
+      "kind": "keynote",
+      "dayId": "day-1",
+      "date": "2026-10-14",
+      "dayLabel": "Wednesday, 14 October",
+      "start": "11:50",
+      "end": "12:30",
+      "sessionId": "origin-plasticity-evolution",
+      "sessionTitle": "Brain Tumor Origin, Plasticity and Evolution",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Jeong Ho Lee"
+    ],
+    "leadAuthor": "Jeong Ho Lee",
+    "authors": [
+      {
+        "name": "Jeong Ho Lee",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Korea Advanced Institute of Science and Technology (KAIST), South Korea"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Somatic mutations occur during cell division across all somatic lineages due to unavoidable DNA replication errors or damage. These mutations, also known as somatic mosaicism, are implicated in both cancer evolution and non-neoplastic disorders. Neural stem cells (NSCs) and their progenitors, which continue dividing throughout life, accumulate somatic mutations in the brain during development and aging. Over the past 15 years, our group has opened a new window into this field and provided molecular genetic evidence that somatic mutations in NSCs or their progenitors contribute to neurodevelopmental disorders and brain tumor evolution. In this seminar, I will present our recent findings on the cell of origin harboring the initial driver mutation in glioma, as well as the associated molecular evolution of these cells of origin and their tumor microenvironment."
+    ],
+    "body": "Somatic mutations occur during cell division across all somatic lineages due to unavoidable DNA replication errors or damage. These mutations, also known as somatic mosaicism, are implicated in both cancer evolution and non-neoplastic disorders. Neural stem cells (NSCs) and their progenitors, which continue dividing throughout life, accumulate somatic mutations in the brain during development and aging. Over the past 15 years, our group has opened a new window into this field and provided molecular genetic evidence that somatic mutations in NSCs or their progenitors contribute to neurodevelopmental disorders and brain tumor evolution. In this seminar, I will present our recent findings on the cell of origin harboring the initial driver mutation in glioma, as well as the associated molecular evolution of these cells of origin and their tumor microenvironment.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2627.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Lee_12th-brain-tumor-meeting_2627.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "somatic mosaicism in brain tumor evolution jeong ho lee jeong ho lee korea advanced institute of science and technology kaist south korea somatic mutations occur during cell division across all somatic lineages due to unavoidable dna replication errors or damage these mutations also known as somatic mosaicism are implicated in both cancer evolution and non neoplastic disorders neural stem cells nscs and their progenitors which continue dividing throughout life accumulate somatic mutations in the brain during development and aging over the past 15 years our group has opened a new window into this field and provided molecular genetic evidence that somatic mutations in nscs or their progenitors contribute to neurodevelopmental disorders and brain tumor evolution in this seminar i will present our recent findings on the cell of origin harboring the initial driver mutation in glioma as well as the associated molecular evolution of these cells of origin and their tumor microenvironment keynote abstract 2627"
+  },
+  {
+    "id": "abs-2630",
+    "submissionId": "2630",
+    "title": "From Diversity to Dependency: Plasticity of Myeloid Cells in Brain Tumors",
+    "format": "Keynote abstract",
+    "programmeId": "leila-akkari",
+    "programme": {
+      "programmeTitle": "From Diversity to Dependency: Plasticity of Myeloid Cells in Brain Tumors",
+      "programmeSpeaker": "Leila Akkari",
+      "kind": "keynote",
+      "dayId": "day-2",
+      "date": "2026-10-15",
+      "dayLabel": "Thursday, 15 October",
+      "start": "11:15",
+      "end": "11:55",
+      "sessionId": "tumor-microenvironment",
+      "sessionTitle": "Brain Tumor Microenvironment",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Leila Akkari"
+    ],
+    "leadAuthor": "Leila Akkari",
+    "authors": [
+      {
+        "name": "Leila Akkari",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Netherlands Cancer Institute (NKI), Amsterdam, Netherlands"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma evolves within a chronically damaged, metabolically constrained brain microenvironment, co-opting resident microglia and infiltrating macrophages to sustain tumor growth and evade therapy. How spatial tissue context and metabolic stress drive microglial reprogramming and myeloid heterogeneity in glioblastoma is a central question. Using spatial transcriptomics, multi-omics profiling, and functional perturbation approaches in preclinical models and patient datasets, the spatiotemporal organization of the glioblastoma myeloid compartment reveals regionally defined microglial states that emerge along tumor invasion fronts and necrotic niches. Among these, a lipid-laden, GPNMB-expressing macrophage population, enriched in metabolically stressed tumor regions, actively recycles myelin lipids and transfers them to glioblastoma cells, fueling mesenchymal malignancy. These spatially constrained myeloid states suppress anti-tumor immunity and drive therapeutic resistance. Defining how brain-specific spatial cues govern microglial identity and function in glioblastoma uncovers niche-specific vulnerabilities that can be leveraged to reprogram the tumor microenvironment and restore durable therapeutic responses."
+    ],
+    "body": "Glioblastoma evolves within a chronically damaged, metabolically constrained brain microenvironment, co-opting resident microglia and infiltrating macrophages to sustain tumor growth and evade therapy. How spatial tissue context and metabolic stress drive microglial reprogramming and myeloid heterogeneity in glioblastoma is a central question. Using spatial transcriptomics, multi-omics profiling, and functional perturbation approaches in preclinical models and patient datasets, the spatiotemporal organization of the glioblastoma myeloid compartment reveals regionally defined microglial states that emerge along tumor invasion fronts and necrotic niches. Among these, a lipid-laden, GPNMB-expressing macrophage population, enriched in metabolically stressed tumor regions, actively recycles myelin lipids and transfers them to glioblastoma cells, fueling mesenchymal malignancy. These spatially constrained myeloid states suppress anti-tumor immunity and drive therapeutic resistance. Defining how brain-specific spatial cues govern microglial identity and function in glioblastoma uncovers niche-specific vulnerabilities that can be leveraged to reprogram the tumor microenvironment and restore durable therapeutic responses.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2630.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Akkari_12th-brain-tumor-meeting_2630.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "from diversity to dependency plasticity of myeloid cells in brain tumors leila akkari leila akkari netherlands cancer institute nki amsterdam netherlands glioblastoma evolves within a chronically damaged metabolically constrained brain microenvironment co opting resident microglia and infiltrating macrophages to sustain tumor growth and evade therapy how spatial tissue context and metabolic stress drive microglial reprogramming and myeloid heterogeneity in glioblastoma is a central question using spatial transcriptomics multi omics profiling and functional perturbation approaches in preclinical models and patient datasets the spatiotemporal organization of the glioblastoma myeloid compartment reveals regionally defined microglial states that emerge along tumor invasion fronts and necrotic niches among these a lipid laden gpnmb expressing macrophage population enriched in metabolically stressed tumor regions actively recycles myelin lipids and transfers them to glioblastoma cells fueling mesenchymal malignancy these spatially constrained myeloid states suppress anti tumor immunity and drive therapeutic resistance defining how brain specific spatial cues govern microglial identity and function in glioblastoma uncovers niche specific vulnerabilities that can be leveraged to reprogram the tumor microenvironment and restore durable therapeutic responses keynote abstract 2630"
+  },
+  {
+    "id": "abs-2632",
+    "submissionId": "2632",
+    "title": "Decoding Aneuploidies in Glioma - using CRISPR technologies in mice to unravel novel cancer driver genes and vulnerabilities in recurrent CNA",
+    "format": "Keynote abstract",
+    "programmeId": "daniel-schramek",
+    "programme": {
+      "programmeTitle": "Decoding Aneuploidies in Glioma — using CRISPR technologies in mice to unravel novel cancer driver genes and vulnerabilities in recurrent CNA",
+      "programmeSpeaker": "Daniel Schramek",
+      "kind": "keynote",
+      "dayId": "day-2",
+      "date": "2026-10-15",
+      "dayLabel": "Thursday, 15 October",
+      "start": "16:20",
+      "end": "17:00",
+      "sessionId": "functional-genetics-models",
+      "sessionTitle": "Functional Genetics and Next-generation Brain Tumor Models",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Daniel Schramek"
+    ],
+    "leadAuthor": "Daniel Schramek",
+    "authors": [
+      {
+        "name": "Daniel Schramek",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Lunenfeld-Tanenbaum Research Institute, Toronto, Canada"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Aneuploidy, the accumulation of whole chromosome or chromosome arm imbalances, is one of the most prevalent alterations in cancer genomes. However, studying how aneuploidy contributes to tumorigenesis and identifying the driver genes on the altered chromosomes that confer a selective fitness advantage is notoriously difficult due to the vast number of genes affected. We previously developed a platform for multiplexed direct in vivo functional genomics knock-out screens (Loganathan et al., Science 2020; Yanchus et al., Science 2022; Langille et al., Cancer Discovery 2022). We refined our CRISPR strategy with a new CRISPR-activation methodology, termed CRISPR-KOALA (CRISPR-Knock Out and Activation Linked Assay), that enables high-throughput, multiplexed gene knockout and activation screens in sensitized mouse models of cancer. We focused on IDH-mutant Low Grade Glioma (LGGs) and GBMs and used KOALA to assess the transforming potential of all the genes residing on the most frequently altered chromosome arms. We uncovered several new and very potent driver genes on these chromosome arms, that converge on regulating distinct transcriptional pathways and provide insight into new potential therapeutic strategies for LGG and a novel template for multiplexed CRISPR screening directly in vivo."
+    ],
+    "body": "Aneuploidy, the accumulation of whole chromosome or chromosome arm imbalances, is one of the most prevalent alterations in cancer genomes. However, studying how aneuploidy contributes to tumorigenesis and identifying the driver genes on the altered chromosomes that confer a selective fitness advantage is notoriously difficult due to the vast number of genes affected. We previously developed a platform for multiplexed direct in vivo functional genomics knock-out screens (Loganathan et al., Science 2020; Yanchus et al., Science 2022; Langille et al., Cancer Discovery 2022). We refined our CRISPR strategy with a new CRISPR-activation methodology, termed CRISPR-KOALA (CRISPR-Knock Out and Activation Linked Assay), that enables high-throughput, multiplexed gene knockout and activation screens in sensitized mouse models of cancer. We focused on IDH-mutant Low Grade Glioma (LGGs) and GBMs and used KOALA to assess the transforming potential of all the genes residing on the most frequently altered chromosome arms. We uncovered several new and very potent driver genes on these chromosome arms, that converge on regulating distinct transcriptional pathways and provide insight into new potential therapeutic strategies for LGG and a novel template for multiplexed CRISPR screening directly in vivo.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2632.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Schramek_12th-brain-tumor-meeting_2632.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "decoding aneuploidies in glioma using crispr technologies in mice to unravel novel cancer driver genes and vulnerabilities in recurrent cna daniel schramek daniel schramek lunenfeld tanenbaum research institute toronto canada aneuploidy the accumulation of whole chromosome or chromosome arm imbalances is one of the most prevalent alterations in cancer genomes however studying how aneuploidy contributes to tumorigenesis and identifying the driver genes on the altered chromosomes that confer a selective fitness advantage is notoriously difficult due to the vast number of genes affected we previously developed a platform for multiplexed direct in vivo functional genomics knock out screens loganathan et al science 2020 yanchus et al science 2022 langille et al cancer discovery 2022 we refined our crispr strategy with a new crispr activation methodology termed crispr koala crispr knock out and activation linked assay that enables high throughput multiplexed gene knockout and activation screens in sensitized mouse models of cancer we focused on idh mutant low grade glioma lggs and gbms and used koala to assess the transforming potential of all the genes residing on the most frequently altered chromosome arms we uncovered several new and very potent driver genes on these chromosome arms that converge on regulating distinct transcriptional pathways and provide insight into new potential therapeutic strategies for lgg and a novel template for multiplexed crispr screening directly in vivo keynote abstract 2632"
+  },
+  {
+    "id": "abs-2634",
+    "submissionId": "2634",
+    "title": "Mapping and Targeting Functional Vulnerabilities in Glioblastoma",
+    "format": "Keynote abstract",
+    "programmeId": "ghazaleh-tabatabai",
+    "programme": {
+      "programmeTitle": "Mapping and Targeting Functional Vulnerabilities in Glioblastoma",
+      "programmeSpeaker": "Ghazaleh Tabatabai",
+      "kind": "keynote",
+      "dayId": "day-1",
+      "date": "2026-10-14",
+      "dayLabel": "Wednesday, 14 October",
+      "start": "12:30",
+      "end": "13:10",
+      "sessionId": "origin-plasticity-evolution",
+      "sessionTitle": "Brain Tumor Origin, Plasticity and Evolution",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Ghazaleh Tabatabai"
+    ],
+    "leadAuthor": "Ghazaleh Tabatabai",
+    "authors": [
+      {
+        "name": "Ghazaleh Tabatabai",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Department of Neurology & Interdisciplinary Neuro-Oncology, University Hospital Tübingen and Eberhard Karls University Tübingen, Tübingen, Germany"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma remains an incurable and aggressive primary tumor of the central nervous system characterized by profound molecular and functional heterogeneity and limited therapeutic options. While genomic profiling has enabled increasingly precise molecular characterization, identifying actionable dependencies remains a major challenge. Given the complexity and adaptability of glioblastoma, effective treatment will likely require rational combination therapies. In this talk, I will discuss how functional genomics can be used to systematically map therapeutic vulnerabilities and establish the biological rationale for such combinations.",
+      "Using genome-wide CRISPR-Cas9 loss-of-function and gain-of-function screens, we have identified genetic dependencies and treatment-specific modifiers of response to targeted therapies, including inhibitors of CDK4/6, ATR, and multikinases. These approaches revealed context-dependent vulnerabilities and synthetic lethal interactions that informed rational combination therapies, subsequently validated in patient-derived models and orthotopic murine models in vivo. As therapeutic vulnerabilities extend beyond tumor-intrinsic dependencies, we have also investigated how targeted treatments reshape tumor metabolism, the immune microenvironment, and immunogenicity, uncovering opportunities to combine targeted therapies with immune-based strategies. Treatment-induced changes in the immunopeptidome and immune cell composition further illustrate how functional perturbations can expose new therapeutic opportunities.",
+      "Together, these studies establish a functional framework for moving from molecular alterations to experimentally defined vulnerabilities and biologically informed combination therapies for glioblastoma."
+    ],
+    "body": "Glioblastoma remains an incurable and aggressive primary tumor of the central nervous system characterized by profound molecular and functional heterogeneity and limited therapeutic options. While genomic profiling has enabled increasingly precise molecular characterization, identifying actionable dependencies remains a major challenge. Given the complexity and adaptability of glioblastoma, effective treatment will likely require rational combination therapies. In this talk, I will discuss how functional genomics can be used to systematically map therapeutic vulnerabilities and establish the biological rationale for such combinations.\n\nUsing genome-wide CRISPR-Cas9 loss-of-function and gain-of-function screens, we have identified genetic dependencies and treatment-specific modifiers of response to targeted therapies, including inhibitors of CDK4/6, ATR, and multikinases. These approaches revealed context-dependent vulnerabilities and synthetic lethal interactions that informed rational combination therapies, subsequently validated in patient-derived models and orthotopic murine models in vivo. As therapeutic vulnerabilities extend beyond tumor-intrinsic dependencies, we have also investigated how targeted treatments reshape tumor metabolism, the immune microenvironment, and immunogenicity, uncovering opportunities to combine targeted therapies with immune-based strategies. Treatment-induced changes in the immunopeptidome and immune cell composition further illustrate how functional perturbations can expose new therapeutic opportunities.\n\nTogether, these studies establish a functional framework for moving from molecular alterations to experimentally defined vulnerabilities and biologically informed combination therapies for glioblastoma.",
+    "abstractStatus": "full",
+    "pdfPath": "",
+    "pageCount": 0,
+    "sourceFilename": "BTM2026_Tabatabai.docx",
+    "source": "Keynote speaker abstract (docx provided directly; the submission platform PDF for this ID contained placeholder text only)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "mapping and targeting functional vulnerabilities in glioblastoma ghazaleh tabatabai ghazaleh tabatabai department of neurology interdisciplinary neuro oncology university hospital tubingen and eberhard karls university tubingen tubingen germany glioblastoma remains an incurable and aggressive primary tumor of the central nervous system characterized by profound molecular and functional heterogeneity and limited therapeutic options while genomic profiling has enabled increasingly precise molecular characterization identifying actionable dependencies remains a major challenge given the complexity and adaptability of glioblastoma effective treatment will likely require rational combination therapies in this talk i will discuss how functional genomics can be used to systematically map therapeutic vulnerabilities and establish the biological rationale for such combinations using genome wide crispr cas9 loss of function and gain of function screens we have identified genetic dependencies and treatment specific modifiers of response to targeted therapies including inhibitors of cdk4 6 atr and multikinases these approaches revealed context dependent vulnerabilities and synthetic lethal interactions that informed rational combination therapies subsequently validated in patient derived models and orthotopic murine models in vivo as therapeutic vulnerabilities extend beyond tumor intrinsic dependencies we have also investigated how targeted treatments reshape tumor metabolism the immune microenvironment and immunogenicity uncovering opportunities to combine targeted therapies with immune based strategies treatment induced changes in the immunopeptidome and immune cell composition further illustrate how functional perturbations can expose new therapeutic opportunities together these studies establish a functional framework for moving from molecular alterations to experimentally defined vulnerabilities and biologically informed combination therapies for glioblastoma keynote abstract 2634"
+  },
+  {
+    "id": "abs-2573",
+    "submissionId": "2573",
+    "title": "Ventricular proximity defines a distinct spatial multi-omic landscape in glioblastoma",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [],
+    "leadAuthor": "Julia L. Gutiérrez-Arroyo",
+    "authors": [
+      {
+        "name": "Julia L. Gutiérrez-Arroyo",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Elvira Carbonell",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Pia Gallego Porcar",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Maria Angeles Marqués-Torrejón",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Conrado Martinez-Cadenas",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Universitat Jaume I"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma is characterised by marked molecular and microenvironmental heterogeneity, and tumour location may contribute to this variability. Tumours located close to the ventricular system have been associated with poorer clinical outcome, although the biological mechanisms underlying this relationship remain unclear. We investigated whether ventricular proximity is associated with distinct clinical, transcriptomic, genomic and proteomic features. A retrospective cohort of 57 patients with glioblastoma was stratified according to tumour distance from the ventricular system into close, intermediate and far groups. Overall survival was assessed using Kaplan–Meier analysis. Multi-omic characterisation included RNA sequencing and whole-genome sequencing in 23 tumours and quantitative LC–MS/MS proteomics in nine tumours. Differential expression, pathway enrichment, immune and tumour-state deconvolution, somatic variant analysis and functional protein annotation were used to compare spatial groups. Tumour proximity to the ventricular system was significantly associated with poorer overall survival. Close tumours displayed a stronger immune and inflammatory transcriptomic profile, with enrichment of antigen presentation, MHC class II signalling, leukocyte activation, cytokine-related processes and extracellular matrix remodelling. They also showed increased expression of immune checkpoint and T-cell dysfunction markers, together with hypoxia, epithelial-to-mesenchymal transition and mesenchymal-like programmes. Deconvolution analyses supported spatial differences in immune composition and glioblastoma cellular states. Whole-genome analysis identified promoter-region variants affecting immune and regulatory genes. Proteomic profiling further showed enrichment of complement, coagulation, antigen presentation and phagocytosis-related processes in close tumours, whereas distant tumours displayed greater representation of neuronal and synaptic functions. These findings indicate that ventricular proximity is associated with a distinct multi-omic phenotype characterised by immune activation and dysfunction, hypoxia, mesenchymal features and extracellular matrix remodelling. Anatomical location therefore appears to contribute to glioblastoma heterogeneity and may help explain the poorer prognosis observed in periventricular tumours."
+    ],
+    "body": "Glioblastoma is characterised by marked molecular and microenvironmental heterogeneity, and tumour location may contribute to this variability. Tumours located close to the ventricular system have been associated with poorer clinical outcome, although the biological mechanisms underlying this relationship remain unclear. We investigated whether ventricular proximity is associated with distinct clinical, transcriptomic, genomic and proteomic features. A retrospective cohort of 57 patients with glioblastoma was stratified according to tumour distance from the ventricular system into close, intermediate and far groups. Overall survival was assessed using Kaplan–Meier analysis. Multi-omic characterisation included RNA sequencing and whole-genome sequencing in 23 tumours and quantitative LC–MS/MS proteomics in nine tumours. Differential expression, pathway enrichment, immune and tumour-state deconvolution, somatic variant analysis and functional protein annotation were used to compare spatial groups. Tumour proximity to the ventricular system was significantly associated with poorer overall survival. Close tumours displayed a stronger immune and inflammatory transcriptomic profile, with enrichment of antigen presentation, MHC class II signalling, leukocyte activation, cytokine-related processes and extracellular matrix remodelling. They also showed increased expression of immune checkpoint and T-cell dysfunction markers, together with hypoxia, epithelial-to-mesenchymal transition and mesenchymal-like programmes. Deconvolution analyses supported spatial differences in immune composition and glioblastoma cellular states. Whole-genome analysis identified promoter-region variants affecting immune and regulatory genes. Proteomic profiling further showed enrichment of complement, coagulation, antigen presentation and phagocytosis-related processes in close tumours, whereas distant tumours displayed greater representation of neuronal and synaptic functions. These findings indicate that ventricular proximity is associated with a distinct multi-omic phenotype characterised by immune activation and dysfunction, hypoxia, mesenchymal features and extracellular matrix remodelling. Anatomical location therefore appears to contribute to glioblastoma heterogeneity and may help explain the poorer prognosis observed in periventricular tumours.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2573.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Gutiérrez-Arroyo_12th-brain-tumor-meeting_2573.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "ventricular proximity defines a distinct spatial multi omic landscape in glioblastoma julia l gutierrez arroyo julia l gutierrez arroyo elvira carbonell pia gallego porcar maria angeles marques torrejon conrado martinez cadenas universitat jaume i glioblastoma is characterised by marked molecular and microenvironmental heterogeneity and tumour location may contribute to this variability tumours located close to the ventricular system have been associated with poorer clinical outcome although the biological mechanisms underlying this relationship remain unclear we investigated whether ventricular proximity is associated with distinct clinical transcriptomic genomic and proteomic features a retrospective cohort of 57 patients with glioblastoma was stratified according to tumour distance from the ventricular system into close intermediate and far groups overall survival was assessed using kaplan meier analysis multi omic characterisation included rna sequencing and whole genome sequencing in 23 tumours and quantitative lc ms ms proteomics in nine tumours differential expression pathway enrichment immune and tumour state deconvolution somatic variant analysis and functional protein annotation were used to compare spatial groups tumour proximity to the ventricular system was significantly associated with poorer overall survival close tumours displayed a stronger immune and inflammatory transcriptomic profile with enrichment of antigen presentation mhc class ii signalling leukocyte activation cytokine related processes and extracellular matrix remodelling they also showed increased expression of immune checkpoint and t cell dysfunction markers together with hypoxia epithelial to mesenchymal transition and mesenchymal like programmes deconvolution analyses supported spatial differences in immune composition and glioblastoma cellular states whole genome analysis identified promoter region variants affecting immune and regulatory genes proteomic profiling further showed enrichment of complement coagulation antigen presentation and phagocytosis related processes in close tumours whereas distant tumours displayed greater representation of neuronal and synaptic functions these findings indicate that ventricular proximity is associated with a distinct multi omic phenotype characterised by immune activation and dysfunction hypoxia mesenchymal features and extracellular matrix remodelling anatomical location therefore appears to contribute to glioblastoma heterogeneity and may help explain the poorer prognosis observed in periventricular tumours poster abstract 2573"
+  },
+  {
+    "id": "abs-2582",
+    "submissionId": "2582",
+    "title": "Neurosurgical skull bone dust for refined cranioencephalic immune compartment access in glioblastoma",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Felix M. Gerach"
+    ],
+    "leadAuthor": "Felix M. Gerach",
+    "authors": [
+      {
+        "name": "Felix M. Gerach",
+        "presenting": true,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Sarah Langer",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Pia Berger",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Sarah Ertmer",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Anita Steinbach",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Mihaela Keller",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Yahya Ahmadipour",
+        "presenting": false,
+        "affiliationRefs": [
+          3,
+          1
+        ]
+      },
+      {
+        "name": "Michael Forsting",
+        "presenting": false,
+        "affiliationRefs": [
+          4
+        ]
+      },
+      {
+        "name": "Ken Herrmann",
+        "presenting": false,
+        "affiliationRefs": [
+          5
+        ]
+      },
+      {
+        "name": "Ulrich Sure",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Björn Scheffler",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Laurèl Rauschenbach",
+        "presenting": false,
+        "affiliationRefs": [
+          3,
+          1
+        ]
+      },
+      {
+        "name": "Celia Dobersalske",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "DKTK Translational Neurooncology at the West German Cancer Center"
+      },
+      {
+        "ref": 2,
+        "name": "University Hospital Essen"
+      },
+      {
+        "ref": 3,
+        "name": "Department of Neurosurgery and Spine Surgery"
+      },
+      {
+        "ref": 4,
+        "name": "Department of Diagnostic and Interventional Radiology and Neuroradiology"
+      },
+      {
+        "ref": 5,
+        "name": "Department of Nuclear Medicine"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Although immunotherapies have achieved notable clinical success in many oncological diseases, glioblastoma (GB), the most prevalent malignant brain tumor in adults, remains incurable and prone to relapse. Augmenting anti-tumor immunity is particularly challenging because effector immune cells are underrepresented within the tumor microenvironment. Our group recently identified tumor-reactive CD8+ effector/memory T cells in the adjacent skull bone marrow (Dobersalske et al., Nat Med, 2024), indicating a potential endogenous reservoir to enhance a potent anti-tumor immune response. Here, we evaluate methods for advanced T cell isolation from GB patients' skull bone, presenting a whole new protocol enabling direct extraction from bone dust obtained during neurosurgical craniotomy. Our aim is to recycle an organic remnant occurring during brain tumor-surgery to facilitate specimen collection as well as enable punctual guided and targeted approaches to the cranial anti-tumor T cell compartment in the skull of GB patients. In addition to the established protocol that enables the use of cranial bone dust as sample material for successful T cell isolation from the skull bone marrow, comparison of cell count, viability, expansion curves and T cell subpopulation compositions shows a direct correlation between surgical burr hole drilling instruments and sample quality in terms of T cell fractions that provides essential information of how to effectively access the cranial skull bone marrow. Hence, our protocol using bone dust for simple access to the immune compartment in the skull bone offers an opportunity to decipher immune cell patterns in the skull, to unlock novel routes for precise and optimized immune cell collection, to understand anti-tumoral functionality and thus to identify therapeutically relevant sites of the cranial immune cell reservoir against glioblastoma."
+    ],
+    "body": "Although immunotherapies have achieved notable clinical success in many oncological diseases, glioblastoma (GB), the most prevalent malignant brain tumor in adults, remains incurable and prone to relapse. Augmenting anti-tumor immunity is particularly challenging because effector immune cells are underrepresented within the tumor microenvironment. Our group recently identified tumor-reactive CD8+ effector/memory T cells in the adjacent skull bone marrow (Dobersalske et al., Nat Med, 2024), indicating a potential endogenous reservoir to enhance a potent anti-tumor immune response. Here, we evaluate methods for advanced T cell isolation from GB patients' skull bone, presenting a whole new protocol enabling direct extraction from bone dust obtained during neurosurgical craniotomy. Our aim is to recycle an organic remnant occurring during brain tumor-surgery to facilitate specimen collection as well as enable punctual guided and targeted approaches to the cranial anti-tumor T cell compartment in the skull of GB patients. In addition to the established protocol that enables the use of cranial bone dust as sample material for successful T cell isolation from the skull bone marrow, comparison of cell count, viability, expansion curves and T cell subpopulation compositions shows a direct correlation between surgical burr hole drilling instruments and sample quality in terms of T cell fractions that provides essential information of how to effectively access the cranial skull bone marrow. Hence, our protocol using bone dust for simple access to the immune compartment in the skull bone offers an opportunity to decipher immune cell patterns in the skull, to unlock novel routes for precise and optimized immune cell collection, to understand anti-tumoral functionality and thus to identify therapeutically relevant sites of the cranial immune cell reservoir against glioblastoma.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2582.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Gerach_12th-brain-tumor-meeting_2582.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "neurosurgical skull bone dust for refined cranioencephalic immune compartment access in glioblastoma felix m gerach felix m gerach sarah langer pia berger sarah ertmer anita steinbach mihaela keller yahya ahmadipour michael forsting ken herrmann ulrich sure bjorn scheffler laurel rauschenbach celia dobersalske dktk translational neurooncology at the west german cancer center university hospital essen department of neurosurgery and spine surgery department of diagnostic and interventional radiology and neuroradiology department of nuclear medicine although immunotherapies have achieved notable clinical success in many oncological diseases glioblastoma gb the most prevalent malignant brain tumor in adults remains incurable and prone to relapse augmenting anti tumor immunity is particularly challenging because effector immune cells are underrepresented within the tumor microenvironment our group recently identified tumor reactive cd8 effector memory t cells in the adjacent skull bone marrow dobersalske et al nat med 2024 indicating a potential endogenous reservoir to enhance a potent anti tumor immune response here we evaluate methods for advanced t cell isolation from gb patients skull bone presenting a whole new protocol enabling direct extraction from bone dust obtained during neurosurgical craniotomy our aim is to recycle an organic remnant occurring during brain tumor surgery to facilitate specimen collection as well as enable punctual guided and targeted approaches to the cranial anti tumor t cell compartment in the skull of gb patients in addition to the established protocol that enables the use of cranial bone dust as sample material for successful t cell isolation from the skull bone marrow comparison of cell count viability expansion curves and t cell subpopulation compositions shows a direct correlation between surgical burr hole drilling instruments and sample quality in terms of t cell fractions that provides essential information of how to effectively access the cranial skull bone marrow hence our protocol using bone dust for simple access to the immune compartment in the skull bone offers an opportunity to decipher immune cell patterns in the skull to unlock novel routes for precise and optimized immune cell collection to understand anti tumoral functionality and thus to identify therapeutically relevant sites of the cranial immune cell reservoir against glioblastoma poster abstract 2582"
+  },
+  {
+    "id": "abs-2615",
+    "submissionId": "2615",
+    "title": "Towards improving synthetic reporters for phenotypic mapping of glioblastoma states by LSD+",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Ali Osman Cetin"
+    ],
+    "leadAuthor": "Ali Osman Cetin",
+    "authors": [
+      {
+        "name": "Ali Osman Cetin",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Yuliia Dramaretska",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Matthias Jürgen Schmitt",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Gaetano Gargiulo",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Max-Delbrück-Center for molecular medicine"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Cell types and cell states are governed by complex gene regulatory programs encoded in cis-regulatory DNA. In glioblastoma (GBM), diverse cellular states contribute substantially to intratumoral heterogeneity and therapeutic resistance, yet their functional characterization remains challenging. To address this, we developed LSD+ (Logical Design of Synthetic cis-regulatory DNA +), a computational framework for designing synthetic locus control regions (sLCRs) that translate transcriptional signatures into compact and functional regulatory DNA constructs.",
+      "To validate the framework, we tested whether LSD+ could recover known natural locus control regions using phenotype-specific transcription factor programs. Using transcription factors derived from yolk sac erythroid progenitors (YEPs), LSD+ identified significant enrichments of known regulatory elements within the alpha- and beta-globin loci. Conversely, cone cell-derived transcription factors failed to enrich these erythroid regulatory regions but successfully identified regulatory elements within the opsin locus. Systematic on-target and off-target analyses across alpha-globin, beta-globin, and opsin loci demonstrated that phenotype matched transcription factor programs consistently recover known natural locus control regions significantly above random expectation, whereas mismatched programs do not. These results support LSD+ as a generalizable framework for discovering functional cis-regulatory architectures from phenotype-specific transcriptional programs, particularly in contexts where natural regulatory elements remain unknown."
+    ],
+    "body": "Cell types and cell states are governed by complex gene regulatory programs encoded in cis-regulatory DNA. In glioblastoma (GBM), diverse cellular states contribute substantially to intratumoral heterogeneity and therapeutic resistance, yet their functional characterization remains challenging. To address this, we developed LSD+ (Logical Design of Synthetic cis-regulatory DNA +), a computational framework for designing synthetic locus control regions (sLCRs) that translate transcriptional signatures into compact and functional regulatory DNA constructs.\n\nTo validate the framework, we tested whether LSD+ could recover known natural locus control regions using phenotype-specific transcription factor programs. Using transcription factors derived from yolk sac erythroid progenitors (YEPs), LSD+ identified significant enrichments of known regulatory elements within the alpha- and beta-globin loci. Conversely, cone cell-derived transcription factors failed to enrich these erythroid regulatory regions but successfully identified regulatory elements within the opsin locus. Systematic on-target and off-target analyses across alpha-globin, beta-globin, and opsin loci demonstrated that phenotype matched transcription factor programs consistently recover known natural locus control regions significantly above random expectation, whereas mismatched programs do not. These results support LSD+ as a generalizable framework for discovering functional cis-regulatory architectures from phenotype-specific transcriptional programs, particularly in contexts where natural regulatory elements remain unknown.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2615.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Cetin_12th-brain-tumor-meeting_2615.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "towards improving synthetic reporters for phenotypic mapping of glioblastoma states by lsd ali osman cetin ali osman cetin yuliia dramaretska matthias jurgen schmitt gaetano gargiulo max delbruck center for molecular medicine cell types and cell states are governed by complex gene regulatory programs encoded in cis regulatory dna in glioblastoma gbm diverse cellular states contribute substantially to intratumoral heterogeneity and therapeutic resistance yet their functional characterization remains challenging to address this we developed lsd logical design of synthetic cis regulatory dna a computational framework for designing synthetic locus control regions slcrs that translate transcriptional signatures into compact and functional regulatory dna constructs to validate the framework we tested whether lsd could recover known natural locus control regions using phenotype specific transcription factor programs using transcription factors derived from yolk sac erythroid progenitors yeps lsd identified significant enrichments of known regulatory elements within the alpha and beta globin loci conversely cone cell derived transcription factors failed to enrich these erythroid regulatory regions but successfully identified regulatory elements within the opsin locus systematic on target and off target analyses across alpha globin beta globin and opsin loci demonstrated that phenotype matched transcription factor programs consistently recover known natural locus control regions significantly above random expectation whereas mismatched programs do not these results support lsd as a generalizable framework for discovering functional cis regulatory architectures from phenotype specific transcriptional programs particularly in contexts where natural regulatory elements remain unknown poster abstract 2615"
+  },
+  {
+    "id": "abs-2618",
+    "submissionId": "2618",
+    "title": "Cryo-mtscATAC-seq resolves region-specific myeloid clonal architecture in human glioblastoma",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Maren Salla"
+    ],
+    "leadAuthor": "Maren Salla",
+    "authors": [
+      {
+        "name": "Maren Salla",
+        "presenting": true,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Marie Cotta",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Benedikt Obermayer",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Ilon Liu",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Leif Ludwig",
+        "presenting": false,
+        "affiliationRefs": [
+          4,
+          5
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Berlin Institute of Health"
+      },
+      {
+        "ref": 2,
+        "name": "Charité - Universitätsmedizin Berlin"
+      },
+      {
+        "ref": 3,
+        "name": "Charité - University Hospital Berlin"
+      },
+      {
+        "ref": 4,
+        "name": "Berlin Institute of Health at Charité"
+      },
+      {
+        "ref": 5,
+        "name": "Berlin Institute of Medical Systems Biology"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "High-throughput clonal tracing of primary human samples relies on naturally occurring barcodes, such as somatic mitochondrial DNA (mtDNA) mutations detected via single-cell ATAC-seq (mtscATAC-seq). Fresh-frozen clinical specimens preserve tissue architecture but compromise cell integrity, thereby precluding their use in multi-omic approaches such as mitochondrial genotyping at single-cell resolution. Here, we introduce Cryo-mtscATAC-seq, a broadly applicable method for diverse pathophysiological contexts to isolate nuclei with their associated mitochondria (\"CryoCells\") from frozen samples for high-throughput clonal analysis, validated across neurodegenerated brain, pediatric neuroblastoma and human aorta. In glioblastoma (GBM), used here as a model to benchmark clonality, we profiled matched primary and recurrent tumors and recovered clonally informative mtDNA variants shared along the longitudinal axis. Focussing clonal tracing to the immune compartment, myeloid-specific mtDNA variants defined tumor-associated macrophage (TAM) clonotypes. These myeloid clones were distributed in a region-specific manner across tumor sections, with clonal composition shifting between regions. Individual TAM clones shared broad phenotype but mapped onto discrete functional states, linking clonal lineage to myeloid state. Together, Cryo-mtscATAC-seq extends mtDNA genotyping to archival frozen GBM specimens, resolving clonal evolution and region-specific myeloid clonality within a single assay — opening new avenues for clonal tracing in human tissue."
+    ],
+    "body": "High-throughput clonal tracing of primary human samples relies on naturally occurring barcodes, such as somatic mitochondrial DNA (mtDNA) mutations detected via single-cell ATAC-seq (mtscATAC-seq). Fresh-frozen clinical specimens preserve tissue architecture but compromise cell integrity, thereby precluding their use in multi-omic approaches such as mitochondrial genotyping at single-cell resolution. Here, we introduce Cryo-mtscATAC-seq, a broadly applicable method for diverse pathophysiological contexts to isolate nuclei with their associated mitochondria (\"CryoCells\") from frozen samples for high-throughput clonal analysis, validated across neurodegenerated brain, pediatric neuroblastoma and human aorta. In glioblastoma (GBM), used here as a model to benchmark clonality, we profiled matched primary and recurrent tumors and recovered clonally informative mtDNA variants shared along the longitudinal axis. Focussing clonal tracing to the immune compartment, myeloid-specific mtDNA variants defined tumor-associated macrophage (TAM) clonotypes. These myeloid clones were distributed in a region-specific manner across tumor sections, with clonal composition shifting between regions. Individual TAM clones shared broad phenotype but mapped onto discrete functional states, linking clonal lineage to myeloid state. Together, Cryo-mtscATAC-seq extends mtDNA genotyping to archival frozen GBM specimens, resolving clonal evolution and region-specific myeloid clonality within a single assay — opening new avenues for clonal tracing in human tissue.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2618.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Salla_12th-brain-tumor-meeting_2618.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "cryo mtscatac seq resolves region specific myeloid clonal architecture in human glioblastoma maren salla maren salla marie cotta benedikt obermayer ilon liu leif ludwig berlin institute of health charite universitatsmedizin berlin charite university hospital berlin berlin institute of health at charite berlin institute of medical systems biology high throughput clonal tracing of primary human samples relies on naturally occurring barcodes such as somatic mitochondrial dna mtdna mutations detected via single cell atac seq mtscatac seq fresh frozen clinical specimens preserve tissue architecture but compromise cell integrity thereby precluding their use in multi omic approaches such as mitochondrial genotyping at single cell resolution here we introduce cryo mtscatac seq a broadly applicable method for diverse pathophysiological contexts to isolate nuclei with their associated mitochondria cryocells from frozen samples for high throughput clonal analysis validated across neurodegenerated brain pediatric neuroblastoma and human aorta in glioblastoma gbm used here as a model to benchmark clonality we profiled matched primary and recurrent tumors and recovered clonally informative mtdna variants shared along the longitudinal axis focussing clonal tracing to the immune compartment myeloid specific mtdna variants defined tumor associated macrophage tam clonotypes these myeloid clones were distributed in a region specific manner across tumor sections with clonal composition shifting between regions individual tam clones shared broad phenotype but mapped onto discrete functional states linking clonal lineage to myeloid state together cryo mtscatac seq extends mtdna genotyping to archival frozen gbm specimens resolving clonal evolution and region specific myeloid clonality within a single assay opening new avenues for clonal tracing in human tissue poster abstract 2618"
+  },
+  {
+    "id": "abs-2619",
+    "submissionId": "2619",
+    "title": "A phenotypic drug discovery platform for combinatorial targeting of glioblastoma cell states and entities",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Ben Jiang"
+    ],
+    "leadAuthor": "Ben Jiang",
+    "authors": [
+      {
+        "name": "Ben Jiang",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Matthias Jürgen Schmitt",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Maria Pilar Sanchez-Bailon",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Moubani Das",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Ali Osman Cetin",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Melanie Großmann",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Michela Serresi",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Gaetano Gargiulo",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Max-Delbrück-Center for molecular medicine"
+      },
+      {
+        "ref": 2,
+        "name": "Center for Study of Stem Cells, France"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GBM) is a highly lethal brain tumor with limited therapeutic options. The blood-brain-barrier (BBB) limits the effectiveness and bioavailability of approved and novel therapeutics. Additionally, GBM consists of heterogeneous, highly plastic cellular entities and states conserved across patients. Tumor cell states adapt in response to standard of care treatment while infiltrating innate immune cells drive a mesenchymal state and acquired drug resistance.",
+      "Our lab has developed transcriptional reporters for glioblastoma subtypes named synthetic locus control regions (sLCRs), which inform on cell identity and fate transitions in vitro and in vivo. We combined this tool with four near-isogenic GBM spheroid models representing distinct genotypes found in patients. We established an in vitro phenotypic drug discovery (PDD) platform that recapitulates the GBM – innate immune cell interaction. In this multicellular 3D model, tumor cells and immortalized human microglia co-exist under conditions that enable screening for therapeutic effectiveness of drugs in combination with the standard of care. Our co-culture system uncovers an association between the phenotypic transition and broad resistance to drugs that is distinct to standard neurobasal conditions. We screened 1,241 small molecules, including lipophilic agents which may possess properties to bypass the BBB. We discovered drugs with the distinct ability to modulate tumor cell viability and proliferation, proneural-to-mesenchymal transition and the survival of non-transformed innate immune cells. By using dimensionality reduction, we classified drug responses into four major categories and identified novel responses for a clinically relevant drug with potential therapeutic implications. We assembled data-informed drug combinations by selecting potent candidates from each drug category to target multiple aspects of GBM and identified potent single agents and effective combinations across cell state and identity.",
+      "Altogether, our PDD platform identified novel and approved drugs targeting distinct features of the tumor, including a mesenchymal state transition enabling data-driven design of combinatorial treatments."
+    ],
+    "body": "Glioblastoma (GBM) is a highly lethal brain tumor with limited therapeutic options. The blood-brain-barrier (BBB) limits the effectiveness and bioavailability of approved and novel therapeutics. Additionally, GBM consists of heterogeneous, highly plastic cellular entities and states conserved across patients. Tumor cell states adapt in response to standard of care treatment while infiltrating innate immune cells drive a mesenchymal state and acquired drug resistance.\n\nOur lab has developed transcriptional reporters for glioblastoma subtypes named synthetic locus control regions (sLCRs), which inform on cell identity and fate transitions in vitro and in vivo. We combined this tool with four near-isogenic GBM spheroid models representing distinct genotypes found in patients. We established an in vitro phenotypic drug discovery (PDD) platform that recapitulates the GBM – innate immune cell interaction. In this multicellular 3D model, tumor cells and immortalized human microglia co-exist under conditions that enable screening for therapeutic effectiveness of drugs in combination with the standard of care. Our co-culture system uncovers an association between the phenotypic transition and broad resistance to drugs that is distinct to standard neurobasal conditions. We screened 1,241 small molecules, including lipophilic agents which may possess properties to bypass the BBB. We discovered drugs with the distinct ability to modulate tumor cell viability and proliferation, proneural-to-mesenchymal transition and the survival of non-transformed innate immune cells. By using dimensionality reduction, we classified drug responses into four major categories and identified novel responses for a clinically relevant drug with potential therapeutic implications. We assembled data-informed drug combinations by selecting potent candidates from each drug category to target multiple aspects of GBM and identified potent single agents and effective combinations across cell state and identity.\n\nAltogether, our PDD platform identified novel and approved drugs targeting distinct features of the tumor, including a mesenchymal state transition enabling data-driven design of combinatorial treatments.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2619.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Jiang_12th-brain-tumor-meeting_2619.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "a phenotypic drug discovery platform for combinatorial targeting of glioblastoma cell states and entities ben jiang ben jiang matthias jurgen schmitt maria pilar sanchez bailon moubani das ali osman cetin melanie grossmann michela serresi gaetano gargiulo max delbruck center for molecular medicine center for study of stem cells france glioblastoma gbm is a highly lethal brain tumor with limited therapeutic options the blood brain barrier bbb limits the effectiveness and bioavailability of approved and novel therapeutics additionally gbm consists of heterogeneous highly plastic cellular entities and states conserved across patients tumor cell states adapt in response to standard of care treatment while infiltrating innate immune cells drive a mesenchymal state and acquired drug resistance our lab has developed transcriptional reporters for glioblastoma subtypes named synthetic locus control regions slcrs which inform on cell identity and fate transitions in vitro and in vivo we combined this tool with four near isogenic gbm spheroid models representing distinct genotypes found in patients we established an in vitro phenotypic drug discovery pdd platform that recapitulates the gbm innate immune cell interaction in this multicellular 3d model tumor cells and immortalized human microglia co exist under conditions that enable screening for therapeutic effectiveness of drugs in combination with the standard of care our co culture system uncovers an association between the phenotypic transition and broad resistance to drugs that is distinct to standard neurobasal conditions we screened 1 241 small molecules including lipophilic agents which may possess properties to bypass the bbb we discovered drugs with the distinct ability to modulate tumor cell viability and proliferation proneural to mesenchymal transition and the survival of non transformed innate immune cells by using dimensionality reduction we classified drug responses into four major categories and identified novel responses for a clinically relevant drug with potential therapeutic implications we assembled data informed drug combinations by selecting potent candidates from each drug category to target multiple aspects of gbm and identified potent single agents and effective combinations across cell state and identity altogether our pdd platform identified novel and approved drugs targeting distinct features of the tumor including a mesenchymal state transition enabling data driven design of combinatorial treatments poster abstract 2619"
+  },
+  {
+    "id": "abs-2621",
+    "submissionId": "2621",
+    "title": "Replication–Transcription Conflicts in Glioblastoma Stem-like Cells: Emerging therapeutic opportunities",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Candela Arribas Parejas"
+    ],
+    "leadAuthor": "Candela Arribas Parejas",
+    "authors": [
+      {
+        "name": "Candela Arribas Parejas",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Carlos Butrón-Díaz",
+        "presenting": false,
+        "affiliationRefs": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Miriam Alonso-García",
+        "presenting": false,
+        "affiliationRefs": [
+          4,
+          5
+        ]
+      },
+      {
+        "name": "Daniel Gómez-Cabello",
+        "presenting": false,
+        "affiliationRefs": [
+          6
+        ]
+      },
+      {
+        "name": "Diana Aguilar-Morante",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Institute of Biomedicine of Seville, IBiS, Virgen del Rocío University Hospital/CSIC/University of Seville, Spain"
+      },
+      {
+        "ref": 2,
+        "name": "Clinical Management Unit of Neurosurgery, Virgen del Rocío University Hospital, Seville, Spain"
+      },
+      {
+        "ref": 3,
+        "name": "CNS Tumor Section, Virgen del Rocío University Hospital, Seville, Spain"
+      },
+      {
+        "ref": 4,
+        "name": "Clinical Management Unit of Medical Oncology, Institute of Biomedicine of Seville, IBiS/Virgen del Rocío University Hospital/CSIC"
+      },
+      {
+        "ref": 5,
+        "name": "CNS Tumor Section, Virgen del Rocío University Hospital, Seville, Spain"
+      },
+      {
+        "ref": 6,
+        "name": "Department of Cell Biology, University of Seville, Spain"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GBM) is the most prevalent and lethal primary malignancy of the adult brain. Although radiotherapy is the most effective non-surgical GBM therapy, recurrence is universal. A major driver of this recurrence is a highly tumor-initiating subpopulation of Glioblastoma Stem-like Cells (GSCs; CD133⁺), which survive treatment and repopulate the tumor. Therapeutic elimination of GSCs is difficult because they exploit core stress-response and self-renewal circuits that also support normal neural stem and progenitor cells. At the same time, the profound genomic instability of GBM and its structured cellular hierarchy—placing therapy-resistant GSCs at the top—make this disease an ideal system to identify and evaluate novel druggable vulnerabilities.",
+      "Here we show that patient-derived human GSC cultures exhibit pronounced replication stress and globally increased transcriptional activity. We propose that this dual burden elevates the incidence of Replication–Transcription Conflicts (RTCs) and DNA:RNA hybrids (R-Loops), triggering a heightened DNA Damage Response and fostering selection of aggressive, resistant GSC clones. Therefore, factors that mitigate RTC-associated lesions may provide targets to sensitize GSCs to therapeutic intervention.",
+      "In this study, we identify the homologous recombination protein RAD52 as a central component of the RTC damage-resolution network in GSCs. RAD52 takes part in pathways connected to conflict repair, including reak-induced replication (BIR), which repairs and restarts collapsed replication forks, and transcription-associated homologous recombination repair (TA-HRR), which detects R-Loops and promotes faithful repair within highly transcribed loci. Based on these observations, our hypothesis points to RAD52 as a critical factor for GSC survival by promoting replication fork restart and clearing persistent R-Loops generated during RTCs, thereby limiting apoptosis and enabling resistance to radiotherapy. This motivates ongoing efforts to evaluate this protein inhibition, alone or combined with irradiation, as a strategy to suppress relapse while ideally sparing normal progenitors."
+    ],
+    "body": "Glioblastoma (GBM) is the most prevalent and lethal primary malignancy of the adult brain. Although radiotherapy is the most effective non-surgical GBM therapy, recurrence is universal. A major driver of this recurrence is a highly tumor-initiating subpopulation of Glioblastoma Stem-like Cells (GSCs; CD133⁺), which survive treatment and repopulate the tumor. Therapeutic elimination of GSCs is difficult because they exploit core stress-response and self-renewal circuits that also support normal neural stem and progenitor cells. At the same time, the profound genomic instability of GBM and its structured cellular hierarchy—placing therapy-resistant GSCs at the top—make this disease an ideal system to identify and evaluate novel druggable vulnerabilities.\n\nHere we show that patient-derived human GSC cultures exhibit pronounced replication stress and globally increased transcriptional activity. We propose that this dual burden elevates the incidence of Replication–Transcription Conflicts (RTCs) and DNA:RNA hybrids (R-Loops), triggering a heightened DNA Damage Response and fostering selection of aggressive, resistant GSC clones. Therefore, factors that mitigate RTC-associated lesions may provide targets to sensitize GSCs to therapeutic intervention.\n\nIn this study, we identify the homologous recombination protein RAD52 as a central component of the RTC damage-resolution network in GSCs. RAD52 takes part in pathways connected to conflict repair, including reak-induced replication (BIR), which repairs and restarts collapsed replication forks, and transcription-associated homologous recombination repair (TA-HRR), which detects R-Loops and promotes faithful repair within highly transcribed loci. Based on these observations, our hypothesis points to RAD52 as a critical factor for GSC survival by promoting replication fork restart and clearing persistent R-Loops generated during RTCs, thereby limiting apoptosis and enabling resistance to radiotherapy. This motivates ongoing efforts to evaluate this protein inhibition, alone or combined with irradiation, as a strategy to suppress relapse while ideally sparing normal progenitors.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2621.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Arribas Parejas_12th-brain-tumor-meeting_2621.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "replication transcription conflicts in glioblastoma stem like cells emerging therapeutic opportunities candela arribas parejas candela arribas parejas carlos butron diaz miriam alonso garcia daniel gomez cabello diana aguilar morante institute of biomedicine of seville ibis virgen del rocio university hospital csic university of seville spain clinical management unit of neurosurgery virgen del rocio university hospital seville spain cns tumor section virgen del rocio university hospital seville spain clinical management unit of medical oncology institute of biomedicine of seville ibis virgen del rocio university hospital csic cns tumor section virgen del rocio university hospital seville spain department of cell biology university of seville spain glioblastoma gbm is the most prevalent and lethal primary malignancy of the adult brain although radiotherapy is the most effective non surgical gbm therapy recurrence is universal a major driver of this recurrence is a highly tumor initiating subpopulation of glioblastoma stem like cells gscs cd133 which survive treatment and repopulate the tumor therapeutic elimination of gscs is difficult because they exploit core stress response and self renewal circuits that also support normal neural stem and progenitor cells at the same time the profound genomic instability of gbm and its structured cellular hierarchy placing therapy resistant gscs at the top make this disease an ideal system to identify and evaluate novel druggable vulnerabilities here we show that patient derived human gsc cultures exhibit pronounced replication stress and globally increased transcriptional activity we propose that this dual burden elevates the incidence of replication transcription conflicts rtcs and dna rna hybrids r loops triggering a heightened dna damage response and fostering selection of aggressive resistant gsc clones therefore factors that mitigate rtc associated lesions may provide targets to sensitize gscs to therapeutic intervention in this study we identify the homologous recombination protein rad52 as a central component of the rtc damage resolution network in gscs rad52 takes part in pathways connected to conflict repair including reak induced replication bir which repairs and restarts collapsed replication forks and transcription associated homologous recombination repair ta hrr which detects r loops and promotes faithful repair within highly transcribed loci based on these observations our hypothesis points to rad52 as a critical factor for gsc survival by promoting replication fork restart and clearing persistent r loops generated during rtcs thereby limiting apoptosis and enabling resistance to radiotherapy this motivates ongoing efforts to evaluate this protein inhibition alone or combined with irradiation as a strategy to suppress relapse while ideally sparing normal progenitors poster abstract 2621"
+  },
+  {
+    "id": "abs-2624",
+    "submissionId": "2624",
+    "title": "CD9 protein in glioblastoma: Implications for progression and therapeutic strategies.",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [],
+    "leadAuthor": "Elvira Carbonell Martínez",
+    "authors": [
+      {
+        "name": "Elvira Carbonell Martínez",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Pia Gallego Porcar",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Julia L. Gutiérrez-Arroyo",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Marwen Ben Fdilen",
+        "presenting": false,
+        "affiliationRefs": [
+          2,
+          3
+        ]
+      },
+      {
+        "name": "Conrado Martinez-Cadenas",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Luis Germán González Bonet",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          4
+        ]
+      },
+      {
+        "name": "María de los Ángeles Marqués Torrejón",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Universitat Jaume I"
+      },
+      {
+        "ref": 2,
+        "name": "University Jaume I, Facultat de Ciències de la Salut"
+      },
+      {
+        "ref": 3,
+        "name": "University of Tunis El Manar, Faculty of Sciences of Tunis"
+      },
+      {
+        "ref": 4,
+        "name": "Hospital Universitario y Politécnico La Fe de Valencia"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GB) contains a population of glioma stem like cells (GSCs) that resemble adult neural stem cells (NSCs) and contribute to treatment resistance and tumour relapse. CD9 (Tspan29) is a tetraspanin enriched in NSCs in the ventricular–subventricular zone and striatum, where it is linked to a neurogenic like programme, and it is also increased in GBM, where higher levels associate with invasion, resistance to cell death and worse prognosis. In this project, we study the role of CD9 in maintaining a stem like state and in regulating communication between glioma cells and their microenvironment using a murine glioblastoma stem like cell model. We use genetic and cellular approaches to analyse how changes in CD9 affect cell proliferation, stemness and differentiation markers, both at baseline and after chemotherapy.",
+      "By combining these results with published data on CD9 in neural stem cells and GBM, we aim to understand whether CD9 helps connect a neural stem like programme with signals that support tumour growth.",
+      "This work may help explain how a normal brain stem cell marker is reused by GBM stem like cells and point to new ways to interfere with tumour–microenvironment communication to improve treatment response."
+    ],
+    "body": "Glioblastoma (GB) contains a population of glioma stem like cells (GSCs) that resemble adult neural stem cells (NSCs) and contribute to treatment resistance and tumour relapse. CD9 (Tspan29) is a tetraspanin enriched in NSCs in the ventricular–subventricular zone and striatum, where it is linked to a neurogenic like programme, and it is also increased in GBM, where higher levels associate with invasion, resistance to cell death and worse prognosis. In this project, we study the role of CD9 in maintaining a stem like state and in regulating communication between glioma cells and their microenvironment using a murine glioblastoma stem like cell model. We use genetic and cellular approaches to analyse how changes in CD9 affect cell proliferation, stemness and differentiation markers, both at baseline and after chemotherapy.\n\nBy combining these results with published data on CD9 in neural stem cells and GBM, we aim to understand whether CD9 helps connect a neural stem like programme with signals that support tumour growth.\n\nThis work may help explain how a normal brain stem cell marker is reused by GBM stem like cells and point to new ways to interfere with tumour–microenvironment communication to improve treatment response.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2624.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Carbonell Martínez_12th-brain-tumor-meeting_2624.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "cd9 protein in glioblastoma implications for progression and therapeutic strategies elvira carbonell martinez elvira carbonell martinez pia gallego porcar julia l gutierrez arroyo marwen ben fdilen conrado martinez cadenas luis german gonzalez bonet maria de los angeles marques torrejon universitat jaume i university jaume i facultat de ciencies de la salut university of tunis el manar faculty of sciences of tunis hospital universitario y politecnico la fe de valencia glioblastoma gb contains a population of glioma stem like cells gscs that resemble adult neural stem cells nscs and contribute to treatment resistance and tumour relapse cd9 tspan29 is a tetraspanin enriched in nscs in the ventricular subventricular zone and striatum where it is linked to a neurogenic like programme and it is also increased in gbm where higher levels associate with invasion resistance to cell death and worse prognosis in this project we study the role of cd9 in maintaining a stem like state and in regulating communication between glioma cells and their microenvironment using a murine glioblastoma stem like cell model we use genetic and cellular approaches to analyse how changes in cd9 affect cell proliferation stemness and differentiation markers both at baseline and after chemotherapy by combining these results with published data on cd9 in neural stem cells and gbm we aim to understand whether cd9 helps connect a neural stem like programme with signals that support tumour growth this work may help explain how a normal brain stem cell marker is reused by gbm stem like cells and point to new ways to interfere with tumour microenvironment communication to improve treatment response poster abstract 2624"
+  },
+  {
+    "id": "abs-2626",
+    "submissionId": "2626",
+    "title": "Functional Differences Between NSCs and GSCs in Proliferation and Quiescence",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Maria Angeles Marqués-Torrejón"
+    ],
+    "leadAuthor": "Maria Angeles Marqués-Torrejón",
+    "authors": [
+      {
+        "name": "Maria Angeles Marqués-Torrejón",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Pia Gallego Porcar",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Elvira Carbonell Martínez",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Julia L. Gutiérrez-Arroyo",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Marwen Ben Fdilen",
+        "presenting": false,
+        "affiliationRefs": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Luis Germán González Bonet",
+        "presenting": false,
+        "affiliationRefs": [
+          2,
+          5
+        ]
+      },
+      {
+        "name": "Conrado Martinez-Cadenas",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Jaume I University Castellón"
+      },
+      {
+        "ref": 2,
+        "name": "Universitat Jaume I"
+      },
+      {
+        "ref": 3,
+        "name": "University Jaume I, Facultat de Ciències de la Salut"
+      },
+      {
+        "ref": 4,
+        "name": "University of Tunis El Manar, Faculty of Sciences of Tunis"
+      },
+      {
+        "ref": 5,
+        "name": "Hospital Universitario y Politécnico La Fe de Valencia"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Background: Glioblastoma (GB) aggressiveness and therapeutic resistance are heavily driven by glioblastoma stem cells (GSCs), a subpopulation capable of entering a reversible quiescent state. While evidence suggests GSCs arise from the malignant transformation of neural stem cells (NSCs), the precise molecular and cellular alterations governing their distinct proliferative and quiescent states remain poorly understood.",
+      "Objective: This study aims to compare murine NSCs and GSCs at both the cellular and gene expression levels under proliferative and quiescent conditions to uncover specific markers that distinguish healthy versus malignant stem cell states.",
+      "Methods: We established an in vitro model using murine NSCs and GSCs (NPE-GFP) under proliferative and serum-deprivation-induced quiescent conditions. Cell cycle state distributions were analyzed via flow cytometry. Cellular content was thoroughly evaluated using Hoechst/Pyronin Y staining to quantify DNA/RNA content and O-propargyl-puromycin (OPP) incorporation to measure nascent protein synthesis. Finally, transcriptomic profiling via RNA sequencing was integrated to dissect and compare the gene expression networks governing healthy and malignant quiescence programs.",
+      "Results: Our cellular analyses revealed that quiescent NSCs and GSCs successfully accumulated in the G0/G1 phase. Quiescence induction significantly reduced cellular RNA content and decreased protein synthesis in both cell types, consistent with a low metabolic state. However, comparative transcriptomic analyses and Gene Set Enrichment Analysis (GSEA) demonstrated that physiological quiescence in NSCs and malignant quiescence in GSCs are governed by distinct gene expression programs, showing minimal overlap in their respective signatures and highlights.",
+      "Conclusion: Although NSCs and GSCs share common cellular features during quiescence, such as cell cycle arrest and metabolic depression, they activate fundamentally different regulatory pathways to maintain their stemness and state. These unique transcriptomic differences offer valuable insights into the basic biology of GB quiescence, paving the way for the identification of tumor-specific biomarkers and therapeutic targets that spare healthy NSC function."
+    ],
+    "body": "Background: Glioblastoma (GB) aggressiveness and therapeutic resistance are heavily driven by glioblastoma stem cells (GSCs), a subpopulation capable of entering a reversible quiescent state. While evidence suggests GSCs arise from the malignant transformation of neural stem cells (NSCs), the precise molecular and cellular alterations governing their distinct proliferative and quiescent states remain poorly understood.\n\nObjective: This study aims to compare murine NSCs and GSCs at both the cellular and gene expression levels under proliferative and quiescent conditions to uncover specific markers that distinguish healthy versus malignant stem cell states.\n\nMethods: We established an in vitro model using murine NSCs and GSCs (NPE-GFP) under proliferative and serum-deprivation-induced quiescent conditions. Cell cycle state distributions were analyzed via flow cytometry. Cellular content was thoroughly evaluated using Hoechst/Pyronin Y staining to quantify DNA/RNA content and O-propargyl-puromycin (OPP) incorporation to measure nascent protein synthesis. Finally, transcriptomic profiling via RNA sequencing was integrated to dissect and compare the gene expression networks governing healthy and malignant quiescence programs.\n\nResults: Our cellular analyses revealed that quiescent NSCs and GSCs successfully accumulated in the G0/G1 phase. Quiescence induction significantly reduced cellular RNA content and decreased protein synthesis in both cell types, consistent with a low metabolic state. However, comparative transcriptomic analyses and Gene Set Enrichment Analysis (GSEA) demonstrated that physiological quiescence in NSCs and malignant quiescence in GSCs are governed by distinct gene expression programs, showing minimal overlap in their respective signatures and highlights.\n\nConclusion: Although NSCs and GSCs share common cellular features during quiescence, such as cell cycle arrest and metabolic depression, they activate fundamentally different regulatory pathways to maintain their stemness and state. These unique transcriptomic differences offer valuable insights into the basic biology of GB quiescence, paving the way for the identification of tumor-specific biomarkers and therapeutic targets that spare healthy NSC function.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2626.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Marqués-Torrejón_12th-brain-tumor-meeting_2626.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "functional differences between nscs and gscs in proliferation and quiescence maria angeles marques torrejon maria angeles marques torrejon pia gallego porcar elvira carbonell martinez julia l gutierrez arroyo marwen ben fdilen luis german gonzalez bonet conrado martinez cadenas jaume i university castellon universitat jaume i university jaume i facultat de ciencies de la salut university of tunis el manar faculty of sciences of tunis hospital universitario y politecnico la fe de valencia background glioblastoma gb aggressiveness and therapeutic resistance are heavily driven by glioblastoma stem cells gscs a subpopulation capable of entering a reversible quiescent state while evidence suggests gscs arise from the malignant transformation of neural stem cells nscs the precise molecular and cellular alterations governing their distinct proliferative and quiescent states remain poorly understood objective this study aims to compare murine nscs and gscs at both the cellular and gene expression levels under proliferative and quiescent conditions to uncover specific markers that distinguish healthy versus malignant stem cell states methods we established an in vitro model using murine nscs and gscs npe gfp under proliferative and serum deprivation induced quiescent conditions cell cycle state distributions were analyzed via flow cytometry cellular content was thoroughly evaluated using hoechst pyronin y staining to quantify dna rna content and o propargyl puromycin opp incorporation to measure nascent protein synthesis finally transcriptomic profiling via rna sequencing was integrated to dissect and compare the gene expression networks governing healthy and malignant quiescence programs results our cellular analyses revealed that quiescent nscs and gscs successfully accumulated in the g0 g1 phase quiescence induction significantly reduced cellular rna content and decreased protein synthesis in both cell types consistent with a low metabolic state however comparative transcriptomic analyses and gene set enrichment analysis gsea demonstrated that physiological quiescence in nscs and malignant quiescence in gscs are governed by distinct gene expression programs showing minimal overlap in their respective signatures and highlights conclusion although nscs and gscs share common cellular features during quiescence such as cell cycle arrest and metabolic depression they activate fundamentally different regulatory pathways to maintain their stemness and state these unique transcriptomic differences offer valuable insights into the basic biology of gb quiescence paving the way for the identification of tumor specific biomarkers and therapeutic targets that spare healthy nsc function poster abstract 2626"
+  },
+  {
+    "id": "abs-2623",
+    "submissionId": "2623",
+    "title": "Finding the right DFG funding programme",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Michael Müller"
+    ],
+    "leadAuthor": "Michael Müller",
+    "authors": [
+      {
+        "name": "Michael Müller",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Deutsche Forschungsgemeinschaft, Bonn"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "The Deutsche Forschungsgemeinschaft (German Research Foundation, DFG) is the largest research funding organisation in Germany, offering funding to German universities in particular. What support and funding opportunities does the DFG offer to individual researchers? Where can you find important background information and practical advice? This overview outlines your options in each phase of your research career."
+    ],
+    "body": "The Deutsche Forschungsgemeinschaft (German Research Foundation, DFG) is the largest research funding organisation in Germany, offering funding to German universities in particular. What support and funding opportunities does the DFG offer to individual researchers? Where can you find important background information and practical advice? This overview outlines your options in each phase of your research career.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/2623.pdf",
+    "pageCount": 1,
+    "sourceFilename": "Müller_12th-brain-tumor-meeting_2623.pdf",
+    "source": "Author-submitted abstract PDF",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "finding the right dfg funding programme michael muller michael muller deutsche forschungsgemeinschaft bonn the deutsche forschungsgemeinschaft german research foundation dfg is the largest research funding organisation in germany offering funding to german universities in particular what support and funding opportunities does the dfg offer to individual researchers where can you find important background information and practical advice this overview outlines your options in each phase of your research career poster abstract 2623"
+  },
+  {
+    "id": "abs-felix-nebeling",
+    "submissionId": "",
+    "title": "Microglial Regulation of Glioblastoma Dissemination at the Far Infiltration Zone",
+    "format": "Flash oral",
+    "programmeId": "felix-nebeling",
+    "programme": {
+      "programmeTitle": "Microglial Regulation of Glioblastoma Dissemination at the Far Infiltration Zone",
+      "programmeSpeaker": "Felix C. Nebeling",
+      "kind": "flash",
+      "dayId": "day-2",
+      "date": "2026-10-15",
+      "dayLabel": "Thursday, 15 October",
+      "start": "12:55",
+      "end": "13:05",
+      "sessionId": "tumor-microenvironment",
+      "sessionTitle": "Brain Tumor Microenvironment",
+      "location": "MDC.C · Building 83"
+    },
+    "presentingAuthors": [
+      "Felix C. Nebeling"
+    ],
+    "leadAuthor": "Felix C. Nebeling",
+    "authors": [
+      {
+        "name": "Felix C. Nebeling",
+        "presenting": true,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Falko Fuhrmann",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Manuel Mittag",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Fabrizio Musacchio",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Annabell Kress",
+        "presenting": false,
+        "affiliationRefs": [
+          1,
+          2
+        ]
+      },
+      {
+        "name": "Henrike Antony",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Nala Gockel",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Lea L. Friker",
+        "presenting": false,
+        "affiliationRefs": [
+          3,
+          4
+        ]
+      },
+      {
+        "name": "Sonia Leonardelli",
+        "presenting": false,
+        "affiliationRefs": [
+          4
+        ]
+      },
+      {
+        "name": "Severin Filser",
+        "presenting": false,
+        "affiliationRefs": [
+          5
+        ]
+      },
+      {
+        "name": "A Deli",
+        "presenting": false,
+        "affiliationRefs": [
+          6
+        ]
+      },
+      {
+        "name": "Miriam Stork",
+        "presenting": false,
+        "affiliationRefs": [
+          6,
+          7
+        ]
+      },
+      {
+        "name": "Daniele Bano",
+        "presenting": false,
+        "affiliationRefs": [
+          7
+        ]
+      },
+      {
+        "name": "Torsten Pietsch",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Frank A. Giordano",
+        "presenting": false,
+        "affiliationRefs": [
+          8,
+          9,
+          10
+        ]
+      },
+      {
+        "name": "Qihui Zhou",
+        "presenting": false,
+        "affiliationRefs": [
+          11
+        ]
+      },
+      {
+        "name": "Simona Parrinello",
+        "presenting": false,
+        "affiliationRefs": [
+          12
+        ]
+      },
+      {
+        "name": "Michael Hölzel",
+        "presenting": false,
+        "affiliationRefs": [
+          4
+        ]
+      },
+      {
+        "name": "Ulrich Herrlinger",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Paolo Salomoni",
+        "presenting": false,
+        "affiliationRefs": [
+          6,
+          13
+        ]
+      },
+      {
+        "name": "Martin Fuhrmann",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Department of Neurooncology, Center for Neurology, University Hospital Bonn, Bonn, Germany"
+      },
+      {
+        "ref": 2,
+        "name": "Neuroimmunology and Imaging Group, German Center for Neurodegenerative Diseases (DZNE), Bonn, Germany"
+      },
+      {
+        "ref": 3,
+        "name": "Institute of Neuropathology, University Hospital Bonn, University of Bonn, Bonn, Germany"
+      },
+      {
+        "ref": 4,
+        "name": "Institute of Experimental Oncology, Medical Faculty, University Hospital Bonn, University of Bonn, Bonn, Germany"
+      },
+      {
+        "ref": 5,
+        "name": "Light microscopy facility, German Center for Neurodegenerative Diseases (DZNE), Bonn, Germany"
+      },
+      {
+        "ref": 6,
+        "name": "Nuclear Function in CNS pathology, German Center for Neurodegenerative Diseases (DZNE), Bonn, Germany"
+      },
+      {
+        "ref": 7,
+        "name": "Aging and Neurodegeneration, German Center for Neurodegenerative Diseases (DZNE), Bonn, Germany"
+      },
+      {
+        "ref": 8,
+        "name": "Department of Radiation Oncology, University Medical Center Mannheim, Mannheim, Germany"
+      },
+      {
+        "ref": 9,
+        "name": "DKFZ-Hector Cancer Institute, University Medical Center Mannheim, Mannheim, Germany"
+      },
+      {
+        "ref": 10,
+        "name": "Mannheim Institute of Intelligent Systems in Medicine (MIISM), Medical Faculty Mannheim, Heidelberg University, Mannheim, Germany"
+      },
+      {
+        "ref": 11,
+        "name": "Adaptive immunity in neurodegeneration, German Center for Neurodegenerative Diseases (DZNE), Munich, Germany"
+      },
+      {
+        "ref": 12,
+        "name": "Samantha Dickson Brain Cancer Unit, UCL Cancer Institute, WC1E 6DD London, UK"
+      },
+      {
+        "ref": 13,
+        "name": "University College London (UCL) Cancer Institute, Department of Cancer Biology, UCL, London, United Kingdom"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GB) cells infiltrate the brain parenchyma and colonize distant regions, driving recurrence and therapy resistance. Here, we examined dynamic microglial responses to infiltrating tumor cells during GB progression. Three-photon imaging in an autochthonous, immunocompetent GB mouse model enabled visualization of microglia-GB interactions at the far infiltration zone (FIZ) in the corpus callosum (CC). GB infiltration speed varied by anatomical location and tumor microtube (TM) number. Microglia increased surveillance in sparsely infiltrated areas but reduced it with higher GB density, revealing a biphasic response. Directional migration toward GB cells was restricted to microglial subsets within a defined spatial range, indicating heterogeneous reactivity. CX3CR1 deficiency enhanced microglial reactivity while limiting GB cell migration. Microglia depletion with the CSF1R inhibitor PLX5622 reduced GB cell migration and constrained TM plasticity. Thus, microglia respond to GB cell infiltration in a stage-dependent manner and critically modulate dissemination at the FIZ. Complementary spatial and single-nucleus transcriptomic analyses provided indications of infiltration-associated changes especially in complement-related and synaptic gene expression, including increased C4b and microglial C1q expression alongside reduced synaptic gene signatures. These observations suggest that GB infiltration may be accompanied by coordinated immune and neuronal niche remodeling at the FIZ."
+    ],
+    "body": "Glioblastoma (GB) cells infiltrate the brain parenchyma and colonize distant regions, driving recurrence and therapy resistance. Here, we examined dynamic microglial responses to infiltrating tumor cells during GB progression. Three-photon imaging in an autochthonous, immunocompetent GB mouse model enabled visualization of microglia-GB interactions at the far infiltration zone (FIZ) in the corpus callosum (CC). GB infiltration speed varied by anatomical location and tumor microtube (TM) number. Microglia increased surveillance in sparsely infiltrated areas but reduced it with higher GB density, revealing a biphasic response. Directional migration toward GB cells was restricted to microglial subsets within a defined spatial range, indicating heterogeneous reactivity. CX3CR1 deficiency enhanced microglial reactivity while limiting GB cell migration. Microglia depletion with the CSF1R inhibitor PLX5622 reduced GB cell migration and constrained TM plasticity. Thus, microglia respond to GB cell infiltration in a stage-dependent manner and critically modulate dissemination at the FIZ. Complementary spatial and single-nucleus transcriptomic analyses provided indications of infiltration-associated changes especially in complement-related and synaptic gene expression, including increased C4b and microglial C1q expression alongside reduced synaptic gene signatures. These observations suggest that GB infiltration may be accompanied by coordinated immune and neuronal niche remodeling at the FIZ.",
+    "abstractStatus": "full",
+    "pdfPath": "",
+    "pageCount": 0,
+    "sourceFilename": "Abstract_Brain_Tumor_Meeting_2026_Nebeling.docx",
+    "source": "Flash-oral speaker abstract (docx provided directly; no submission platform PDF)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "microglial regulation of glioblastoma dissemination at the far infiltration zone felix c nebeling felix c nebeling falko fuhrmann manuel mittag fabrizio musacchio annabell kress henrike antony nala gockel lea l friker sonia leonardelli severin filser a deli miriam stork daniele bano torsten pietsch frank a giordano qihui zhou simona parrinello michael holzel ulrich herrlinger paolo salomoni martin fuhrmann department of neurooncology center for neurology university hospital bonn bonn germany neuroimmunology and imaging group german center for neurodegenerative diseases dzne bonn germany institute of neuropathology university hospital bonn university of bonn bonn germany institute of experimental oncology medical faculty university hospital bonn university of bonn bonn germany light microscopy facility german center for neurodegenerative diseases dzne bonn germany nuclear function in cns pathology german center for neurodegenerative diseases dzne bonn germany aging and neurodegeneration german center for neurodegenerative diseases dzne bonn germany department of radiation oncology university medical center mannheim mannheim germany dkfz hector cancer institute university medical center mannheim mannheim germany mannheim institute of intelligent systems in medicine miism medical faculty mannheim heidelberg university mannheim germany adaptive immunity in neurodegeneration german center for neurodegenerative diseases dzne munich germany samantha dickson brain cancer unit ucl cancer institute wc1e 6dd london uk university college london ucl cancer institute department of cancer biology ucl london united kingdom glioblastoma gb cells infiltrate the brain parenchyma and colonize distant regions driving recurrence and therapy resistance here we examined dynamic microglial responses to infiltrating tumor cells during gb progression three photon imaging in an autochthonous immunocompetent gb mouse model enabled visualization of microglia gb interactions at the far infiltration zone fiz in the corpus callosum cc gb infiltration speed varied by anatomical location and tumor microtube tm number microglia increased surveillance in sparsely infiltrated areas but reduced it with higher gb density revealing a biphasic response directional migration toward gb cells was restricted to microglial subsets within a defined spatial range indicating heterogeneous reactivity cx3cr1 deficiency enhanced microglial reactivity while limiting gb cell migration microglia depletion with the csf1r inhibitor plx5622 reduced gb cell migration and constrained tm plasticity thus microglia respond to gb cell infiltration in a stage dependent manner and critically modulate dissemination at the fiz complementary spatial and single nucleus transcriptomic analyses provided indications of infiltration associated changes especially in complement related and synaptic gene expression including increased c4b and microglial c1q expression alongside reduced synaptic gene signatures these observations suggest that gb infiltration may be accompanied by coordinated immune and neuronal niche remodeling at the fiz flash oral"
   }
 ]

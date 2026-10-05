@@ -1,6 +1,6 @@
 {
   "title": "Poster session",
-  "intro": "62 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
+  "intro": "70 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
   "format": {
     "title": "Poster format",
     "body": "Posters will be displayed physically rather than digitally. Please bring a printed poster.",
@@ -13,7 +13,7 @@
     {
       "code": "A",
       "name": "Tumour evolution, stemness and cell-state plasticity",
-      "numbers": "A1-A12"
+      "numbers": "A1-A17"
     },
     {
       "code": "B",
@@ -28,7 +28,7 @@
     {
       "code": "D",
       "name": "Myeloid cells, haematopoiesis and systemic immunity",
-      "numbers": "D1-D6"
+      "numbers": "D1-D8"
     },
     {
       "code": "E",
@@ -38,7 +38,7 @@
     {
       "code": "F",
       "name": "Therapeutic targeting and drug delivery",
-      "numbers": "F1-F9"
+      "numbers": "F1-F10"
     },
     {
       "code": "G",
@@ -495,6 +495,62 @@
       "presenter": "Francesca Lessi",
       "title": "Development of a multimodal platform for the characterization of glioblastoma circulating tumor cells using FLIM Analysis",
       "abstractId": "abs-2547"
+    },
+    {
+      "number": "A13",
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Julia L. Gutiérrez-Arroyo",
+      "title": "Ventricular proximity defines a distinct spatial multi-omic landscape in glioblastoma",
+      "abstractId": "abs-2573"
+    },
+    {
+      "number": "A14",
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Ali Osman Cetin",
+      "title": "Towards improving synthetic reporters for phenotypic mapping of glioblastoma states by LSD+",
+      "abstractId": "abs-2615"
+    },
+    {
+      "number": "A15",
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Candela Arribas Parejas",
+      "title": "Replication–Transcription Conflicts in Glioblastoma Stem-like Cells: Emerging therapeutic opportunities",
+      "abstractId": "abs-2621"
+    },
+    {
+      "number": "A16",
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Elvira Carbonell Martínez",
+      "title": "CD9 protein in glioblastoma: Implications for progression and therapeutic strategies.",
+      "abstractId": "abs-2624"
+    },
+    {
+      "number": "A17",
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Maria Angeles Marqués-Torrejón",
+      "title": "Functional Differences Between NSCs and GSCs in Proliferation and Quiescence",
+      "abstractId": "abs-2626"
+    },
+    {
+      "number": "D7",
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Felix M. Gerach",
+      "title": "Neurosurgical skull bone dust for refined cranioencephalic immune compartment access in glioblastoma",
+      "abstractId": "abs-2582"
+    },
+    {
+      "number": "D8",
+      "theme": "Myeloid cells, haematopoiesis and systemic immunity",
+      "presenter": "Maren Salla",
+      "title": "Cryo-mtscATAC-seq resolves region-specific myeloid clonal architecture in human glioblastoma",
+      "abstractId": "abs-2618"
+    },
+    {
+      "number": "F10",
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Ben Jiang",
+      "title": "A phenotypic drug discovery platform for combinatorial targeting of glioblastoma cell states and entities",
+      "abstractId": "abs-2619"
     }
   ]
 }

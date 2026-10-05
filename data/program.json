@@ -55,7 +55,8 @@
               "speaker": "Jeong Ho Lee",
               "affiliation": "KAIST, South Korea",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2627"
             },
             {
               "id": "ghazaleh-tabatabai",
@@ -66,7 +67,8 @@
               "speaker": "Ghazaleh Tabatabai",
               "affiliation": "Tübingen, Germany",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2634"
             },
             {
               "id": "d1-lunch",
@@ -382,7 +384,8 @@
               "speaker": "Leila Akkari",
               "affiliation": "NKI, Amsterdam, Netherlands",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2630"
             },
             {
               "id": "simona-parrinello",
@@ -417,7 +420,8 @@
               "speaker": "Felix C. Nebeling",
               "affiliation": "University Hospital Bonn / DZNE, Germany",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-felix-nebeling"
             },
             {
               "id": "d2-lunch",
@@ -526,7 +530,8 @@
               "speaker": "Daniel Schramek",
               "affiliation": "Lunenfeld-Tanenbaum, Toronto, Canada",
               "note": "",
-              "location": "MDC.C · Building 83"
+              "location": "MDC.C · Building 83",
+              "abstractId": "abs-2632"
             },
             {
               "id": "poster-prize-closing",
