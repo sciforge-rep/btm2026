@@ -17,6 +17,7 @@ const state = {
   theme: localStorage.getItem('btm2026-theme') || 'system',
   standalone: window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true,
   previousHash: '',
+  voting: { code: storedVotingCode(), status: null, loading: false, busy: '', error: '' },
 };
 
 const ICONS = {
@@ -669,6 +670,150 @@ function posterMatches(poster, query) {
   return normalise(`${poster.number} ${poster.title} ${poster.presenter} ${poster.theme}`).includes(query);
 }
 
+/* Poster voting: anonymous codes, votes stored on the voting server (see voting/README.md). */
+function storedVotingCode() {
+  try { return localStorage.getItem('btm2026-voting-code') || ''; } catch { return ''; }
+}
+
+function storeVotingCode(code) {
+  try { code ? localStorage.setItem('btm2026-voting-code', code) : localStorage.removeItem('btm2026-voting-code'); } catch { /* storage unavailable */ }
+}
+
+const normaliseVotingCode = value => String(value || '').toUpperCase().replace(/[^A-Z0-9]/g, '');
+const formatVotingCode = code => code.length === 8 ? `${code.slice(0, 4)}-${code.slice(4)}` : code;
+const berlinTime = value => new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(value));
+
+async function votingRpc(name, body) {
+  const config = DATA.config.voting;
+  const response = await fetch(`${config.apiUrl}/rest/v1/rpc/${name}`, {
+    method: 'POST',
+    headers: { apikey: config.apiKey, 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+    cache: 'no-store',
+  });
+  const data = await response.json().catch(() => null);
+  if (!response.ok) {
+    const error = new Error(data?.message || `HTTP ${response.status}`);
+    error.code = data?.message || 'network';
+    throw error;
+  }
+  return data;
+}
+
+function votingPhase(status) {
+  if (!status?.valid) return 'none';
+  if (status.test) return 'open';
+  const now = Date.now();
+  if (now < Date.parse(status.opensAt)) return 'before';
+  if (now > Date.parse(status.closesAt)) return 'after';
+  return 'open';
+}
+
+function votingErrorMessage(code) {
+  const config = DATA.config.voting;
+  switch (code) {
+    case 'invalid_code': return 'This voting code was not recognised.';
+    case 'not_open': return `Voting opens ${berlinTime(config.opensAt)} (Berlin time).`;
+    case 'closed': return 'Voting has closed.';
+    case 'limit_reached': return `You have used all ${config.maxVotes} votes. Remove one first.`;
+    default: return 'The voting server could not be reached. Check your connection and try again.';
+  }
+}
+
+async function loadVotingStatus(code = state.voting.code) {
+  if (!code || !DATA.config.voting) return;
+  const voting = state.voting;
+  voting.loading = true;
+  voting.error = '';
+  try {
+    const status = await votingRpc('voting_status', { p_code: code });
+    if (status?.valid) {
+      voting.code = code;
+      voting.status = status;
+      storeVotingCode(code);
+    } else {
+      voting.status = null;
+      voting.error = 'invalid_code';
+      if (storedVotingCode() === code) storeVotingCode('');
+    }
+  } catch {
+    voting.error = 'network';
+  } finally {
+    voting.loading = false;
+    if (state.route.name === 'posters') renderRoute(false);
+  }
+}
+
+async function togglePosterVote(number) {
+  const voting = state.voting;
+  const status = voting.status;
+  if (!status?.valid || voting.busy) return;
+  if (votingPhase(status) !== 'open') { toast(votingErrorMessage(votingPhase(status) === 'before' ? 'not_open' : 'closed')); return; }
+  const voted = status.votes.includes(number);
+  if (!voted && status.votes.length >= status.maxVotes) { toast(votingErrorMessage('limit_reached')); return; }
+  voting.busy = number;
+  renderRoute(false);
+  try {
+    voting.status = await votingRpc('set_poster_vote', { p_code: voting.code, p_poster: number, p_vote: !voted });
+    haptic();
+    toast(voted ? `Vote for poster ${number} removed` : `You voted for poster ${number}`);
+  } catch (error) {
+    toast(votingErrorMessage(error.code));
+    if (['not_open', 'closed', 'invalid_code'].includes(error.code)) loadVotingStatus();
+  } finally {
+    voting.busy = '';
+    renderRoute(false);
+  }
+}
+
+function useVotingCode(value) {
+  const code = normaliseVotingCode(value);
+  if (code.length !== 8) { toast('Please enter the 8-character code from your badge.'); return; }
+  state.voting = { code, status: null, loading: false, busy: '', error: '' };
+  loadVotingStatus(code);
+  if (state.route.name === 'posters') renderRoute(false);
+}
+
+function renderVotingCard() {
+  const config = DATA.config.voting;
+  if (!config) return '';
+  const voting = state.voting;
+  const status = voting.status;
+  const windowText = `${berlinTime(config.opensAt)} – ${berlinTime(config.closesAt)} (Berlin time)`;
+  const head = `<div class="voting-head"><span class="voting-icon">${icon('star')}</span><div><h2>${esc(config.title)}</h2><p>${esc(windowText)}</p></div></div>`;
+
+  if (!status) {
+    if (voting.code && voting.loading) return `<article class="card voting-card">${head}<p class="voting-text">Checking your voting code…</p></article>`;
+    if (voting.code && voting.error === 'network') return `<article class="card voting-card">${head}<p class="voting-text">${esc(votingErrorMessage('network'))}</p><button class="button small outline" type="button" data-action="voting-retry">${icon('refresh')}Try again</button></article>`;
+    return `<article class="card voting-card">${head}
+      <p class="voting-text">${esc(config.intro)}</p>
+      <form class="voting-form" id="voting-code-form" autocomplete="off">
+        <input id="voting-code" name="code" type="text" inputmode="text" autocapitalize="characters" spellcheck="false" maxlength="12" placeholder="Voting code, e.g. ABCD-1234" aria-label="Voting code" value="${attr(voting.error === 'invalid_code' ? formatVotingCode(voting.code) : '')}">
+        <button class="button small primary" type="submit">Use code</button>
+      </form>
+      ${voting.error === 'invalid_code' ? `<p class="voting-error">${icon('alert')}<span>${esc(votingErrorMessage('invalid_code'))} Please check it and try again.</span></p>` : ''}
+    </article>`;
+  }
+
+  const phase = votingPhase(status);
+  const used = status.votes.length;
+  const dots = Array.from({ length: status.maxVotes }, (_, index) => `<span class="voting-dot${index < used ? ' used' : ''}"></span>`).join('');
+  const chips = status.votes.map(number => phase === 'open'
+    ? `<button class="voting-chip" type="button" data-action="poster-vote" data-id="${attr(number)}" aria-label="Remove vote for poster ${attr(number)}">${esc(number)}${icon('x')}</button>`
+    : `<span class="voting-chip">${esc(number)}</span>`).join('');
+  const text = phase === 'before' ? `Your code is saved. Voting opens ${berlinTime(status.opensAt)}; come back to this page then.`
+    : phase === 'after' ? 'Voting has closed. Thank you for taking part!'
+    : used >= status.maxVotes ? `All votes used. Tap a poster's star again to remove a vote; you can change your votes until ${berlinTime(status.closesAt)}.`
+    : `Tap the star next to a poster to vote. You can change your votes until ${berlinTime(status.closesAt)}.`;
+  return `<article class="card voting-card">${head}
+    ${status.test ? '<span class="badge gold">Test code: votes are not counted</span>' : ''}
+    <div class="voting-meter"><div class="voting-dots" aria-hidden="true">${dots}</div><strong>${used} of ${status.maxVotes} votes used</strong></div>
+    ${chips ? `<div class="voting-chips" aria-label="Your votes">${chips}</div>` : ''}
+    <p class="voting-text">${esc(text)}</p>
+    <p class="voting-code-line">Code ${esc(formatVotingCode(voting.code))} · <button type="button" class="link-button" data-action="voting-forget">Use a different code</button></p>
+  </article>`;
+}
+
 function renderPosters() {
   setTopbar({ title: 'Posters', kicker: 'Poster session' });
   const data = DATA.posters;
@@ -678,10 +823,18 @@ function renderPosters() {
   if (state.posterTheme !== 'all' && !themes.some(t => t.name === state.posterTheme)) state.posterTheme = 'all';
   const visible = data.posters.filter(p => (state.posterTheme === 'all' || p.theme === state.posterTheme) && posterMatches(p, query));
   const groups = themes.map(t => ({ ...t, items: visible.filter(p => p.theme === t.name).sort((a, b) => posterSeq(a) - posterSeq(b)) })).filter(g => g.items.length);
+  const voting = state.voting;
+  if (DATA.config.voting && voting.code && !voting.status && !voting.loading && !voting.error) setTimeout(() => loadVotingStatus(), 0);
+  const phase = votingPhase(voting.status);
+  const votingOpen = phase === 'open';
+  // Vote buttons appear while voting is open; afterwards only if this code voted.
+  const votingStatus = votingOpen || (phase === 'after' && voting.status.votes.length) ? voting.status : null;
+  const columns = votingStatus ? 5 : 4;
   return `<div class="page posters-page">
     <div class="large-title">
       <div class="large-title-row"><div><h1 class="page-title">Posters</h1><p class="page-subtitle">${esc(data.intro || 'Find your poster number.')}</p></div><span class="count">${data.posters.length} posters</span></div>
     </div>
+    ${renderVotingCard()}
     ${data.format ? `<article class="card poster-format">
       <div class="poster-format-head"><span class="poster-format-icon">${icon('board')}</span><div><h2>${esc(data.format.title || 'Poster format')}</h2><p>${esc(data.format.body)}</p></div></div>
       <div class="poster-format-facts">
@@ -703,9 +856,9 @@ function renderPosters() {
     </div>
     <div class="results-row"><span>${visible.length} poster${visible.length === 1 ? '' : 's'}</span><span>Tap a poster to read the abstract</span></div>
     ${groups.length ? `<div class="card poster-table-card"><table class="poster-table">
-      <thead><tr><th scope="col" class="pt-no">No.</th><th scope="col">Poster title</th><th scope="col" class="pt-author">Presenting author</th><th scope="col" class="pt-topic">Topic</th></tr></thead>
+      <thead><tr><th scope="col" class="pt-no">No.</th><th scope="col">Poster title</th><th scope="col" class="pt-author">Presenting author</th><th scope="col" class="pt-topic">Topic</th>${votingStatus ? '<th scope="col" class="pt-vote">Vote</th>' : ''}</tr></thead>
       ${groups.map(g => `<tbody>
-        <tr class="pt-group"><th colspan="4" scope="rowgroup"><span>${g.code ? `${esc(g.code)} · ` : ''}${esc(g.name)}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
+        <tr class="pt-group"><th colspan="${columns}" scope="rowgroup"><span>${g.code ? `${esc(g.code)} · ` : ''}${esc(g.name)}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
         ${g.items.map(p => {
           const hasAbstract = !!abstractById(p.abstractId);
           const open = hasAbstract ? ` data-href="#/abstract/${attr(p.abstractId)}" tabindex="0" role="link"` : '';
@@ -714,6 +867,12 @@ function renderPosters() {
             <td class="pt-title"><strong>${esc(p.title)}</strong><span class="pt-author-inline">${icon('person')}${esc(p.presenter)}</span></td>
             <td class="pt-author">${esc(p.presenter)}</td>
             <td class="pt-topic">${esc(p.theme)}</td>
+            ${votingStatus ? (() => {
+              const number = String(p.number);
+              const voted = votingStatus.votes.includes(number);
+              const busy = voting.busy === number;
+              return `<td class="pt-vote"><button type="button" class="vote-button${voted ? ' voted' : ''}${busy ? ' busy' : ''}" data-action="poster-vote" data-id="${attr(number)}" aria-pressed="${voted}" aria-label="${voted ? 'Remove vote for' : 'Vote for'} poster ${attr(number)}"${votingOpen ? '' : ' disabled'}>${icon('star')}</button></td>`;
+            })() : ''}
           </tr>`;
         }).join('')}
       </tbody>`).join('')}
@@ -840,6 +999,12 @@ function renderRoute(resetScroll = true) {
     case 'posters': html = renderPosters(); break;
     case 'cme': html = renderCme(); break;
     case 'more': html = renderMore(); break;
+    case 'vote': {
+      // QR codes on badges link to #/vote/<code>.
+      if (DATA.config.voting && state.route.id) useVotingCode(state.route.id);
+      location.replace('#/posters');
+      return;
+    }
     default: routeTo('#/home'); return;
   }
   $('#app').innerHTML = html;
@@ -922,7 +1087,7 @@ function renderPerson(person) {
 
 function showPrivacy() {
   const privacy = DATA.config.privacy;
-  showInformationSheet('Privacy', 'On-device by design', `<p>${esc(privacy.summary)}</p><p>${esc(privacy.publicationNote)}</p><div class="sheet-meta-list"><div class="sheet-meta">${icon('check')}<div><strong>No account</strong><span>Participants can use the entire app without signing in.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>No analytics</strong><span>The build contains no analytics, advertising or cross-site tracking SDK.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>Local preferences</strong><span>Saved items and theme preference remain in this browser on this device.</span></div></div></div>`);
+  showInformationSheet('Privacy', 'On-device by design', `<p>${esc(privacy.summary)}</p><p>${esc(privacy.publicationNote)}</p><div class="sheet-meta-list"><div class="sheet-meta">${icon('check')}<div><strong>No account</strong><span>Participants can use the entire app without signing in.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>No analytics</strong><span>The build contains no analytics, advertising or cross-site tracking SDK.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>Local preferences</strong><span>Saved items and theme preference remain in this browser on this device.</span></div></div>${DATA.config.voting?.privacy ? `<div class="sheet-meta">${icon('star')}<div><strong>Poster voting</strong><span>${esc(DATA.config.voting.privacy)}</span></div></div>` : ''}</div>`);
 }
 
 function showInformationSheet(title, kicker, content) {
@@ -1077,7 +1242,7 @@ function bindEvents() {
 
   document.addEventListener('keydown', event => {
     const rowLink = event.target.closest?.('tr[data-href]');
-    if (rowLink && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); location.hash = rowLink.dataset.href; }
+    if (rowLink && !event.target.closest('button') && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); location.hash = rowLink.dataset.href; }
   });
 
   document.addEventListener('input', event => {
@@ -1104,7 +1269,16 @@ function bindEvents() {
     if (target && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); target.click(); }
   });
 
+  document.addEventListener('submit', event => {
+    if (event.target.id === 'voting-code-form') {
+      event.preventDefault();
+      useVotingCode(event.target.elements.code.value);
+    }
+  });
+
   document.addEventListener('click', event => {
+    const voteButton = event.target.closest('[data-action="poster-vote"]');
+    if (voteButton) { togglePosterVote(voteButton.dataset.id); return; }
     const rowLink = event.target.closest('tr[data-href]');
     if (rowLink) { location.hash = rowLink.dataset.href; return; }
     const actionElement = event.target.closest('[data-action]');
@@ -1136,6 +1310,12 @@ function bindEvents() {
       case 'clear-abstract-search': state.abstractQuery = ''; renderRoute(false); break;
       case 'poster-theme': state.posterTheme = value; renderRoute(false); break;
       case 'clear-poster-search': state.posterQuery = ''; renderRoute(false); break;
+      case 'voting-retry': loadVotingStatus(); renderRoute(false); break;
+      case 'voting-forget':
+        storeVotingCode('');
+        state.voting = { code: '', status: null, loading: false, busy: '', error: '' };
+        renderRoute(false);
+        break;
       case 'open-abstract': routeTo(`#/abstract/${encodeURIComponent(id)}`); break;
       case 'toggle-abstract-favourite': {
         toggleFavourite('abstract', id);
