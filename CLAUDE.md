@@ -31,3 +31,10 @@ Static PWA for the Brain Tumor Meeting 2026 (14–15 Oct 2026, MDC.C Berlin-Buch
 ## Poster numbering
 
 Each thematic block has a letter `code` (A, B, C, … in `themes` order), and posters are numbered within their block: A1–A12, B1–B6, etc. `number` is a string such as "B3". When adding a poster, give it the next free number at the end of its block (e.g. B7); no other poster changes number. Update that theme's `numbers` range (e.g. "B1-B7") and the count in `intro`. The organizers keep a matching Excel plan; mention the new number in the reply so it can be updated.
+
+## Poster voting
+
+Participants vote for posters (3 votes each, anonymous codes) on the Posters tab; organisers see results at `voting-results/` with an admin key. Details, protection and SQL for common tasks: `voting/README.md`. Backend: Supabase project `btm2026-poster-voting`; settings in `data/app-config.json` → `voting`.
+
+- Votes are stored by poster number. Once voting opens (Wed 14 Oct 2026, 08:00 Berlin time), do not renumber posters; a new poster may still get the next free number in its block.
+- Never commit voting codes, code slips or the admin key.

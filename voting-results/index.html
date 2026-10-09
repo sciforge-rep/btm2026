@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Poster Award Results · BTM 2026</title>
+<link rel="icon" href="../images/icon.svg" type="image/svg+xml">
+<style>
+  :root {
+    --bg: #f3f6fa; --surface: #ffffff; --muted-bg: #edf2f7; --ink: #0b1c2e; --muted: #5b6f84; --faint: #8a9aab;
+    --line: #dde5ee; --navy: #0f2742; --gold: #d9aa24; --gold-soft: #fbf0c9; --gold-ink: #8a6508; --danger: #b34848; --success: #2f7d58;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #07121f; --surface: #102237; --muted-bg: #14283d; --ink: #eef4fa; --muted: #a9bacb; --faint: #7f93a8;
+      --line: #22384f; --navy: #d7e8f4; --gold: #e2b93c; --gold-soft: #3a3015; --gold-ink: #f0cf69; --danger: #e48a8a; --success: #6fcf9f;
+      color-scheme: dark;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 48px; }
+  header { display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; justify-content: space-between; margin-bottom: 18px; }
+  .eyebrow { margin: 0; color: var(--gold-ink); font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+  h1 { margin: 2px 0 0; font-size: 1.8rem; letter-spacing: -.03em; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
+  .login { max-width: 440px; margin: 10vh auto 0; }
+  .login h1 { font-size: 1.4rem; }
+  .login p { color: var(--muted); }
+  form { display: flex; gap: 8px; margin-top: 14px; }
+  input, select { min-height: 42px; padding: 0 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; }
+  input { flex: 1; min-width: 0; }
+  select { width: 100%; max-width: 440px; text-overflow: ellipsis; }
+  button { min-height: 42px; padding: 0 14px; border: 1px solid transparent; border-radius: 12px; background: var(--navy); color: var(--bg); font: inherit; font-weight: 700; cursor: pointer; }
+  button.secondary { border-color: var(--line); background: var(--surface); color: var(--ink); }
+  .error { margin: 12px 0 0; color: var(--danger); font-weight: 650; }
+  .status { display: inline-flex; align-items: center; gap: 7px; padding: 5px 11px; border-radius: 999px; background: var(--muted-bg); font-size: .78rem; font-weight: 750; }
+  .status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--faint); }
+  .status.open::before { background: var(--success); }
+  .status.closed::before { background: var(--danger); }
+  .actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .meta { margin: 6px 0 0; color: var(--muted); font-size: .8rem; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+  .tile strong { display: block; font-size: 2rem; line-height: 1.1; letter-spacing: -.03em; font-variant-numeric: tabular-nums; }
+  .tile span { color: var(--muted); font-size: .78rem; font-weight: 650; }
+  .toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+  .toolbar label { display: inline-flex; gap: 7px; align-items: center; color: var(--muted); font-size: .82rem; font-weight: 650; }
+  .table-card { padding: 0; overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .86rem; }
+  th { padding: 11px 12px; background: var(--muted-bg); color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .07em; text-align: left; text-transform: uppercase; white-space: nowrap; }
+  td { padding: 11px 12px; border-top: 1px solid var(--line); vertical-align: top; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .rank { font-weight: 800; color: var(--muted); white-space: nowrap; }
+  tr.top .rank { color: var(--gold-ink); }
+  .no { display: inline-grid; place-items: center; min-width: 38px; height: 30px; padding: 0 6px; border-radius: 9px; background: var(--navy); color: var(--bg); font-weight: 800; font-size: .82rem; }
+  .title { font-weight: 650; }
+  .sub { display: block; margin-top: 3px; color: var(--muted); font-size: .78rem; }
+  .bar { position: relative; min-width: 120px; height: 10px; margin-top: 6px; border-radius: 99px; background: var(--muted-bg); overflow: hidden; }
+  .bar span { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--gold); }
+  .votes { font-size: 1.05rem; font-weight: 800; }
+  .empty { padding: 28px; color: var(--muted); text-align: center; }
+  .hidden { display: none !important; }
+  @media (max-width: 640px) {
+    h1 { font-size: 1.4rem; }
+    .col-block { display: none; }
+    .bar { min-width: 70px; }
+  }
+  @media print {
+    body { background: #fff; color: #000; }
+    .actions, .toolbar, form { display: none !important; }
+    .card { border-color: #bbb; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <section id="login" class="card login hidden">
+    <p class="eyebrow">BTM 2026 · Organisers only</p>
+    <h1>Poster award results</h1>
+    <p>Enter the admin key to see the live voting results. Participants cannot see this page's data.</p>
+    <form id="login-form" autocomplete="off">
+      <input id="admin-key" type="password" placeholder="Admin key" aria-label="Admin key" required>
+      <button type="submit">Show results</button>
+    </form>
+    <p id="login-error" class="error hidden"></p>
+  </section>
+
+  <section id="results" class="hidden">
+    <header>
+      <div>
+        <p class="eyebrow">BTM 2026 · Organisers only</p>
+        <h1>Poster award results</h1>
+        <p class="meta"><span id="window"></span> · Updated <span id="updated"></span></p>
+      </div>
+      <div class="actions">
+        <span id="status" class="status"></span>
+        <button id="refresh" class="secondary" type="button">Refresh</button>
+        <button id="export" class="secondary" type="button">Export CSV</button>
+        <button id="logout" class="secondary" type="button">Log out</button>
+      </div>
+    </header>
+
+    <div class="tiles">
+      <div class="card tile"><strong id="t-votes">0</strong><span>votes cast</span></div>
+      <div class="card tile"><strong id="t-codes">0</strong><span id="t-codes-label">codes used</span></div>
+      <div class="card tile"><strong id="t-posters">0</strong><span id="t-posters-label">posters with votes</span></div>
+      <div class="card tile"><strong id="t-avg">0</strong><span>votes per voter (max 3)</span></div>
+    </div>
+
+    <div class="toolbar">
+      <select id="block" aria-label="Thematic block"><option value="">All thematic blocks</option></select>
+      <label><input id="show-zero" type="checkbox"> Show posters without votes</label>
+      <label><input id="auto" type="checkbox" checked> Auto-refresh every 30 s</label>
+    </div>
+
+    <div class="card table-card">
+      <table>
+        <thead><tr><th>Rank</th><th>No.</th><th>Poster</th><th class="col-block">Block</th><th class="num">Votes</th></tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+      <p id="empty" class="empty hidden">No votes yet.</p>
+    </div>
+    <p id="fetch-error" class="error hidden"></p>
+  </section>
+</main>
+
+<script>
+(() => {
+  const $ = id => document.getElementById(id);
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const store = {
+    get() { try { return sessionStorage.getItem('btm2026-admin-key') || ''; } catch { return ''; } },
+    set(v) { try { v ? sessionStorage.setItem('btm2026-admin-key', v) : sessionStorage.removeItem('btm2026-admin-key'); } catch { /* unavailable */ } },
+  };
+  const fmt = value => new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', weekday: 'short', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }).format(new Date(value));
+  let config = null, posters = [], themes = [], key = store.get(), last = null, timer = null;
+
+  async function boot() {
+    const [cfg, plan] = await Promise.all([
+      fetch('../data/app-config.json', { cache: 'no-store' }).then(r => r.json()),
+      fetch('../data/posters.json', { cache: 'no-store' }).then(r => r.json()),
+    ]);
+    config = cfg.voting;
+    posters = plan.posters || [];
+    themes = plan.themes || [];
+    $('block').innerHTML += themes.map(t => `<option value="${esc(t.name)}">${esc(t.code ? `${t.code} · ` : '')}${esc(t.name)}</option>`).join('');
+    if (key) load(); else showLogin();
+  }
+
+  function showLogin(message) {
+    $('results').classList.add('hidden');
+    $('login').classList.remove('hidden');
+    $('login-error').textContent = message || '';
+    $('login-error').classList.toggle('hidden', !message);
+    $('admin-key').focus();
+  }
+
+  async function load() {
+    try {
+      const response = await fetch(`${config.apiUrl}/rest/v1/rpc/voting_results`, {
+        method: 'POST',
+        headers: { apikey: config.apiKey, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ p_admin_key: key }),
+        cache: 'no-store',
+      });
+      const data = await response.json().catch(() => null);
+      if (!response.ok) {
+        if (data?.message === 'forbidden') { store.set(''); key = ''; showLogin('This admin key is not valid.'); return; }
+        throw new Error(data?.message || `HTTP ${response.status}`);
+      }
+      store.set(key);
+      last = data;
+      $('fetch-error').classList.add('hidden');
+      $('login').classList.add('hidden');
+      $('results').classList.remove('hidden');
+      render();
+    } catch (error) {
+      if ($('results').classList.contains('hidden')) showLogin('The voting server could not be reached. Check your connection.');
+      else { $('fetch-error').textContent = `Refresh failed (${error.message}). Showing the last results.`; $('fetch-error').classList.remove('hidden'); }
+    }
+    schedule();
+  }
+
+  function schedule() {
+    clearTimeout(timer);
+    if (key && $('auto').checked) timer = setTimeout(load, 30000);
+  }
+
+  function rows() {
+    const counts = new Map(last.posters.map(p => [p.number, p.votes]));
+    const known = new Set(posters.map(p => String(p.number)));
+    const list = posters.map(p => ({ ...p, number: String(p.number), votes: counts.get(String(p.number)) || 0 }));
+    // Votes for numbers missing from the poster plan (e.g. after renumbering) are still listed.
+    last.posters.filter(p => !known.has(p.number)).forEach(p => list.push({ number: p.number, title: 'Not in the current poster plan', presenter: '', theme: '', votes: p.votes }));
+    list.sort((a, b) => b.votes - a.votes || a.number.localeCompare(b.number, 'en', { numeric: true }));
+    return list;
+  }
+
+  function render() {
+    const d = last;
+    const now = Date.now();
+    const phase = now < Date.parse(d.opensAt) ? 'not yet open' : now > Date.parse(d.closesAt) ? 'closed' : 'open';
+    $('status').textContent = `Voting ${phase}`;
+    $('status').className = `status ${phase === 'open' ? 'open' : phase === 'closed' ? 'closed' : ''}`;
+    $('window').textContent = `${fmt(d.opensAt)} – ${fmt(d.closesAt)} (Berlin time)`;
+    $('updated').textContent = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit', second: '2-digit' }).format(new Date(d.generatedAt));
+    $('t-votes').textContent = d.votesCast;
+    $('t-codes').textContent = d.codesUsed;
+    $('t-codes-label').textContent = `of ${d.codesIssued} codes used`;
+    $('t-posters').textContent = d.posters.length;
+    $('t-posters-label').textContent = `of ${posters.length} posters with votes`;
+    $('t-avg').textContent = d.codesUsed ? (d.votesCast / d.codesUsed).toFixed(1) : '0';
+
+    const block = $('block').value;
+    const showZero = $('show-zero').checked;
+    const all = rows();
+    const max = Math.max(1, ...all.map(p => p.votes));
+    // Competition ranking (1, 2, 2, 4) within the current block filter.
+    const visible = all.filter(p => (!block || p.theme === block) && (showZero || p.votes > 0));
+    let rank = 0, prev = null;
+    $('rows').innerHTML = visible.map((p, i) => {
+      if (p.votes !== prev) { rank = i + 1; prev = p.votes; }
+      const tie = visible.filter(q => q.votes === p.votes).length > 1 && p.votes > 0;
+      const theme = themes.find(t => t.name === p.theme);
+      return `<tr class="${rank <= 3 && p.votes > 0 ? 'top' : ''}">
+        <td class="rank">${p.votes > 0 ? `${tie ? '=' : ''}${rank}` : '–'}</td>
+        <td><span class="no">${esc(p.number)}</span></td>
+        <td><span class="title">${esc(p.title)}</span><span class="sub">${esc(p.presenter)}</span><div class="bar"><span style="width:${(p.votes / max) * 100}%"></span></div></td>
+        <td class="col-block">${esc(theme ? `${theme.code} · ${theme.name}` : p.theme)}</td>
+        <td class="num votes">${p.votes}</td>
+      </tr>`;
+    }).join('');
+    $('empty').classList.toggle('hidden', visible.length > 0);
+  }
+
+  function exportCsv() {
+    if (!last) return;
+    const cell = v => `"${String(v ?? '').replace(/"/g, '""')}"`;
+    const lines = [['Poster', 'Title', 'Presenter', 'Block', 'Votes'].map(cell).join(',')]
+      .concat(rows().map(p => [p.number, p.title, p.presenter, p.theme, p.votes].map(cell).join(',')));
+    const blob = new Blob(['﻿' + lines.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = `btm2026-poster-votes-${new Date().toISOString().slice(0, 16).replace(/[:T]/g, '-')}.csv`;
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  }
+
+  $('login-form').addEventListener('submit', event => { event.preventDefault(); key = $('admin-key').value.trim(); if (key) load(); });
+  $('refresh').addEventListener('click', load);
+  $('export').addEventListener('click', exportCsv);
+  $('logout').addEventListener('click', () => { store.set(''); key = ''; last = null; clearTimeout(timer); $('admin-key').value = ''; showLogin(); });
+  $('block').addEventListener('change', () => last && render());
+  $('show-zero').addEventListener('change', () => last && render());
+  $('auto').addEventListener('change', schedule);
+  boot().catch(() => showLogin('The poster plan could not be loaded. Reload the page.'));
+})();
+</script>
+</body>
+</html>

@@ -277,5 +277,15 @@
         "url": "https://www.novocure.de/"
       }
     ]
+  },
+  "voting": {
+    "title": "Poster award voting",
+    "apiUrl": "https://ouohhiwikhpbtvxagcfh.supabase.co",
+    "apiKey": "sb_publishable_kLE2CJw-RFAZgpfR6uPf5Q_GTRuQUQw",
+    "maxVotes": 3,
+    "opensAt": "2026-10-14T08:00:00+02:00",
+    "closesAt": "2026-10-15T16:00:00+02:00",
+    "intro": "Every participant has 3 votes for the best posters. Enter the personal voting code from your badge, or scan its QR code. Voting is anonymous, and you can change your votes until voting closes.",
+    "privacy": "Poster voting sends only your anonymous voting code and the poster numbers you choose to the voting server (Supabase, Frankfurt). Codes are not linked to names."
   }
 }

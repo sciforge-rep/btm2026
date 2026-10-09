@@ -897,3 +897,44 @@ body.detail-route .toast { bottom: calc(var(--safe-bottom) + 18px); }
 .poster-format-note { display: flex; gap: 8px; align-items: flex-start; margin: 13px 0 0; color: var(--muted); font-size: .76rem; line-height: 1.45; }
 .poster-format-note svg { width: 16px; height: 16px; flex: none; margin-top: 1px; color: var(--success); }
 @media (max-width: 389px) { .poster-format-facts strong { font-size: .76rem; } }
+
+/* Poster voting */
+.voting-card { margin-bottom: 16px; padding: 18px; border-color: color-mix(in srgb, var(--gold-500) 45%, var(--line)); }
+.voting-head { display: flex; gap: 13px; align-items: flex-start; }
+.voting-icon { display: grid; place-items: center; width: 42px; height: 42px; flex: none; border-radius: 13px; background: var(--gold-100); color: var(--gold-600); }
+.voting-icon svg { width: 22px; height: 22px; fill: currentColor; }
+.voting-head h2 { margin: 1px 0 4px; font-size: 1.02rem; letter-spacing: -.02em; }
+.voting-head p { margin: 0; color: var(--muted); font-size: .74rem; font-weight: 650; line-height: 1.45; }
+.voting-card > .badge { margin-top: 13px; }
+.voting-text { margin: 12px 0 0; color: var(--ink-soft); font-size: .8rem; line-height: 1.5; }
+.voting-form { display: flex; gap: 8px; margin-top: 13px; }
+.voting-form input { flex: 1; min-width: 0; min-height: 42px; padding: 0 13px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-size: .9rem; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; }
+.voting-form input::placeholder { color: var(--faint); font-weight: 600; letter-spacing: 0; text-transform: none; }
+.voting-form input:focus { outline: 2px solid var(--blue-500); outline-offset: 1px; }
+.voting-form .button { min-height: 42px; flex: none; }
+.voting-error { display: flex; gap: 8px; align-items: flex-start; margin: 10px 0 0; color: var(--danger); font-size: .76rem; font-weight: 650; line-height: 1.45; }
+.voting-error svg { width: 16px; height: 16px; flex: none; margin-top: 1px; }
+.voting-card > .button { margin-top: 12px; }
+.voting-meter { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+.voting-meter strong { font-size: .86rem; }
+.voting-dots { display: flex; gap: 5px; }
+.voting-dot { width: 12px; height: 12px; border: 2px solid var(--gold-500); border-radius: 50%; }
+.voting-dot.used { background: var(--gold-500); }
+.voting-chips { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 11px; }
+.voting-chip { display: inline-flex; align-items: center; gap: 5px; min-height: 30px; padding: 0 10px; border: 0; border-radius: 999px; background: var(--navy-850); color: #fff; font: inherit; font-size: .78rem; font-weight: 850; cursor: default; }
+button.voting-chip { cursor: pointer; }
+.voting-chip svg { width: 13px; height: 13px; opacity: .75; }
+:root[data-theme="dark"] .voting-chip { background: #d7e8f4; color: #071425; }
+.voting-code-line { margin: 12px 0 0; color: var(--faint); font-size: .7rem; font-weight: 650; }
+.link-button { padding: 0; border: 0; background: none; color: var(--blue-600); font: inherit; text-decoration: underline; cursor: pointer; }
+.pt-vote { width: 52px; text-align: center !important; }
+.pt-row td.pt-vote { padding-left: 4px; padding-right: 8px; vertical-align: middle; }
+.vote-button { display: inline-grid; place-items: center; width: 40px; height: 40px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); color: var(--muted); cursor: pointer; transition: transform .12s ease, background .12s ease; }
+.vote-button svg { width: 20px; height: 20px; }
+@media (hover: hover) { .vote-button:not(.voted):not(:disabled):hover { background: var(--gold-100); color: var(--gold-600); } }
+.vote-button:active { transform: scale(.92); }
+.vote-button.voted { border-color: var(--gold-500); background: var(--gold-500); color: var(--navy-950); }
+.vote-button.voted svg { fill: currentColor; }
+.vote-button.busy { opacity: .55; }
+.vote-button:disabled { cursor: default; opacity: .45; }
+.vote-button.voted:disabled { opacity: .8; }
