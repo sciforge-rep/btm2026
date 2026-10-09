@@ -1,6 +1,6 @@
 {
   "title": "Poster session",
-  "intro": "72 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
+  "intro": "73 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
   "format": {
     "title": "Poster format",
     "body": "Posters will be displayed physically rather than digitally. Please bring a printed poster.",
@@ -18,7 +18,7 @@
     {
       "code": "B",
       "name": "Invasion, migration and tumour biophysics",
-      "numbers": "B1-B6"
+      "numbers": "B1-B7"
     },
     {
       "code": "C",
@@ -187,6 +187,13 @@
       "presenter": "Mariangela Morelli",
       "title": "Adding a Metabolic Layer to Glioblastoma Pathology with Label-Free NADH-Fluorescence Lifetime Imaging",
       "abstractId": "abs-2553"
+    },
+    {
+      "number": "B7",
+      "theme": "Invasion, migration and tumour biophysics",
+      "presenter": "Tejas Borkar",
+      "title": "Patient-derived glioblastoma tumoroids preserve tumor identity and reveal neurotropic stem-cell behavior",
+      "abstractId": "abs-tejas-borkar"
     },
     {
       "number": "C1",

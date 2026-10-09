@@ -538,10 +538,10 @@ function renderAbstractDetail(id) {
     </article>
 
     <div class="detail-grid">
-      <section class="card info-card">
+      ${abstract.affiliations.length ? `<section class="card info-card">
         <h2>Affiliations</h2>
         <ol class="affiliation-list">${abstract.affiliations.map(item => `<li><sup>${item.ref}</sup><span>${esc(item.name)}</span></li>`).join('')}</ol>
-      </section>
+      </section>` : ''}
 
       ${abstract.programme ? renderAbstractScheduleCard(abstract) : ''}
 

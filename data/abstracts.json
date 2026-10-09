@@ -12423,5 +12423,52 @@
     "eveningContributor": false,
     "eveningContributorName": "",
     "searchText": "programming glioblastoma subtype identity using synthetic genetic tracing maria pilar sanchez bailon maria pilar sanchez bailon melanie grossmann ali osman cetin carlos company yuliia dramaretska andreas j gohrig ulrike bruning aina valenti matthias j schmitt heike naumann michela serresi danielle hulsman anne scholer stefan kempa david capper rainer glass gaetano gargiulo max delbruck center for molecular medicine mdc berlin germany division of molecular genetics the netherlands cancer institute amsterdam the netherlands department of neuropathology charite universitatsmedizin berlin germany university hospital lmu munich munich germany glioblastoma is a highly aggressive brain tumor characterized by its intra and inter patient heterogeneity including non genetic cell state diversity the development of accurate glioblastoma models remains a challenge to screen for factors that enhance the cellular and molecular fidelity of the models we utilized our synthetic reporters for the classical proneural and mesenchymal molecular subtypes in combination with a custom library of supplements small molecules and biologicals in a high content screening platform using this approach we have established a defined standardized differentiation protocol imparting or restoring glioblastoma identity applicable to engineered established and patient derived cell lines our high fidelity glioblastoma models differentially respond to drugs highlighting their potential to inform precision treatment strategies poster abstract"
+  },
+  {
+    "id": "abs-tejas-borkar",
+    "submissionId": "",
+    "title": "Patient-derived glioblastoma tumoroids preserve tumor identity and reveal neurotropic stem-cell behavior",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Tejas Borkar"
+    ],
+    "leadAuthor": "Tejas Borkar",
+    "authors": [
+      {
+        "name": "Tejas Borkar",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Jay Gopalakrishnan",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Institute of Human Genetics, University Hospital, Friedrich-Schiller-Universität Jena, 07740 Jena, Germany"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GBM, IDH-wild type) is an aggressive primary brain cancer driven by glioblastoma stem cells (GSCs), which invade the brain through a “wired network” of microtubes and establish GSC–neuron synapses. How GSCs dynamically establish these interactions remains unknown. Here, we establish optimized methods to generate 3D GBM tumoroids that faithfully preserve the molecular features of parental tumors and enable long-term, high-resolution imaging of tumor–brain interactions. Continuous spatiotemporal tracking revealed striking neurotropic behavior, with GBM tumoroids releasing asymmetric, vesicle-like particles that assemble into Milky Way-like migratory streams extending toward brain organoids. These streams guide directional GSC migration and facilitate GSC–neuron synaptic interactions, revealing a previously unrecognized mode of GBM–brain communication. Thus, our study, revealing a vesicle-associated migratory stream emerging from GBM tumoroids, may form a complementary “wireless network” for GBM-neuron communication. With a success rate exceeding 90%, these cryopreservable tumoroids could enable translational GBM modeling."
+    ],
+    "body": "Glioblastoma (GBM, IDH-wild type) is an aggressive primary brain cancer driven by glioblastoma stem cells (GSCs), which invade the brain through a “wired network” of microtubes and establish GSC–neuron synapses. How GSCs dynamically establish these interactions remains unknown. Here, we establish optimized methods to generate 3D GBM tumoroids that faithfully preserve the molecular features of parental tumors and enable long-term, high-resolution imaging of tumor–brain interactions. Continuous spatiotemporal tracking revealed striking neurotropic behavior, with GBM tumoroids releasing asymmetric, vesicle-like particles that assemble into Milky Way-like migratory streams extending toward brain organoids. These streams guide directional GSC migration and facilitate GSC–neuron synaptic interactions, revealing a previously unrecognized mode of GBM–brain communication. Thus, our study, revealing a vesicle-associated migratory stream emerging from GBM tumoroids, may form a complementary “wireless network” for GBM-neuron communication. With a success rate exceeding 90%, these cryopreservable tumoroids could enable translational GBM modeling.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/tejas-borkar.pdf",
+    "pageCount": 1,
+    "sourceFilename": "tejas-borkar.pdf",
+    "source": "Author-submitted abstract (text sent to the organisers and recreated in the standard abstract PDF template)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "patient derived glioblastoma tumoroids preserve tumor identity and reveal neurotropic stem cell behavior tejas borkar tejas borkar jay gopalakrishnan institute of human genetics university hospital friedrich schiller universitat jena 07740 jena germany glioblastoma gbm idh wild type is an aggressive primary brain cancer driven by glioblastoma stem cells gscs which invade the brain through a wired network of microtubes and establish gsc neuron synapses how gscs dynamically establish these interactions remains unknown here we establish optimized methods to generate 3d gbm tumoroids that faithfully preserve the molecular features of parental tumors and enable long term high resolution imaging of tumor brain interactions continuous spatiotemporal tracking revealed striking neurotropic behavior with gbm tumoroids releasing asymmetric vesicle like particles that assemble into milky way like migratory streams extending toward brain organoids these streams guide directional gsc migration and facilitate gsc neuron synaptic interactions revealing a previously unrecognized mode of gbm brain communication thus our study revealing a vesicle associated migratory stream emerging from gbm tumoroids may form a complementary wireless network for gbm neuron communication with a success rate exceeding 90 these cryopreservable tumoroids could enable translational gbm modeling poster abstract"
   }
 ]
