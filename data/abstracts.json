@@ -12432,20 +12432,20 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Tejas Borkar"
+      "Jay Gopalakrishnan"
     ],
     "leadAuthor": "Tejas Borkar",
     "authors": [
       {
         "name": "Tejas Borkar",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
       },
       {
         "name": "Jay Gopalakrishnan",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
