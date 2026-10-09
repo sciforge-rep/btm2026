@@ -1,6 +1,6 @@
 {
   "title": "Poster session",
-  "intro": "70 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
+  "intro": "72 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
   "format": {
     "title": "Poster format",
     "body": "Posters will be displayed physically rather than digitally. Please bring a printed poster.",
@@ -13,7 +13,7 @@
     {
       "code": "A",
       "name": "Tumour evolution, stemness and cell-state plasticity",
-      "numbers": "A1-A17"
+      "numbers": "A1-A18"
     },
     {
       "code": "B",
@@ -38,7 +38,7 @@
     {
       "code": "F",
       "name": "Therapeutic targeting and drug delivery",
-      "numbers": "F1-F10"
+      "numbers": "F1-F11"
     },
     {
       "code": "G",
@@ -551,6 +551,20 @@
       "presenter": "Ben Jiang",
       "title": "A phenotypic drug discovery platform for combinatorial targeting of glioblastoma cell states and entities",
       "abstractId": "abs-2619"
+    },
+    {
+      "number": "F11",
+      "theme": "Therapeutic targeting and drug delivery",
+      "presenter": "Daniele De Pasquale",
+      "title": "Biomimetic Fluidic Model of the Glioblastoma-Affected Neurovascular Unit as an Advanced In Vitro Platform",
+      "abstractId": "abs-daniele-de-pasquale"
+    },
+    {
+      "number": "A18",
+      "theme": "Tumour evolution, stemness and cell-state plasticity",
+      "presenter": "Maria Pilar Sanchez-Bailon",
+      "title": "Programming glioblastoma subtype identity using synthetic genetic tracing",
+      "abstractId": "abs-maria-pilar-sanchez-bailon"
     }
   ]
 }

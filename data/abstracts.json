@@ -12131,5 +12131,297 @@
     "eveningContributor": false,
     "eveningContributorName": "",
     "searchText": "microglial regulation of glioblastoma dissemination at the far infiltration zone felix c nebeling felix c nebeling falko fuhrmann manuel mittag fabrizio musacchio annabell kress henrike antony nala gockel lea l friker sonia leonardelli severin filser a deli miriam stork daniele bano torsten pietsch frank a giordano qihui zhou simona parrinello michael holzel ulrich herrlinger paolo salomoni martin fuhrmann department of neurooncology center for neurology university hospital bonn bonn germany neuroimmunology and imaging group german center for neurodegenerative diseases dzne bonn germany institute of neuropathology university hospital bonn university of bonn bonn germany institute of experimental oncology medical faculty university hospital bonn university of bonn bonn germany light microscopy facility german center for neurodegenerative diseases dzne bonn germany nuclear function in cns pathology german center for neurodegenerative diseases dzne bonn germany aging and neurodegeneration german center for neurodegenerative diseases dzne bonn germany department of radiation oncology university medical center mannheim mannheim germany dkfz hector cancer institute university medical center mannheim mannheim germany mannheim institute of intelligent systems in medicine miism medical faculty mannheim heidelberg university mannheim germany adaptive immunity in neurodegeneration german center for neurodegenerative diseases dzne munich germany samantha dickson brain cancer unit ucl cancer institute wc1e 6dd london uk university college london ucl cancer institute department of cancer biology ucl london united kingdom glioblastoma gb cells infiltrate the brain parenchyma and colonize distant regions driving recurrence and therapy resistance here we examined dynamic microglial responses to infiltrating tumor cells during gb progression three photon imaging in an autochthonous immunocompetent gb mouse model enabled visualization of microglia gb interactions at the far infiltration zone fiz in the corpus callosum cc gb infiltration speed varied by anatomical location and tumor microtube tm number microglia increased surveillance in sparsely infiltrated areas but reduced it with higher gb density revealing a biphasic response directional migration toward gb cells was restricted to microglial subsets within a defined spatial range indicating heterogeneous reactivity cx3cr1 deficiency enhanced microglial reactivity while limiting gb cell migration microglia depletion with the csf1r inhibitor plx5622 reduced gb cell migration and constrained tm plasticity thus microglia respond to gb cell infiltration in a stage dependent manner and critically modulate dissemination at the fiz complementary spatial and single nucleus transcriptomic analyses provided indications of infiltration associated changes especially in complement related and synaptic gene expression including increased c4b and microglial c1q expression alongside reduced synaptic gene signatures these observations suggest that gb infiltration may be accompanied by coordinated immune and neuronal niche remodeling at the fiz flash oral"
+  },
+  {
+    "id": "abs-daniele-de-pasquale",
+    "submissionId": "",
+    "title": "Biomimetic Fluidic Model of the Glioblastoma-Affected Neurovascular Unit as an Advanced In Vitro Platform",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Daniele De Pasquale"
+    ],
+    "leadAuthor": "Daniele De Pasquale",
+    "authors": [
+      {
+        "name": "Daniele De Pasquale",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Martina D'Ambrosio",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Fabrizo Loiacono",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Andrea Bianconi",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Monica Truffelli",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Debora Giunti",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Federico Carlini",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Stella Maglio",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Isotta Cainero",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Elena Cerutti",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Gianluigi Zona",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Antonio Uccelli",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Pietro Fiaschi",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "IRCCS AOM Ospedale Policlinico San Martino, Genoa, Italy"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma (GBM) remains a poorly understood and highly aggressive brain tumor, characterized by frequent recurrence and limited therapeutic options. A major challenge in GBM treatment is the inability of many potentially effective drugs to cross the blood–brain barrier (BBB), the selective interface that protects the central nervous system.",
+      "Current in vitro BBB models are commonly based on static Transwell systems, which fail to reproduce the physiological shear stress generated by blood flow. As a result, drug transport and uptake dynamics often differ from those observed in vivo.",
+      "Here, we present a biomimetic in vitro platform designed to model a GBM-affected neurovascular unit (NVU) using exclusively primary human cells. Primary cells were isolated from GBM surgical specimens, phenotypically characterized, and separated into distinct cellular populations. In parallel, patient-derived GBM tumoroids were generated.",
+      "The resulting cell populations were seeded into a custom-designed perfused bioreactor according to the histological organization of the human NVU. The device consists of a three-dimensional dual-compartment structure. The upper channel reproduces the BBB and contains endothelial cells, astrocytes, and pericytes. The lower compartment, directly connected to the upper channel, contains GBM tumoroids together with healthy microglia, astrocytes, and neurons, mimicking the brain parenchymal environment. The bioreactor was engineered through fluid-dynamic modeling to generate a physiological wall shear stress of approximately 15 dyn/cm², comparable to that of human cerebral capillaries.",
+      "This platform provides a physiologically relevant tool for investigating BBB permeability, assessing the distribution of therapeutic agents within brain tissue, and evaluating treatment responses in GBM and surrounding neural cells. The model may support the development and preclinical testing of novel therapies for glioblastoma."
+    ],
+    "body": "Glioblastoma (GBM) remains a poorly understood and highly aggressive brain tumor, characterized by frequent recurrence and limited therapeutic options. A major challenge in GBM treatment is the inability of many potentially effective drugs to cross the blood–brain barrier (BBB), the selective interface that protects the central nervous system.\n\nCurrent in vitro BBB models are commonly based on static Transwell systems, which fail to reproduce the physiological shear stress generated by blood flow. As a result, drug transport and uptake dynamics often differ from those observed in vivo.\n\nHere, we present a biomimetic in vitro platform designed to model a GBM-affected neurovascular unit (NVU) using exclusively primary human cells. Primary cells were isolated from GBM surgical specimens, phenotypically characterized, and separated into distinct cellular populations. In parallel, patient-derived GBM tumoroids were generated.\n\nThe resulting cell populations were seeded into a custom-designed perfused bioreactor according to the histological organization of the human NVU. The device consists of a three-dimensional dual-compartment structure. The upper channel reproduces the BBB and contains endothelial cells, astrocytes, and pericytes. The lower compartment, directly connected to the upper channel, contains GBM tumoroids together with healthy microglia, astrocytes, and neurons, mimicking the brain parenchymal environment. The bioreactor was engineered through fluid-dynamic modeling to generate a physiological wall shear stress of approximately 15 dyn/cm², comparable to that of human cerebral capillaries.\n\nThis platform provides a physiologically relevant tool for investigating BBB permeability, assessing the distribution of therapeutic agents within brain tissue, and evaluating treatment responses in GBM and surrounding neural cells. The model may support the development and preclinical testing of novel therapies for glioblastoma.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/daniele-de-pasquale.pdf",
+    "pageCount": 1,
+    "sourceFilename": "daniele-de-pasquale.pdf",
+    "source": "Author-submitted abstract (extracted from cover letter and recreated in the standard abstract PDF template)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "biomimetic fluidic model of the glioblastoma affected neurovascular unit as an advanced in vitro platform daniele de pasquale daniele de pasquale martina d ambrosio fabrizo loiacono andrea bianconi monica truffelli debora giunti federico carlini stella maglio isotta cainero elena cerutti gianluigi zona antonio uccelli pietro fiaschi irccs aom ospedale policlinico san martino genoa italy glioblastoma gbm remains a poorly understood and highly aggressive brain tumor characterized by frequent recurrence and limited therapeutic options a major challenge in gbm treatment is the inability of many potentially effective drugs to cross the blood brain barrier bbb the selective interface that protects the central nervous system current in vitro bbb models are commonly based on static transwell systems which fail to reproduce the physiological shear stress generated by blood flow as a result drug transport and uptake dynamics often differ from those observed in vivo here we present a biomimetic in vitro platform designed to model a gbm affected neurovascular unit nvu using exclusively primary human cells primary cells were isolated from gbm surgical specimens phenotypically characterized and separated into distinct cellular populations in parallel patient derived gbm tumoroids were generated the resulting cell populations were seeded into a custom designed perfused bioreactor according to the histological organization of the human nvu the device consists of a three dimensional dual compartment structure the upper channel reproduces the bbb and contains endothelial cells astrocytes and pericytes the lower compartment directly connected to the upper channel contains gbm tumoroids together with healthy microglia astrocytes and neurons mimicking the brain parenchymal environment the bioreactor was engineered through fluid dynamic modeling to generate a physiological wall shear stress of approximately 15 dyn cm2 comparable to that of human cerebral capillaries this platform provides a physiologically relevant tool for investigating bbb permeability assessing the distribution of therapeutic agents within brain tissue and evaluating treatment responses in gbm and surrounding neural cells the model may support the development and preclinical testing of novel therapies for glioblastoma poster abstract"
+  },
+  {
+    "id": "abs-maria-pilar-sanchez-bailon",
+    "submissionId": "",
+    "title": "Programming glioblastoma subtype identity using synthetic genetic tracing",
+    "format": "Poster abstract",
+    "programmeId": "",
+    "programme": null,
+    "presentingAuthors": [
+      "Maria Pilar Sanchez-Bailon"
+    ],
+    "leadAuthor": "Maria Pilar Sanchez-Bailon",
+    "authors": [
+      {
+        "name": "Maria Pilar Sanchez-Bailon",
+        "presenting": true,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Melanie Grossmann",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Ali Osman Cetin",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Carlos Company",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Yuliia Dramaretska",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Andreas J. Göhrig",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Ulrike Brüning",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Aina Valenti",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Matthias J. Schmitt",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Heike Naumann",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Michela Serresi",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "Danielle Hulsman",
+        "presenting": false,
+        "affiliationRefs": [
+          2
+        ]
+      },
+      {
+        "name": "Anne Schöler",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Stefan Kempa",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      },
+      {
+        "name": "David Capper",
+        "presenting": false,
+        "affiliationRefs": [
+          3
+        ]
+      },
+      {
+        "name": "Rainer Glass",
+        "presenting": false,
+        "affiliationRefs": [
+          4
+        ]
+      },
+      {
+        "name": "Gaetano Gargiulo",
+        "presenting": false,
+        "affiliationRefs": [
+          1
+        ]
+      }
+    ],
+    "affiliations": [
+      {
+        "ref": 1,
+        "name": "Max-Delbrück-Center for Molecular Medicine (MDC), Berlin, Germany"
+      },
+      {
+        "ref": 2,
+        "name": "Division of Molecular Genetics, The Netherlands Cancer Institute, Amsterdam, The Netherlands"
+      },
+      {
+        "ref": 3,
+        "name": "Department of Neuropathology, Charité Universitätsmedizin, Berlin, Germany"
+      },
+      {
+        "ref": 4,
+        "name": "University Hospital, LMU Munich, Munich, Germany"
+      }
+    ],
+    "keywords": [],
+    "bodyParagraphs": [
+      "Glioblastoma is a highly aggressive brain tumor characterized by its intra- and inter-patient heterogeneity, including non-genetic cell state diversity. The development of accurate glioblastoma models remains a challenge. To screen for factors that enhance the cellular and molecular fidelity of the models, we utilized our synthetic reporters for the classical, proneural, and mesenchymal molecular subtypes in combination with a custom library of supplements, small molecules and biologicals in a high-content screening platform. Using this approach, we have established a defined standardized differentiation protocol imparting or restoring glioblastoma identity applicable to engineered, established and patient-derived cell lines. Our high-fidelity glioblastoma models differentially respond to drugs, highlighting their potential to inform precision treatment strategies."
+    ],
+    "body": "Glioblastoma is a highly aggressive brain tumor characterized by its intra- and inter-patient heterogeneity, including non-genetic cell state diversity. The development of accurate glioblastoma models remains a challenge. To screen for factors that enhance the cellular and molecular fidelity of the models, we utilized our synthetic reporters for the classical, proneural, and mesenchymal molecular subtypes in combination with a custom library of supplements, small molecules and biologicals in a high-content screening platform. Using this approach, we have established a defined standardized differentiation protocol imparting or restoring glioblastoma identity applicable to engineered, established and patient-derived cell lines. Our high-fidelity glioblastoma models differentially respond to drugs, highlighting their potential to inform precision treatment strategies.",
+    "abstractStatus": "full",
+    "pdfPath": "./abstracts/pdf/maria-pilar-sanchez-bailon.pdf",
+    "pageCount": 1,
+    "sourceFilename": "maria-pilar-sanchez-bailon.pdf",
+    "source": "Author-submitted abstract (extracted from docx and recreated in the standard abstract PDF template)",
+    "eveningContributor": false,
+    "eveningContributorName": "",
+    "searchText": "programming glioblastoma subtype identity using synthetic genetic tracing maria pilar sanchez bailon maria pilar sanchez bailon melanie grossmann ali osman cetin carlos company yuliia dramaretska andreas j gohrig ulrike bruning aina valenti matthias j schmitt heike naumann michela serresi danielle hulsman anne scholer stefan kempa david capper rainer glass gaetano gargiulo max delbruck center for molecular medicine mdc berlin germany division of molecular genetics the netherlands cancer institute amsterdam the netherlands department of neuropathology charite universitatsmedizin berlin germany university hospital lmu munich munich germany glioblastoma is a highly aggressive brain tumor characterized by its intra and inter patient heterogeneity including non genetic cell state diversity the development of accurate glioblastoma models remains a challenge to screen for factors that enhance the cellular and molecular fidelity of the models we utilized our synthetic reporters for the classical proneural and mesenchymal molecular subtypes in combination with a custom library of supplements small molecules and biologicals in a high content screening platform using this approach we have established a defined standardized differentiation protocol imparting or restoring glioblastoma identity applicable to engineered established and patient derived cell lines our high fidelity glioblastoma models differentially respond to drugs highlighting their potential to inform precision treatment strategies poster abstract"
   }
 ]
