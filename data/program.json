@@ -213,8 +213,8 @@
           "items": [
             {
               "id": "extended-flash",
-              "start": "19:00",
-              "end": "20:00",
+              "start": "19:15",
+              "end": "20:15",
               "kind": "flash-session",
               "title": "Flash-orals",
               "speaker": "Francesca Lessi · Chiara Maria Mazzanti · Mariangela Morelli · Giuseppina Catanzaro · Sukrit Mahajan · Adrián Sanz Gálvez",
@@ -271,21 +271,10 @@
             },
             {
               "id": "social-dinner",
-              "start": "20:00",
-              "end": "21:45",
+              "start": "20:15",
+              "end": "23:00",
               "kind": "social",
               "title": "Social dinner",
-              "speaker": "",
-              "affiliation": "",
-              "note": "",
-              "location": "Stadtgut Berlin-Buch · Historic wooden barn"
-            },
-            {
-              "id": "late-breaking-flash",
-              "start": "21:45",
-              "end": "23:00",
-              "kind": "flash-session",
-              "title": "Late-breaking flash-orals",
               "speaker": "",
               "affiliation": "",
               "note": "",

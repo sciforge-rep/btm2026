@@ -617,7 +617,7 @@ function renderVenues() {
       <div class="route-steps">
         <div class="route-step"><span class="route-number">1</span><div><strong>Leave Campus Berlin-Buch</strong><p>Start at MDC.C, Building 83, and follow the live walking route toward Alt-Buch.</p></div></div>
         <div class="route-step"><span class="route-number">2</span><div><strong>Walk to Alt-Buch 45–51</strong><p>Allow additional time for wayfinding and mobility needs.</p></div></div>
-        <div class="route-step"><span class="route-number">3</span><div><strong>Historic wooden barn</strong><p>Flash-orals begin at 19:00 and the social dinner at 20:00.</p></div></div>
+        <div class="route-step"><span class="route-number">3</span><div><strong>Historic wooden barn</strong><p>Flash-orals begin at 19:15 and the social dinner at 20:15.</p></div></div>
       </div>
       <a class="button primary full" style="margin-top:17px" href="${attr(social.walking)}" target="_blank" rel="noopener">${icon('walk')} Start walking directions</a>
     </article>
