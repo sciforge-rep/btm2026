@@ -245,7 +245,7 @@ function renderHome() {
   const count = countdown();
   const summary = dataSummary();
   const saved = getSavedItems().slice(0, 5);
-  const notices = DATA.announcements.filter(item => item.active).sort((a, b) => String(a.date).localeCompare(String(b.date)));
+  const notices = DATA.announcements.filter(item => item.active).sort((a, b) => String(b.date).localeCompare(String(a.date)));
 
   return `
     <div class="page home-page">
