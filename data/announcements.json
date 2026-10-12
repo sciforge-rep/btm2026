@@ -8,19 +8,19 @@
     "active": true
   },
   {
-    "id": "poster-voting",
-    "level": "event",
-    "title": "Vote for the best posters",
-    "body": "Every participant has 3 votes for the poster awards. Open the Posters tab, enter the personal voting code from your badge or scan its QR code, and tap the star on your favourite posters. Voting is anonymous and open from Wed 14 Oct, 08:00 until Thu 15 Oct, 16:00; you can change your votes until it closes.",
-    "date": "2026-10-12",
-    "active": true
-  },
-  {
     "id": "abstract-book",
     "level": "success",
     "title": "Abstract book available",
     "body": "All abstracts are searchable in the app and available offline after the first complete load.",
     "date": "2026-09-22",
+    "active": true
+  },
+  {
+    "id": "poster-voting",
+    "level": "event",
+    "title": "Vote for the best posters",
+    "body": "Every participant has 3 votes for the poster awards. Open the Posters tab, enter the personal voting code from your badge or scan its QR code, and tap the star on your favourite posters. Voting is anonymous and open from Wed 14 Oct, 08:00 until Thu 15 Oct, 16:00; you can change your votes until it closes.",
+    "date": "2026-10-12",
     "active": true
   },
   {
