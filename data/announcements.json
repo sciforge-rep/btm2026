@@ -1,5 +1,14 @@
 [
   {
+    "id": "social-dinner-spots",
+    "level": "highlight",
+    "pinned": true,
+    "title": "SPOTS STILL AVAILABLE FOR THE SOCIAL DINNER!",
+    "body": "THERE ARE STILL PLACES LEFT FOR THE SOCIAL DINNER ON WEDNESDAY EVENING AT STADTGUT BUCH. PLEASE ASK AT THE REGISTRATION DESK.",
+    "date": "2026-10-13",
+    "active": true
+  },
+  {
     "id": "stadtgut-evening",
     "level": "event",
     "title": "Wednesday evening at Stadtgut Buch",

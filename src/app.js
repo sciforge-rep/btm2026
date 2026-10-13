@@ -245,7 +245,7 @@ function renderHome() {
   const count = countdown();
   const summary = dataSummary();
   const saved = getSavedItems().slice(0, 5);
-  const notices = DATA.announcements.filter(item => item.active).sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  const notices = DATA.announcements.filter(item => item.active).sort((a, b) => (b.pinned === true) - (a.pinned === true) || String(b.date).localeCompare(String(a.date)));
 
   return `
     <div class="page home-page">
@@ -329,7 +329,7 @@ function renderHome() {
 }
 
 function renderNotice(item) {
-  const iconName = item.level === 'success' ? 'circleCheck' : item.level === 'event' ? 'calendar' : 'info';
+  const iconName = item.level === 'success' ? 'circleCheck' : item.level === 'event' || item.level === 'highlight' ? 'calendar' : 'info';
   return `<article class="card notice-card" data-level="${attr(item.level)}">
     <span class="notice-icon">${icon(iconName)}</span>
     <div><h3>${esc(item.title)}</h3><p>${esc(item.body)}</p></div>
