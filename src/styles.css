@@ -337,6 +337,10 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round
 .notice-icon { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 12px; background: var(--blue-100); color: var(--blue-600); }
 .notice-card[data-level="success"] .notice-icon { background: var(--success-soft); color: var(--success); }
 .notice-card[data-level="event"] .notice-icon { background: var(--gold-100); color: var(--gold-600); }
+.notice-card[data-level="highlight"] { border: 2px solid var(--gold-600); background: var(--gold-100); }
+.notice-card[data-level="highlight"] .notice-icon { background: var(--gold-600); color: #fff; }
+.notice-card[data-level="highlight"] h3 { font-size: 1rem; font-weight: 850; letter-spacing: .02em; }
+.notice-card[data-level="highlight"] p { color: var(--ink); font-size: .8rem; font-weight: 600; }
 .notice-icon svg { width: 18px; height: 18px; }
 .notice-card h3 { margin: 1px 0 3px; font-size: .86rem; }
 .notice-card p { margin: 0; color: var(--muted); font-size: .74rem; line-height: 1.45; }
