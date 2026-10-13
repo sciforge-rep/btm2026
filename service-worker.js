@@ -1,4 +1,4 @@
-const VERSION = 'btm2026-v2.4.9-20261013';
+const VERSION = 'btm2026-v2.4.10-20261013';
 const APP_CACHE = `${VERSION}-app`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const DATA_CACHE = `${VERSION}-data`;
@@ -31,6 +31,7 @@ const APP_SHELL = [
   './images/sponsors/illumina.png',
   './images/sponsors/servier.png',
   './images/sponsors/novocure.png',
+  './images/sponsors/verdiblot.png',
   './images/sponsors/alexion.png'
 ];
 
