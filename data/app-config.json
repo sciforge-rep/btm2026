@@ -268,6 +268,13 @@
         "amount": 750,
         "logo": "./images/sponsors/novocure.png",
         "url": "https://www.novocure.de/"
+      },
+      {
+        "name": "LAM-X a.s. (VerdiBlot)",
+        "tier": "Supporter",
+        "amount": 500,
+        "logo": "./images/sponsors/verdiblot.png",
+        "url": "https://www.verdiblot.com/about-us"
       }
     ]
   },
