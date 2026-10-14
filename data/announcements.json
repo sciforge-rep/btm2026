@@ -1,11 +1,11 @@
 [
   {
-    "id": "social-dinner-spots",
+    "id": "poster-voting-reminder",
     "level": "highlight",
     "pinned": true,
-    "title": "SPOTS STILL AVAILABLE FOR THE SOCIAL DINNER!",
-    "body": "THERE ARE STILL PLACES LEFT FOR THE SOCIAL DINNER ON WEDNESDAY EVENING AT STADTGUT BUCH. PLEASE ASK AT THE REGISTRATION DESK.",
-    "date": "2026-10-13",
+    "title": "DON'T FORGET TO VOTE FOR THE BEST POSTERS!",
+    "body": "Every participant has 3 votes. Open the Posters tab, enter the voting code from your badge or scan its QR code, and tap the star on your favourite posters. Voting is anonymous and closes on Thursday 15 Oct at 16:00; you can change your votes until then.",
+    "date": "2026-10-14",
     "active": true
   },
   {
@@ -14,14 +14,6 @@
     "title": "Wednesday evening at Stadtgut Buch",
     "body": "Flash-orals begin at 19:15, followed by the social dinner from 20:15 until 23:00.",
     "date": "2026-10-14",
-    "active": true
-  },
-  {
-    "id": "poster-voting",
-    "level": "event",
-    "title": "Vote for the best posters",
-    "body": "Every participant has 3 votes for the poster awards. Open the Posters tab, enter the personal voting code from your badge or scan its QR code, and tap the star on your favourite posters. Voting is anonymous and open from Wed 14 Oct, 08:00 until Thu 15 Oct, 16:00; you can change your votes until it closes.",
-    "date": "2026-10-12",
     "active": true
   },
   {
