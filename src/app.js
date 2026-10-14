@@ -814,6 +814,9 @@ function renderVotingCard() {
   </article>`;
 }
 
+// A block without a category name uses its letter as name and is shown by its letter only.
+const posterBlockLabel = theme => !theme?.name || theme.name === theme.code ? (theme?.code || '') : theme.code ? `${theme.code} · ${theme.name}` : theme.name;
+
 function renderPosters() {
   setTopbar({ title: 'Posters', kicker: 'Poster session' });
   const data = DATA.posters;
@@ -851,14 +854,14 @@ function renderPosters() {
       </div>
       <div class="chip-row" aria-label="Poster topics">
         <button type="button" class="chip ${state.posterTheme === 'all' ? 'active' : ''}" data-action="poster-theme" data-value="all">All topics <span class="chip-count">${data.posters.length}</span></button>
-        ${themes.map(t => `<button type="button" class="chip ${state.posterTheme === t.name ? 'active' : ''}" data-action="poster-theme" data-value="${attr(t.name)}">${esc(t.name)} <span class="chip-count">${data.posters.filter(p => p.theme === t.name).length}</span></button>`).join('')}
+        ${themes.map(t => `<button type="button" class="chip ${state.posterTheme === t.name ? 'active' : ''}" data-action="poster-theme" data-value="${attr(t.name)}">${esc(t.name === t.code ? `Block ${t.code}` : t.name)} <span class="chip-count">${data.posters.filter(p => p.theme === t.name).length}</span></button>`).join('')}
       </div>
     </div>
     <div class="results-row"><span>${visible.length} poster${visible.length === 1 ? '' : 's'}</span><span>Tap a poster to read the abstract</span></div>
     ${groups.length ? `<div class="card poster-table-card"><table class="poster-table">
       <thead><tr><th scope="col" class="pt-no">No.</th><th scope="col">Poster title</th><th scope="col" class="pt-author">Presenting author</th><th scope="col" class="pt-topic">Topic</th>${votingStatus ? '<th scope="col" class="pt-vote">Vote</th>' : ''}</tr></thead>
       ${groups.map(g => `<tbody>
-        <tr class="pt-group"><th colspan="${columns}" scope="rowgroup"><span>${g.code ? `${esc(g.code)} · ` : ''}${esc(g.name)}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
+        <tr class="pt-group"><th colspan="${columns}" scope="rowgroup"><span>${esc(posterBlockLabel(g))}</span>${g.numbers ? `<small>Posters ${esc(String(g.numbers).replace('-', '–'))}</small>` : ''}</th></tr>
         ${g.items.map(p => {
           const hasAbstract = !!abstractById(p.abstractId);
           const open = hasAbstract ? ` data-href="#/abstract/${attr(p.abstractId)}" tabindex="0" role="link"` : '';
@@ -866,7 +869,7 @@ function renderPosters() {
             <td class="pt-no"><span class="poster-no">${esc(String(p.number))}</span></td>
             <td class="pt-title"><strong>${esc(p.title)}</strong><span class="pt-author-inline">${icon('person')}${esc(p.presenter)}</span></td>
             <td class="pt-author">${esc(p.presenter)}</td>
-            <td class="pt-topic">${esc(p.theme)}</td>
+            <td class="pt-topic">${esc(posterBlockLabel(themes.find(t => t.name === p.theme)) || p.theme)}</td>
             ${votingStatus ? (() => {
               const number = String(p.number);
               const voted = votingStatus.votes.includes(number);
