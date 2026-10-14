@@ -1,6 +1,6 @@
 {
   "title": "Poster session",
-  "intro": "73 posters in 10 thematic blocks (A–J). Posters of the same block hang next to each other on the boards.",
+  "intro": "74 posters in 10 thematic blocks (A–J) plus block K. Posters of the same block hang next to each other on the boards.",
   "format": {
     "title": "Poster format",
     "body": "Posters will be displayed physically rather than digitally. Please bring a printed poster.",
@@ -59,6 +59,11 @@
       "code": "J",
       "name": "Liquid biopsy and molecular diagnostics",
       "numbers": "J1-J5"
+    },
+    {
+      "code": "K",
+      "name": "K",
+      "numbers": "K1"
     }
   ],
   "posters": [
@@ -572,6 +577,13 @@
       "presenter": "Maria Pilar Sanchez-Bailon",
       "title": "Programming glioblastoma subtype identity using synthetic genetic tracing",
       "abstractId": "abs-maria-pilar-sanchez-bailon"
+    },
+    {
+      "number": "K1",
+      "theme": "K",
+      "presenter": "Elisabetta Stanzani",
+      "title": "CDKN2A loss defines a MAPK/RB signaling dependency in BRAF-wildtype GBM and CDK4/6+MEK dual inhibition overcome adaptive resistance",
+      "abstractId": "abs-2546"
     }
   ]
 }
