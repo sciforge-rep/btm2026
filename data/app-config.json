@@ -307,5 +307,90 @@
     "closesAt": "2026-10-15T16:00:00+02:00",
     "intro": "Every participant has 3 votes for the best posters. Enter the personal voting code from your badge, or scan its QR code. Voting is anonymous, and you can change your votes until voting closes.",
     "privacy": "Poster voting sends only your anonymous voting code and the poster numbers you choose to the voting server (Supabase, Frankfurt). Codes are not linked to names."
+  },
+  "feedback": {
+    "title": "Your feedback",
+    "intro": "Help us shape the next Brain Tumor Meeting. It takes about a minute, and every question except the first is optional.",
+    "privacy": "Feedback is anonymous: the app sends only your answers and a random device number (so you can edit them later) to the meeting's server (Supabase, Frankfurt). Please don't include names or other personal details in your comments.",
+    "closesAt": "2026-11-30T23:59:00+01:00",
+    "ratings": [
+      {
+        "key": "overall",
+        "label": "Overall, how was BTM 2026?",
+        "required": true
+      },
+      {
+        "key": "programme",
+        "label": "Scientific programme"
+      },
+      {
+        "key": "organisation",
+        "label": "Organisation and venue"
+      },
+      {
+        "key": "social",
+        "label": "Wednesday evening at Stadtgut Buch"
+      },
+      {
+        "key": "app",
+        "label": "This conference app"
+      }
+    ],
+    "attendAgain": {
+      "label": "Would you come to the next Brain Tumor Meeting?",
+      "options": [
+        [
+          "yes",
+          "Yes"
+        ],
+        [
+          "maybe",
+          "Maybe"
+        ],
+        [
+          "no",
+          "No"
+        ]
+      ]
+    },
+    "role": {
+      "label": "You are…",
+      "options": [
+        [
+          "phd",
+          "PhD student"
+        ],
+        [
+          "postdoc",
+          "Postdoc"
+        ],
+        [
+          "pi",
+          "Group leader / PI"
+        ],
+        [
+          "clinician",
+          "Clinician"
+        ],
+        [
+          "industry",
+          "Industry"
+        ],
+        [
+          "other",
+          "Other"
+        ]
+      ]
+    },
+    "texts": [
+      {
+        "key": "liked",
+        "label": "What did you like most?"
+      },
+      {
+        "key": "improve",
+        "label": "What should we improve next time?"
+      }
+    ]
   }
 }

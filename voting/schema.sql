@@ -119,3 +119,94 @@ end $$;
 
 revoke all on function public.normalise_voting_code(text), public.voting_status(text), public.set_poster_vote(text, text, boolean), public.voting_results(text) from public;
 grant execute on function public.voting_status(text), public.set_poster_vote(text, text, boolean), public.voting_results(text), public.normalise_voting_code(text) to anon;
+
+-- ---------------------------------------------------------------------------
+-- Participant feedback (migrations "participant_feedback" and
+-- "feedback_results_exclude_test_ids"). Same project, same admin key.
+-- ---------------------------------------------------------------------------
+alter table public.voting_settings add column if not exists feedback_closes_at timestamptz not null default '2026-11-30 23:59 Europe/Berlin';
+
+create table public.feedback (
+  client_id uuid primary key,              -- random id stored on the participant's device
+  overall smallint not null check (overall between 1 and 5),
+  programme smallint check (programme between 1 and 5),
+  organisation smallint check (organisation between 1 and 5),
+  social smallint check (social between 1 and 5),
+  app smallint check (app between 1 and 5),
+  attend_again text check (attend_again in ('yes', 'maybe', 'no')),
+  role text check (role in ('phd', 'postdoc', 'pi', 'clinician', 'industry', 'other')),
+  liked text check (char_length(liked) <= 2000),
+  improve text check (char_length(improve) <= 2000),
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+alter table public.feedback enable row level security;
+revoke all on public.feedback from anon, authenticated;
+
+create or replace function public.feedback_rating(p jsonb, p_key text)
+returns smallint language sql immutable set search_path = '' as $$
+  select case when jsonb_typeof(p -> p_key) = 'number' and (p ->> p_key)::numeric between 1 and 5 then (p ->> p_key)::numeric::smallint end
+$$;
+
+create or replace function public.feedback_text(p jsonb, p_key text)
+returns text language sql immutable set search_path = '' as $$
+  select nullif(left(btrim(coalesce(p ->> p_key, '')), 2000), '')
+$$;
+
+-- Participant: submit or update their own feedback (one entry per device).
+create or replace function public.submit_feedback(p_client_id uuid, p_answers jsonb)
+returns jsonb language plpgsql volatile security definer set search_path = '' as $$
+declare
+  v_closes timestamptz;
+  v_overall smallint := public.feedback_rating(p_answers, 'overall');
+begin
+  select feedback_closes_at into v_closes from public.voting_settings where id = 1;
+  if now() > v_closes then raise exception 'closed' using errcode = 'P0001'; end if;
+  if p_client_id is null or v_overall is null then raise exception 'invalid' using errcode = 'P0001'; end if;
+  insert into public.feedback as f (client_id, overall, programme, organisation, social, app, attend_again, role, liked, improve)
+  values (p_client_id, v_overall,
+    public.feedback_rating(p_answers, 'programme'), public.feedback_rating(p_answers, 'organisation'),
+    public.feedback_rating(p_answers, 'social'), public.feedback_rating(p_answers, 'app'),
+    case when p_answers ->> 'attendAgain' in ('yes', 'maybe', 'no') then p_answers ->> 'attendAgain' end,
+    case when p_answers ->> 'role' in ('phd', 'postdoc', 'pi', 'clinician', 'industry', 'other') then p_answers ->> 'role' end,
+    public.feedback_text(p_answers, 'liked'), public.feedback_text(p_answers, 'improve'))
+  on conflict (client_id) do update set
+    overall = excluded.overall, programme = excluded.programme, organisation = excluded.organisation,
+    social = excluded.social, app = excluded.app, attend_again = excluded.attend_again, role = excluded.role,
+    liked = excluded.liked, improve = excluded.improve, updated_at = now();
+  return jsonb_build_object('saved', true, 'closesAt', v_closes);
+end $$;
+
+-- Participant: read back only their own feedback (to edit it).
+create or replace function public.my_feedback(p_client_id uuid)
+returns jsonb language sql stable security definer set search_path = '' as $$
+  select jsonb_build_object('closesAt', (select feedback_closes_at from public.voting_settings where id = 1),
+    'answers', (select jsonb_build_object('overall', overall, 'programme', programme, 'organisation', organisation, 'social', social, 'app', app,
+      'attendAgain', attend_again, 'role', role, 'liked', liked, 'improve', improve, 'updatedAt', updated_at)
+      from public.feedback where client_id = p_client_id))
+$$;
+
+-- Organisers: all feedback, protected by the admin key. Client ids starting with
+-- 00000000-0000-4000-8000- are reserved for tests and never counted.
+create or replace function public.feedback_results(p_admin_key text)
+returns jsonb language plpgsql stable security definer set search_path = '' as $$
+declare
+  v_hash text;
+begin
+  select admin_key_hash into v_hash from public.voting_settings where id = 1;
+  if v_hash is null or extensions.crypt(coalesce(p_admin_key, ''), v_hash) <> v_hash then
+    perform pg_sleep(1);
+    raise exception 'forbidden' using errcode = 'P0001';
+  end if;
+  return jsonb_build_object(
+    'generatedAt', now(),
+    'closesAt', (select feedback_closes_at from public.voting_settings where id = 1),
+    'entries', coalesce((select jsonb_agg(jsonb_build_object('overall', overall, 'programme', programme, 'organisation', organisation,
+      'social', social, 'app', app, 'attendAgain', attend_again, 'role', role, 'liked', liked, 'improve', improve,
+      'createdAt', created_at, 'updatedAt', updated_at) order by updated_at desc)
+      from public.feedback where client_id::text not like '00000000-0000-4000-8000-%'), '[]'::jsonb)
+  );
+end $$;
+
+revoke all on function public.feedback_rating(jsonb, text), public.feedback_text(jsonb, text), public.submit_feedback(uuid, jsonb), public.my_feedback(uuid), public.feedback_results(text) from public;
+grant execute on function public.submit_feedback(uuid, jsonb), public.my_feedback(uuid), public.feedback_results(text) to anon;

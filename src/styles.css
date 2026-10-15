@@ -961,3 +961,33 @@ button.voting-chip { cursor: pointer; }
 .vote-button.busy { opacity: .55; }
 .vote-button:disabled { cursor: default; opacity: .45; }
 .vote-button.voted:disabled { opacity: .8; }
+
+/* Notice link button */
+.notice-link { margin-top: 10px; }
+.notice-link svg { width: 16px; height: 16px; }
+
+/* Participant feedback */
+.feedback-form { display: grid; gap: 18px; padding: 18px; }
+.feedback-q { display: grid; gap: 8px; min-width: 0; margin: 0; padding: 0; border: 0; }
+.feedback-q legend, .feedback-label { padding: 0; margin-bottom: 8px; color: var(--ink); font-size: .86rem; font-weight: 750; }
+.feedback-required { margin-left: 6px; color: var(--gold-600); font-size: .64rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.feedback-stars { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.feedback-star { display: grid; place-items: center; width: 42px; height: 42px; padding: 0; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); color: var(--faint); cursor: pointer; }
+.feedback-star svg { width: 22px; height: 22px; }
+.feedback-star.on { border-color: var(--gold-500); background: var(--gold-500); color: var(--navy-950); }
+.feedback-star.on svg { fill: currentColor; }
+.feedback-star:focus-visible { outline: 2px solid var(--blue-500); outline-offset: 2px; }
+.feedback-scale { margin-left: 4px; color: var(--muted); font-size: .76rem; font-weight: 700; }
+.chip-row.wrap { flex-wrap: wrap; overflow: visible; margin: 0; padding: 0; }
+.feedback-q textarea { width: 100%; min-height: 96px; padding: 11px 12px; border: 1px solid var(--line-strong); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-size: .88rem; line-height: 1.45; resize: vertical; }
+.feedback-q textarea:focus { outline: 2px solid var(--blue-500); outline-offset: 1px; }
+.feedback-privacy { display: flex; gap: 8px; align-items: flex-start; margin: 0; color: var(--muted); font-size: .74rem; line-height: 1.45; }
+.feedback-privacy svg { width: 16px; height: 16px; flex: none; margin-top: 1px; }
+.feedback-error { display: flex; gap: 8px; align-items: flex-start; margin: 0 0 12px; padding: 12px 14px; border-radius: 14px; background: var(--danger-soft); color: var(--danger); font-size: .82rem; font-weight: 650; }
+.feedback-error svg { width: 17px; height: 17px; flex: none; margin-top: 1px; }
+.feedback-thanks { display: flex; gap: 14px; align-items: flex-start; padding: 20px; }
+.feedback-thanks-icon { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border-radius: 14px; background: var(--success-soft); color: var(--success); }
+.feedback-thanks-icon svg { width: 24px; height: 24px; }
+.feedback-thanks h2 { margin: 2px 0 6px; font-size: 1.1rem; }
+.feedback-thanks p { margin: 0 0 14px; color: var(--muted); font-size: .84rem; line-height: 1.5; }
+@media (min-width: 700px) { .feedback-page { max-width: 760px; } }

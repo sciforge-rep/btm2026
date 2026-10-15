@@ -37,3 +37,20 @@ update public.voting_settings set admin_key_hash = extensions.crypt('new-key', e
 -- Clear test votes (test codes are never counted in results anyway)
 delete from public.votes where code in (select code from public.voting_codes where is_test);
 ```
+
+# Participant feedback
+
+After the meeting, participants can rate BTM 2026 and leave comments on the app's Feedback page (`#/feedback`, linked from the Home notice and the More tab). It is anonymous: the app stores a random device id so a participant can edit their own answers, nothing else.
+
+- **Questions:** overall rating (required), ratings for programme, organisation and venue, the Stadtgut evening and the app, "come again?", role, and two comment fields. Labels are in `data/app-config.json` → `feedback`; the stored keys are fixed in `schema.sql`.
+- **Open until:** 30 Nov 2026, 23:59 Berlin time (`voting_settings.feedback_closes_at`).
+- **Results:** [`/feedback-results/`](https://sciforge-rep.github.io/btm2026/feedback-results/), not linked from the app. Uses the same admin key as the poster results; shows averages, distributions, comments (searchable) and a CSV export.
+- **Tests:** client ids starting with `00000000-0000-4000-8000-` are never counted.
+
+```sql
+-- Change the closing date
+update public.voting_settings set feedback_closes_at = '2026-12-31 23:59 Europe/Berlin';
+
+-- Remove a spam entry (look it up first in the CSV export by its time stamp)
+delete from public.feedback where updated_at = '2026-10-16 09:12:33.123+00';
+```

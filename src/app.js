@@ -18,6 +18,7 @@ const state = {
   standalone: window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true,
   previousHash: '',
   voting: { code: storedVotingCode(), status: null, loading: false, busy: '', error: '' },
+  feedback: { answers: {}, loaded: false, loading: false, saving: false, saved: false, error: '' },
 };
 
 const ICONS = {
@@ -332,7 +333,7 @@ function renderNotice(item) {
   const iconName = item.level === 'success' ? 'circleCheck' : item.level === 'event' || item.level === 'highlight' ? 'calendar' : 'info';
   return `<article class="card notice-card" data-level="${attr(item.level)}">
     <span class="notice-icon">${icon(iconName)}</span>
-    <div><h3>${esc(item.title)}</h3><p>${esc(item.body)}</p></div>
+    <div><h3>${esc(item.title)}</h3><p>${esc(item.body)}</p>${item.link?.href ? `<a class="button small primary notice-link" href="${attr(item.link.href)}">${esc(item.link.label || 'Open')}${icon('arrowRight')}</a>` : ''}</div>
     <time datetime="${attr(item.date)}">${esc(formatDate(item.date, { day: 'numeric', month: 'short' }))}</time>
   </article>`;
 }
@@ -676,6 +677,85 @@ function posterMatches(poster, query) {
   return normalise(`${poster.number} ${poster.title} ${poster.presenter} ${poster.theme}`).includes(query);
 }
 
+/* Participant feedback: anonymous, one editable entry per device (see voting/README.md). */
+function feedbackClientId(create = false) {
+  try {
+    let id = localStorage.getItem('btm2026-feedback-id');
+    if (!id && create) {
+      id = crypto.randomUUID ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => ((Math.random() * 16) | (c === 'x' ? 0 : 8) & (c === 'x' ? 15 : 11)).toString(16));
+      localStorage.setItem('btm2026-feedback-id', id);
+    }
+    return id || '';
+  } catch { return ''; }
+}
+
+async function loadMyFeedback() {
+  const fb = state.feedback;
+  const id = feedbackClientId();
+  fb.loaded = true;
+  if (!id || !DATA.config.feedback) return;
+  fb.loading = true;
+  try {
+    const result = await votingRpc('my_feedback', { p_client_id: id });
+    if (result?.answers) { fb.answers = { ...result.answers, ...fb.answers }; fb.saved = true; }
+  } catch { /* offline: the form still works */ }
+  fb.loading = false;
+  if (state.route.name === 'feedback') renderRoute(false);
+}
+
+async function submitFeedback() {
+  const fb = state.feedback;
+  if (!fb.answers.overall) { fb.error = 'Please rate the meeting overall (first question).'; renderRoute(false); return; }
+  fb.saving = true; fb.error = '';
+  renderRoute(false);
+  try {
+    const { updatedAt, ...answers } = fb.answers;
+    await votingRpc('submit_feedback', { p_client_id: feedbackClientId(true), p_answers: answers });
+    fb.saved = true; fb.editing = false;
+    haptic();
+    toast('Thank you for your feedback!');
+  } catch (error) {
+    fb.error = error.code === 'closed' ? 'Feedback is closed.' : 'Your feedback could not be sent. Check your connection and try again; your answers are kept.';
+  } finally {
+    fb.saving = false;
+    renderRoute(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
+
+function renderFeedback() {
+  setTopbar({ title: 'Feedback', kicker: 'Brain Tumor Meeting 2026' });
+  const config = DATA.config.feedback;
+  const fb = state.feedback;
+  if (!config) return `<div class="page">${renderEmpty('info', 'Feedback is not available', 'Reload the app while online.')}</div>`;
+  if (!fb.loaded) setTimeout(loadMyFeedback, 0);
+  const closed = Date.now() > Date.parse(config.closesAt);
+  const head = `<div class="large-title"><h1 class="page-title">${esc(config.title)}</h1><p class="page-subtitle">${esc(config.intro)}</p></div>`;
+  if (closed) return `<div class="page feedback-page">${head}${renderEmpty('check', 'Feedback is closed', 'Thank you to everyone who shared their thoughts.')}</div>`;
+  if (fb.saved && !fb.editing) {
+    return `<div class="page feedback-page">${head}
+      <article class="card feedback-thanks"><span class="feedback-thanks-icon">${icon('circleCheck')}</span><div><h2>Thank you!</h2><p>Your feedback has been received. Safe travels home, and we hope to see you at the next Brain Tumor Meeting.</p>
+      <button class="button small outline" type="button" data-action="feedback-edit">Edit my answers</button></div></article>
+    </div>`;
+  }
+  const a = fb.answers;
+  const stars = r => `<fieldset class="feedback-q"><legend>${esc(r.label)}${r.required ? ' <span class="feedback-required">required</span>' : ''}</legend>
+    <div class="feedback-stars" role="radiogroup" aria-label="${attr(r.label)}">${[1, 2, 3, 4, 5].map(n => `<button type="button" class="feedback-star${a[r.key] >= n ? ' on' : ''}" role="radio" aria-checked="${a[r.key] === n}" aria-label="${n} of 5" data-action="feedback-set" data-id="${attr(r.key)}" data-value="${n}">${icon('star')}</button>`).join('')}
+    <span class="feedback-scale">${a[r.key] ? ['', 'Poor', 'Fair', 'Good', 'Very good', 'Excellent'][a[r.key]] : 'Tap to rate'}</span></div></fieldset>`;
+  const chips = (key, q) => `<fieldset class="feedback-q"><legend>${esc(q.label)}</legend><div class="chip-row wrap">${q.options.map(([value, label]) => `<button type="button" class="chip${a[key] === value ? ' active' : ''}" aria-pressed="${a[key] === value}" data-action="feedback-set" data-id="${attr(key)}" data-value="${attr(value)}">${esc(label)}</button>`).join('')}</div></fieldset>`;
+  return `<div class="page feedback-page">${head}
+    ${fb.error ? `<p class="feedback-error">${icon('alert')}<span>${esc(fb.error)}</span></p>` : ''}
+    <form class="card feedback-form" id="feedback-form" novalidate>
+      ${config.ratings.map(stars).join('')}
+      ${chips('attendAgain', config.attendAgain)}
+      ${chips('role', config.role)}
+      ${config.texts.map(t => `<label class="feedback-q"><span class="feedback-label">${esc(t.label)}</span><textarea id="feedback-${attr(t.key)}" data-feedback="${attr(t.key)}" rows="4" maxlength="2000" placeholder="Optional">${esc(a[t.key] || '')}</textarea></label>`).join('')}
+      <p class="feedback-privacy">${icon('shield')}<span>${esc(config.privacy)}</span></p>
+      <button class="button primary full" type="submit"${fb.saving ? ' disabled' : ''}>${fb.saving ? 'Sending…' : fb.saved ? 'Update my feedback' : 'Send feedback'}</button>
+    </form>
+  </div>`;
+}
+
 /* Poster voting: anonymous codes, votes stored on the voting server (see voting/README.md). */
 function storedVotingCode() {
   try { return localStorage.getItem('btm2026-voting-code') || ''; } catch { return ''; }
@@ -978,6 +1058,7 @@ function renderMore() {
       <section class="list-group"><h2>Meeting</h2><div class="card list-card">
         ${listRow('info', 'Meeting information', 'Poster size, presentation lengths and CME', 'show-meeting')}
         ${listRow('users', 'Committees', 'Scientific and organizing committees', 'show-committees')}
+        ${DATA.config.feedback ? listLink('star', 'Give feedback', 'Tell us how BTM 2026 went', '#/feedback') : ''}
         ${listLink('bed', 'Accommodation', 'Hotels and pensions listed by the meeting', '#/explore?tab=berlin')}
         ${listLink('globe', 'Official meeting website', 'Latest organizer information', DATA.config.event.officialWebsite, true)}
         ${listLink('file', 'Published programme PDF', 'Open the official six-page programme', DATA.config.event.programmePdf, true)}
@@ -1018,7 +1099,7 @@ function renderRoute(resetScroll = true) {
   state.route = getRoute();
   const detail = state.route.name === 'abstract';
   document.body.classList.toggle('detail-route', detail);
-  const navName = detail ? 'abstracts' : ['home', 'programme', 'abstracts', 'posters', 'explore', 'cme', 'more'].includes(state.route.name) ? state.route.name : 'home';
+  const navName = detail ? 'abstracts' : state.route.name === 'feedback' ? 'more' : ['home', 'programme', 'abstracts', 'posters', 'explore', 'cme', 'more'].includes(state.route.name) ? state.route.name : 'home';
   setActiveNavigation(navName);
 
   let html;
@@ -1031,6 +1112,7 @@ function renderRoute(resetScroll = true) {
     case 'posters': html = renderPosters(); break;
     case 'cme': html = renderCme(); break;
     case 'more': html = renderMore(); break;
+    case 'feedback': html = renderFeedback(); break;
     case 'vote': {
       // QR codes on badges link to #/vote/<code>.
       if (DATA.config.voting && state.route.id) useVotingCode(state.route.id);
@@ -1119,7 +1201,7 @@ function renderPerson(person) {
 
 function showPrivacy() {
   const privacy = DATA.config.privacy;
-  showInformationSheet('Privacy', 'On-device by design', `<p>${esc(privacy.summary)}</p><p>${esc(privacy.publicationNote)}</p><div class="sheet-meta-list"><div class="sheet-meta">${icon('check')}<div><strong>No account</strong><span>Participants can use the entire app without signing in.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>No analytics</strong><span>The build contains no analytics, advertising or cross-site tracking SDK.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>Local preferences</strong><span>Saved items and theme preference remain in this browser on this device.</span></div></div>${DATA.config.voting?.privacy ? `<div class="sheet-meta">${icon('star')}<div><strong>Poster voting</strong><span>${esc(DATA.config.voting.privacy)}</span></div></div>` : ''}</div>`);
+  showInformationSheet('Privacy', 'On-device by design', `<p>${esc(privacy.summary)}</p><p>${esc(privacy.publicationNote)}</p><div class="sheet-meta-list"><div class="sheet-meta">${icon('check')}<div><strong>No account</strong><span>Participants can use the entire app without signing in.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>No analytics</strong><span>The build contains no analytics, advertising or cross-site tracking SDK.</span></div></div><div class="sheet-meta">${icon('check')}<div><strong>Local preferences</strong><span>Saved items and theme preference remain in this browser on this device.</span></div></div>${DATA.config.voting?.privacy ? `<div class="sheet-meta">${icon('star')}<div><strong>Poster voting</strong><span>${esc(DATA.config.voting.privacy)}</span></div></div>` : ''}${DATA.config.feedback?.privacy ? `<div class="sheet-meta">${icon('mail')}<div><strong>Feedback</strong><span>${esc(DATA.config.feedback.privacy)}</span></div></div>` : ''}</div>`);
 }
 
 function showInformationSheet(title, kicker, content) {
@@ -1286,6 +1368,9 @@ function bindEvents() {
       state.abstractQuery = event.target.value;
       debounceRender('abstracts');
     }
+    if (event.target.dataset?.feedback) {
+      state.feedback.answers[event.target.dataset.feedback] = event.target.value;
+    }
     if (event.target.id === 'poster-search') {
       state.posterQuery = event.target.value;
       debounceRender('posters');
@@ -1302,6 +1387,11 @@ function bindEvents() {
   });
 
   document.addEventListener('submit', event => {
+    if (event.target.id === 'feedback-form') {
+      event.preventDefault();
+      submitFeedback();
+      return;
+    }
     if (event.target.id === 'voting-code-form') {
       event.preventDefault();
       useVotingCode(event.target.elements.code.value);
@@ -1343,6 +1433,15 @@ function bindEvents() {
       case 'poster-theme': state.posterTheme = value; renderRoute(false); break;
       case 'clear-poster-search': state.posterQuery = ''; renderRoute(false); break;
       case 'voting-retry': loadVotingStatus(); renderRoute(false); break;
+      case 'feedback-set': {
+        const answers = state.feedback.answers;
+        const parsed = /^\d$/.test(value) ? Number(value) : value;
+        answers[id] = answers[id] === parsed && id !== 'overall' ? null : parsed;
+        state.feedback.error = '';
+        renderRoute(false);
+        break;
+      }
+      case 'feedback-edit': state.feedback.editing = true; renderRoute(false); break;
       case 'voting-forget':
         storeVotingCode('');
         state.voting = { code: '', status: null, loading: false, busy: '', error: '' };
