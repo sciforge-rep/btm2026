@@ -1609,13 +1609,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Tugba Bagci-Onder"
+      "Nareg Degirmenci"
     ],
     "leadAuthor": "Nareg Degirmenci",
     "authors": [
       {
         "name": "Nareg Degirmenci",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -1650,7 +1650,7 @@
       },
       {
         "name": "Tugba Bagci-Onder",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
@@ -4175,13 +4175,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Giuseppina Catanzaro"
+      "Zaira Spinello"
     ],
     "leadAuthor": "Zaira Spinello",
     "authors": [
       {
         "name": "Zaira Spinello",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -4258,7 +4258,7 @@
       },
       {
         "name": "Giuseppina Catanzaro",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
@@ -4595,13 +4595,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Giuseppina Catanzaro"
+      "Zaira Spinello"
     ],
     "leadAuthor": "Zaira Spinello",
     "authors": [
       {
         "name": "Zaira Spinello",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -4795,7 +4795,7 @@
       },
       {
         "name": "Giuseppina Catanzaro",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
@@ -4874,13 +4874,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Roland Kälin"
+      "Lakmi Pitigala-Motal"
     ],
     "leadAuthor": "Lakmi Pitigala-Motal",
     "authors": [
       {
         "name": "Lakmi Pitigala-Motal",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -4916,7 +4916,7 @@
       },
       {
         "name": "Roland Kälin",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1,
           3
@@ -6106,12 +6106,14 @@
       "sessionTitle": "Pediatric, Low-grade and Rare CNS Tumors",
       "location": "MDC.C · Building 83"
     },
-    "presentingAuthors": [],
+    "presentingAuthors": [
+      "Klejdi Nurellari"
+    ],
     "leadAuthor": "Klejdi Nurellari",
     "authors": [
       {
         "name": "Klejdi Nurellari",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1,
           2
@@ -6231,13 +6233,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Davide Ceresa"
+      "Sebastian Garcia Mena"
     ],
     "leadAuthor": "Sebastian Garcia Mena",
     "authors": [
       {
         "name": "Sebastian Garcia Mena",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1,
           2
@@ -6290,7 +6292,7 @@
       },
       {
         "name": "Davide Ceresa",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1,
           2
@@ -6590,13 +6592,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Tim Hohmann"
+      "Urszula Hohmann"
     ],
     "leadAuthor": "Urszula Hohmann",
     "authors": [
       {
         "name": "Urszula Hohmann",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -6631,7 +6633,7 @@
       },
       {
         "name": "Tim Hohmann",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
@@ -8786,13 +8788,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Diana Aguilar-Morante"
+      "Candela Arribas-Parejas"
     ],
     "leadAuthor": "Candela Arribas-Parejas",
     "authors": [
       {
         "name": "Candela Arribas-Parejas",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -8806,7 +8808,7 @@
       },
       {
         "name": "Diana Aguilar-Morante",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
