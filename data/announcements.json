@@ -1,11 +1,15 @@
 [
   {
-    "id": "poster-voting-reminder",
+    "id": "thank-you-feedback",
     "level": "highlight",
     "pinned": true,
-    "title": "DON'T FORGET TO VOTE FOR THE BEST POSTERS!",
-    "body": "Every participant has 3 votes. Open the Posters tab, enter the voting code from your badge or scan its QR code, and tap the star on your favourite posters. Voting is anonymous and closes on Thursday 15 Oct at 16:00; you can change your votes until then.",
-    "date": "2026-10-14",
+    "title": "THANK YOU FOR JOINING BTM 2026!",
+    "body": "Thank you all for making the 12th Brain Tumor Meeting such an inspiring two days. We wish you a safe journey home! Please take a minute to tell us what you liked and what we can do better next time — your feedback is anonymous.",
+    "link": {
+      "href": "#/feedback",
+      "label": "Give feedback"
+    },
+    "date": "2026-10-15",
     "active": true
   },
   {

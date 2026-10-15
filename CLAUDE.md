@@ -38,3 +38,7 @@ Participants vote for posters (3 votes each, anonymous codes) on the Posters tab
 
 - Votes are stored by poster number. Once voting opens (Wed 14 Oct 2026, 08:00 Berlin time), do not renumber posters; a new poster may still get the next free number in its block.
 - Never commit voting codes, code slips or the admin key.
+
+## Participant feedback
+
+Anonymous feedback form at `#/feedback` (Home notice and More tab); organisers read it at `feedback-results/` with the same admin key as the poster results. Same Supabase project; schema and maintenance notes in `voting/schema.sql` and `voting/README.md`; texts in `data/app-config.json` → `feedback`.
