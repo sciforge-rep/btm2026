@@ -276,6 +276,26 @@
         "logo": "./images/sponsors/verdiblot.png",
         "url": "https://www.verdiblot.com/about-us"
       }
+    ],
+    "ads": [
+      {
+        "id": "alexion-nf1-2026",
+        "sponsor": "Alexion, AstraZeneca Rare Disease",
+        "image": "./images/sponsors/ads/alexion-nf1-cme-2026.jpg",
+        "width": 1440,
+        "height": 960,
+        "alt": "Advertisement by Alexion, AstraZeneca Rare Disease: Targeting NF1: Vom Tumorsuppressor zur Multisystemerkrankung. Live online event, Tuesday 20 October 2026, 18:00–19:30. CME points applied for. For physicians only.",
+        "url": "https://link.alxn.com/r/3kzq0gwab5ii2xx",
+        "cta": "Register",
+        "note": "Live online CME event for physicians only",
+        "event": {
+          "title": "Targeting NF1: Vom Tumorsuppressor zur Multisystemerkrankung (Alexion, live online)",
+          "start": "2026-10-20T18:00:00+02:00",
+          "end": "2026-10-20T19:30:00+02:00",
+          "location": "Live-Online-Veranstaltung",
+          "description": "Live online CME event by Alexion, AstraZeneca Rare Disease. For physicians only. Registration: https://link.alxn.com/r/3kzq0gwab5ii2xx"
+        }
+      }
     ]
   },
   "voting": {

@@ -932,8 +932,31 @@ function renderCme() {
           <div class="sponsor-amount"><strong>${esc(formatEuro(sp.amount))}</strong><small>Sponsorship</small></div>
         </article>`).join('')}
       </div>
+      ${(sponsors.ads || []).map(renderSponsorAd).join('')}
     </section>` : ''}
   </div>`;
+}
+
+// Sponsor advertisements: the artwork is shown unchanged; tapping it opens the sponsor's link,
+// since a QR code in the artwork cannot be scanned from the same phone.
+function renderSponsorAd(ad) {
+  return `<article class="card sponsor-ad">
+    <div class="sponsor-ad-label"><span>Advertisement</span><span>${esc(ad.sponsor)}</span></div>
+    <a class="sponsor-ad-image" href="${attr(ad.url)}" target="_blank" rel="noopener sponsored"><img src="${attr(ad.image)}" alt="${attr(ad.alt)}" width="${attr(String(ad.width))}" height="${attr(String(ad.height))}" loading="lazy" decoding="async"></a>
+    <div class="sponsor-ad-actions">
+      ${ad.note ? `<p>${esc(ad.note)}</p>` : ''}
+      <div>
+        ${ad.event ? `<button class="button small outline" type="button" data-action="calendar-ad" data-id="${attr(ad.id)}">${icon('calendar')}Add to calendar</button>` : ''}
+        <a class="button small primary" href="${attr(ad.url)}" target="_blank" rel="noopener sponsored">${esc(ad.cta || 'Learn more')}${icon('external')}</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+function calendarForAd(id) {
+  const ad = (DATA.config.sponsors?.ads || []).find(item => item.id === id);
+  if (!ad?.event) return;
+  downloadICS(`${ad.id}.ics`, eventICS(ad.event));
 }
 
 function renderMore() {
@@ -1335,6 +1358,7 @@ function bindEvents() {
       case 'share-programme': shareProgramme(id); break;
       case 'copy-citation': copyCitation(id); break;
       case 'calendar-programme': calendarForProgramme(id); break;
+      case 'calendar-ad': calendarForAd(id); break;
       case 'calendar-abstract': calendarForAbstract(id); break;
       case 'explore-tab': state.exploreTab = value; renderRoute(false); break;
       case 'show-meeting': showMeetingInfo(); break;
