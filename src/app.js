@@ -2,7 +2,7 @@ const DATA = { config: null, program: null, abstracts: [], announcements: [], po
 
 const state = {
   route: { name: 'home', id: '', query: new URLSearchParams() },
-  programmeDay: 'day-1',
+  programmeDay: '', // empty until the participant picks a day; then today's meeting day is shown
   programmeQuery: '',
   programmeFilter: 'all',
   abstractQuery: '',
@@ -356,12 +356,18 @@ function renderSavedCard(item) {
   return `<a class="card pressable saved-card" href="${attr(item.href)}"><small>${esc(item.badge)}</small><h3>${esc(item.title)}</h3><p>${esc(item.subtitle)}</p></a>`;
 }
 
+// Today's meeting day in Berlin: the first day before the meeting, the last day after it.
+function defaultProgrammeDay() {
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Berlin' }).format(new Date());
+  const days = DATA.program.days;
+  return [...days].reverse().find(item => item.date <= today) || days[0];
+}
+
 function renderProgramme() {
   setTopbar({ title: 'Programme', kicker: '14–15 October 2026' });
   if (state.route.query.get('day')) state.programmeDay = state.route.query.get('day');
   if (state.route.query.get('filter')) state.programmeFilter = state.route.query.get('filter');
-  const day = DATA.program.days.find(item => item.id === state.programmeDay) || DATA.program.days[0];
-  state.programmeDay = day.id;
+  const day = DATA.program.days.find(item => item.id === state.programmeDay) || defaultProgrammeDay();
   const query = normalise(state.programmeQuery);
   const sessions = day.sessions.map(session => ({ ...session, items: session.items.filter(item => programmeItemMatches(item, session, query)) })).filter(session => session.items.length);
   const count = sessions.reduce((sum, session) => sum + session.items.length, 0);
