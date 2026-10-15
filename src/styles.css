@@ -848,6 +848,25 @@ body.detail-route .toast { bottom: calc(var(--safe-bottom) + 18px); }
 .sponsor-amount { text-align: right; font-variant-numeric: tabular-nums; }
 .sponsor-amount strong { display: block; font-size: 1rem; }
 .sponsor-amount small { color: var(--faint); font-size: .62rem; }
+.sponsor-ad { margin-top: 14px; padding: 0; overflow: hidden; }
+.sponsor-ad-label { display: flex; justify-content: space-between; gap: 10px; padding: 9px 14px; color: var(--faint); font-size: .62rem; font-weight: 800; letter-spacing: .07em; text-transform: uppercase; }
+.sponsor-ad-label span:last-child { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; letter-spacing: .02em; text-transform: none; }
+.sponsor-ad-image { display: block; background: #0a1f4d; }
+.sponsor-ad-image img { width: 100%; height: auto; }
+.sponsor-ad-image:focus-visible { outline: 3px solid var(--blue-500); outline-offset: -3px; }
+.sponsor-ad-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 14px; padding: 12px 14px; border-top: 1px solid var(--line); }
+.sponsor-ad-actions p { margin: 0; color: var(--muted); font-size: .74rem; font-weight: 650; }
+.sponsor-ad-actions div { display: flex; flex-wrap: wrap; gap: 8px; }
+.sponsor-ad-actions .button svg { width: 16px; height: 16px; }
+@media (max-width: 420px) { .sponsor-ad-actions div { width: 100%; } .sponsor-ad-actions .button { flex: 1; } }
+@media (min-width: 820px) {
+  .sponsor-ad { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(220px, 1fr); }
+  .sponsor-ad-label { grid-column: 1 / -1; }
+  .sponsor-ad-actions { flex-direction: column; align-items: stretch; justify-content: center; gap: 14px; padding: 20px; border-top: 0; border-left: 1px solid var(--line); }
+  .sponsor-ad-actions p { font-size: .82rem; line-height: 1.45; }
+  .sponsor-ad-actions div { flex-direction: column; }
+  .sponsor-ad-actions .button { width: 100%; }
+}
 @media (max-width: 389px) {
   .sponsor-card { grid-template-columns: 88px minmax(0, 1fr); }
   .sponsor-amount { grid-column: 2; text-align: left; }
