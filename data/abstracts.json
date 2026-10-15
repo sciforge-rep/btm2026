@@ -4402,13 +4402,13 @@
     "programmeId": "",
     "programme": null,
     "presentingAuthors": [
-      "Maria Stella Carro"
+      "Roberto Ferrarese"
     ],
     "leadAuthor": "Roberto Ferrarese",
     "authors": [
       {
         "name": "Roberto Ferrarese",
-        "presenting": false,
+        "presenting": true,
         "affiliationRefs": [
           1
         ]
@@ -4457,7 +4457,7 @@
       },
       {
         "name": "Maria Stella Carro",
-        "presenting": true,
+        "presenting": false,
         "affiliationRefs": [
           1
         ]
